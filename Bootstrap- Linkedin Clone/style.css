@@ -1,0 +1,47 @@
+.bg-white {
+  background-color: white;
+}
+.navbar-nav .nav-item {
+  font-size: 12px;
+}
+.navbar-nav .nav-item a {
+  padding: 0px;
+}
+
+body {
+  background-color: #f3f2ef;
+  font-size: 12px;
+}
+.nav-icon .nav-link {
+  border-bottom: 3px solid white;
+}
+.nav-icon .nav-link:focus {
+  border-bottom: 3px solid black;
+}
+
+.premium:hover {
+  text-decoration: underline;
+}
+
+#search-input {
+  background-color: #f0f4fc;
+  border: none;
+}
+#search-input:focus {
+  box-shadow: none;
+}
+#search-input::placeholder {
+  background: url("search-solid.svg") no-repeat left center;
+  background-size: 15px;
+  padding-left: 25px;
+  color: rgba(142, 142, 142, 1);
+}
+.profile-clickable:hover {
+  background-color: rgb(218, 218, 218);
+  cursor: pointer;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
