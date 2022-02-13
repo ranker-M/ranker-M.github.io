@@ -91,3 +91,18 @@ body {
 .accordion-button:hover::after {
   display: block !important;
 }
+
+#sort-menu a {
+  color: black !important;
+  background-color: white !important;
+  border-left: white solid 2px;
+}
+#sort-menu a.active,
+#sort-menu a:active {
+  border-left: green solid 2px;
+  background-color: #eeeeee !important;
+}
+
+#sort-menu a:hover {
+  background-color: #eeeeee !important;
+}
