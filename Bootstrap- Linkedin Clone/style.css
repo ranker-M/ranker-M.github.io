@@ -5,7 +5,15 @@
   font-size: 12px;
 }
 .navbar-nav .nav-item a {
-  padding: 0px;
+  padding: 0px 5px !important;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: black !important;
+}
+
+.navbar-nav .nav-item a:active {
+  color: black !important;
 }
 
 body {
@@ -17,10 +25,6 @@ body {
 }
 .nav-icon .nav-link:focus {
   border-bottom: 3px solid black;
-}
-
-.premium:hover {
-  text-decoration: underline;
 }
 
 #search-input {
@@ -44,4 +48,46 @@ body {
 .hover-underline:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.hover-text-black:hover {
+  color: black !important;
+}
+
+.accordion-button {
+  font-size: 12px;
+  color: black !important;
+  background-color: white !important;
+  border: none !important;
+  line-height: 1.2rem !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:focus {
+  color: black !important;
+  background-color: white !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.accordion-button:active {
+  border: none !important;
+}
+
+.accordion-button::after {
+  width: 1rem !important;
+  height: 1rem !important;
+  background-size: 1rem !important;
+  color: black !important;
+  background-color: white !important;
+  display: none !important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='currentColor'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  transform: rotate(-180deg);
+}
+
+.accordion-button:hover::after {
+  display: block !important;
 }

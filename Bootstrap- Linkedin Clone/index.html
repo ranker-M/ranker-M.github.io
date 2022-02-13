@@ -17,11 +17,13 @@
 </head>
 
 <body>
+    <!-- Navbar Starts -->
     <div class="bg-white">
         <div class="container">
             <div class="row justify-content-center">
                 <nav class="col-10 navbar navbar-expand navbar-light p-0" style="height: 53px;"
                     aria-label="Second navbar example">
+                    <!-- Brand and search Bar -->
                     <a class="navbar-brand" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"
                             class="text-primary">
@@ -30,7 +32,8 @@
                             <g>
                                 <path
                                     d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z"
-                                    fill="currentColor"></path>
+                                    fill="
+                                    #0a66c2"></path>
                             </g>
                         </svg>
                     </a>
@@ -44,31 +47,32 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
+                    <!-- Buttons -->
                     <div class="collapse navbar-collapse" id="navbarsExample02">
                         <ul class="navbar-nav ms-auto d-flex justify-content-center align-items-center"
                             style="font-size: 15px;">
                             <li class="nav-item nav-icon">
                                 <a class="nav-link active d-flex flex-column justify-content-center align-items-center"
-                                    aria-current="page" href="#">
+                                    aria-current="page" href="#" style="white-space: nowrap;">
                                     <i class="fas fa-home fa-2x"></i>
-                                    Main Page
+                                    Home
                                 </a>
                             </li>
-                            <li class="nav-item nav-icon">
+                            <li class="nav-item nav-icon ps-2">
                                 <a class="nav-link d-flex flex-column justify-content-center align-items-center"
-                                    aria-current="page" href="#">
+                                    aria-current="page" href="#" style="white-space: nowrap;">
                                     <i class="fas fa-users fa-2x"></i>
-                                    Network
+                                    My Network
                                 </a>
                             </li>
-                            <li class="nav-item nav-icon">
+                            <li class="nav-item nav-icon ps-2">
                                 <a class="nav-link d-flex flex-column justify-content-center align-items-center"
                                     aria-current="page" href="#">
                                     <i class="fas fa-suitcase fa-2x"></i>
                                     Jobs
                                 </a>
                             </li>
-                            <li class="nav-item nav-icon">
+                            <li class="nav-item nav-icon ps-2 ">
                                 <a class="nav-link d-flex flex-column justify-content-center align-items-center"
                                     aria-current="page" href="#">
                                     <i class="fas fa-comment-dots fa-2x"></i>
@@ -82,12 +86,13 @@
                                     Notifications
                                 </a>
                             </li>
-                            <li class="nav-item dropdown me-4">
-                                <a class="nav-link dropdown-toggle d-flex flex-column justify-content-center align-items-center"
-                                    data-bs-toggle="dropdown" aria-expanded="false" href="#">
-                                    <img src="https://i.pinimg.com/474x/13/93/04/139304c97828a21af1e84a509ceaab12.jpg"
-                                        alt="someone's-face" width="30" height="30" class="rounded-circle"
-                                        style="padding: 2px;">
+                            <li class="nav-item dropdown pe-3" style="margin-bottom:3px">
+                                <a class="nav-link dropdown-toggle d-flex justify-content-center align-items-center flex-wrap"
+                                    data-bs-toggle="dropdown" aria-expanded="false" href="#" style="width:50px">
+                                    <div><img
+                                            src="https://i.pinimg.com/474x/13/93/04/139304c97828a21af1e84a509ceaab12.jpg"
+                                            alt="someone's-face" width="30" height="30" class="rounded-circle"
+                                            style="padding: 2px;"></div>
                                     Me
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdown06">
@@ -96,11 +101,12 @@
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown border-start border-1 border-secondary ps-4">
-                                <a class="nav-link dropdown-toggle d-flex flex-column justify-content-center align-items-center"
-                                    data-bs-toggle="dropdown" aria-expanded="false" href="#">
-                                    <i class="fas fa-border-none fa-2x"></i>
-                                    <span> Job</span>
+                            <li class="nav-item dropdown border-start border-1 border-secondary ps-4"
+                                style="margin-bottom:3px">
+                                <a class="nav-link dropdown-toggle d-flex justify-content-center align-items-center flex-wrap"
+                                    data-bs-toggle="dropdown" aria-expanded="false" href="#" style="width:50px">
+                                    <div> <i class="fas fa-border-none fa-2x"></i></div>
+                                    <span>Work</span>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdown06">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
@@ -108,33 +114,30 @@
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item premium ">
+                            <li class="nav-item hover-underline px-2">
                                 <a class="nav-link text-center d-flex flex-column justify-content-center align-items-center"
-                                    aria-current="page" href="#" style="color: #915907; max-width: 125px;">
-                                    Try Premium for Free</a>
+                                    aria-current="page" href="#" style="color: #915907; max-width: 120px;">
+                                    Get Hired Faster, Try Premium for Free</a>
                             </li>
                         </ul>
-
-
-
                     </div>
-
                 </nav>
             </div>
         </div>
     </div>
+    <!-- Navbar Ends -->
 
     <!-- Main page Starts -->
     <div class="container p-3">
         <div class="row justify-content-center">
             <!-- Left Side Starts -->
-            <div class="left col-2 w-10 bg-white p-0">
+            <div class="left col-md-2 p-0">
                 <!-- Profile Card Starts -->
                 <div class="card text-center p-0 rounded-3">
                     <!-- Profile Photo and description starts -->
                     <div class="card-header bg-white p-0">
                         <div class="profile-background w-100 rounded-top"
-                            style="height: 80px; background-color: lightblue;">
+                            style="height: 60px; background-color: lightblue;">
                         </div>
                         <div class="mx-auto" style="margin-top: -40px;">
                             <a href="#" class="link">
@@ -203,10 +206,113 @@
                     </div>
                     <!-- Profile Card Ends -->
                 </div>
+
+                <!-- Recent Starts -->
+                <div class="card text-center p-0 pt-2 rounded-3 mt-3">
+                    <div class="card-body p-0">
+                        <!-- Card Body starts -->
+                        <div class="accordion p-0" id="accordionExample">
+                            <div class="accordion-item border-0 p-0">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button p-2 px-3" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Recent
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show border-0"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body py-1 px-0">
+
+                                        <div class="profile-clickable w-100 px-3">
+                                            <div
+                                                class="d-flex flex-nowrap w-100 justify-content-between mb-1 text-secondary">
+                                                <div
+                                                    class="d-flex text-start justify-content-center align-items-center">
+                                                    <i class="fas fa-solid fa-hashtag fa-lg"></i>
+                                                    <span class="ms-2 hover-text-black bold">mühendislik</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="w-100 px-2">
+                            <div
+                                class="d-flex flex-nowrap w-100 justify-content-between mb-1 text-primary hover-underline">
+                                <div class="d-flex text-start justify-content-center align-items-center">
+                                    <span class="ms-2 bold">Groups</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-100 px-2">
+                            <div class="d-flex flex-nowrap w-100 justify-content-between mb-1 ">
+                                <div
+                                    class="d-flex text-start justify-content-center align-items-center text-primary hover-underline">
+                                    <span class="ms-2 bold">Events</span>
+                                </div>
+                                <i class="fas fa-solid fa-plus text-secondary profile-clickable p-2 rounded-circle"></i>
+                            </div>
+                        </div>
+
+                        <div class="accordion p-0" id="accordion-followed">
+                            <div class="accordion-item border-0 p-0">
+                                <h2 class="accordion-header border-dark" id="heading-followed">
+                                    <button class="accordion-button p-0 px-3 mb-1" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse-followed"
+                                        aria-expanded="true" aria-controls="collapse-followed">
+                                        <span class="text-primary hover-underline">Followed Hastags</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse-followed" class="accordion-collapse collapse show border-0"
+                                    aria-labelledby="heading-followed" data-bs-parent="#accordion-followed">
+                                    <div class="accordion-body py-1 px-0">
+
+                                        <div class="profile-clickable w-100 px-3">
+                                            <div
+                                                class="d-flex flex-nowrap w-100 justify-content-between mb-1 text-secondary">
+                                                <div
+                                                    class="d-flex text-start justify-content-center align-items-center">
+                                                    <i class="fas fa-solid fa-hashtag fa-lg"></i>
+                                                    <span class="ms-2 hover-text-black bold">mühendislik</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="profile-clickable w-100 px-3">
+                                            <div
+                                                class="d-flex flex-nowrap w-100 justify-content-between mb-1 text-secondary">
+                                                <div
+                                                    class="d-flex text-start justify-content-center align-items-center">
+                                                    <span class="ms-4 hover-text-black bold">See all</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer bg-white p-0 rounded-bottom-3">
+                            <div class=" profile-clickable w-100 px-2 py-3 rounded-bottom-3">
+                                <span class="text-secondary">Discover more</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Recent Ends -->
                 <!-- Left Side Ends -->
-                <div class="mid col-6 w-100 bg-white"></div>
-                <div class="right col-3 w-100 bg-white"></div>
             </div>
+            <div class="mid col-md-7 bg-white">dfgdf</div>
+            <div class="right offset-md-2 col-md-7 offset-lg-0 col-lg-3 bg-white mt-3 mt-lg-0">asdfsdf</div>
         </div>
     </div>
     <!-- Main page Ends -->
