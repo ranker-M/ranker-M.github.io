@@ -10,7 +10,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <script src="https://kit.fontawesome.com/16d19e3696.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style.css">
     <title>Linkedin</title>
@@ -352,7 +351,8 @@
                     </div>
                 </div>
                 <!-- Start a post Ends -->
-                <div class="d-flex flex-nowrap justify-content-center align-items-center mt-2">
+                <!-- Sort by starts -->
+                <div class="d-flex flex-nowrap justify-content-center align-items-center my-2">
                     <div class="w-100 h-auto border-top border-secondary border-1"></div>
                     <div class="dropdown">
                         <button class=" dropdown-toggle border-0" type="button" id="dropdownMenuButton1"
@@ -365,6 +365,96 @@
                         </ul>
                     </div>
                 </div>
+                <!-- Sort By Ends -->
+                <!-- Posts Starts -->
+                <!-- A post -->
+
+                <div class="card">
+                    <div class="body py-1">
+
+                        <div class="w-100 px-2">
+                            <div class="d-flex flex-nowrap w-100 align-items-center justify-content-between mb-1 ">
+                                <div class="d-flex text-start justify-content-center align-items-center text-dark">
+                                    <img src="https://i.pinimg.com/474x/13/93/04/139304c97828a21af1e84a509ceaab12.jpg"
+                                        alt="someone's-face" width="24" height="24" class="rounded-circle"
+                                        style="padding: 2px;">
+                                    <span><span class="ms-2 hover-underline hover-blue"
+                                            style="font-weight: bold;">Someone</span>
+                                        likes this</span>
+                                </div>
+                                <div class="profile-clickable rounded-circle p-1">
+                                    <i class="fa-solid fa-ellipsis text-dark fa-lg "></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-100 px-2 border-top border-1 pt-2">
+                            <div class="d-flex flex-nowrap w-100 mb-1 ">
+                                <img src="https://i.pinimg.com/474x/13/93/04/139304c97828a21af1e84a509ceaab12.jpg"
+                                    alt="someone's-face" width="48" height="48" class="rounded-circle me-2"
+                                    style="padding: 2px;">
+                                <div class="d-flex flex-column">
+                                    <span class="text-secondary"><strong class="text-dark me-1">Someone</strong>•
+                                        2nd</span>
+                                    <span class="text-secondary"><small>Graduated From Some University</small></span>
+                                    <span class="text-secondary"><small>1d •</small><i
+                                            class="fa fa-solid fa-globe ms-1"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2" style="font-size:14px;">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint libero voluptatem dolorem
+                                doloremque tempora omnis modi! Tempore, itaque quas? Mollitia.</p>
+                        </div>
+                        <img src="https://picsum.photos/id/58/400/300" alt="someone's-post" class="image-fluid w-100">
+                        <div class="d-flex justify-content-start align-items-center p-3 border-bottom border-1"
+                            id="post-emoji">
+                            <ul class="list-inline m-0">
+                                <li class="list-inline-item">
+                                    <i
+                                        class="fas fa-solid fa-thumbs-up fa-lg border border-light border-1 text-primary"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i
+                                        class="fas fa-solid fa-hands-clapping text-success fa-lg border border-light border-1"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i
+                                        class="fa-solid fa-hand-holding-heart fa-lg border border-light border-1 text-danger"></i>
+                                    <i></i>
+                                </li>
+                            </ul>
+                            <span class="text-secondary hover-blue hover-underline ms-1">Someone and 15,532
+                                others</span>
+                            <span class="text-secondary hover-blue hover-underline ms-auto">58 comments</span>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <a href="#" style="transition:0.1s;"
+                                class="link flex-grow-1 text-secondary text-decoration-none profile-clickable py-2 rounded-3 d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-thumbs-up fa-2x"></i>
+                                <span class="ms-2">Like</span>
+                            </a>
+                            <a href="#" style="transition:0.1s;"
+                                class="link flex-grow-1 text-secondary text-decoration-none profile-clickable p-1 py-2 rounded-3 d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-comment fa-2x"></i>
+                                <span class="ms-2">Comment</span>
+                            </a>
+                            <a href="#" style="transition:0.1s;"
+                                class="link flex-grow-1 text-secondary text-decoration-none profile-clickable p-1 py-2 rounded-3 d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-share fa-2x"></i>
+                                <span class=" ms-2">Share</span>
+                            </a>
+                            <a href="#" style="transition:0.1s;"
+                                class="link flex-grow-1 text-secondary text-decoration-none profile-clickable p-1 py-2 rounded-3 d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-paper-plane fa-2x"></i>
+                                <span class=" ms-2">Sent</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Posts Ends -->
             </div>
             <!-- Main Flow Ends -->
 
@@ -377,6 +467,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/16d19e3696.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
