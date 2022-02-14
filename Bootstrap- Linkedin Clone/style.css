@@ -49,6 +49,24 @@ body {
   text-decoration: underline !important;
   cursor: pointer !important;
 }
+.text-menu .hover-underline-child {
+  padding: 5px 30px 5px 8px !important ;
+}
+
+.text-menu .hover-underline-child:hover {
+  background-color: white !important;
+}
+
+.text-menu .hover-underline-child small {
+  white-space: normal !important;
+}
+
+.hover-underline-child:hover strong,
+.hover-underline-child:hover small {
+  text-decoration: underline !important;
+  text-decoration-color: #0d6efd !important;
+  cursor: pointer !important;
+}
 
 .hover-text-black:hover {
   color: black !important;
@@ -239,4 +257,28 @@ body {
 .right-side-bottom-navigation a:hover {
   color: #0d6efd !important;
   text-decoration: underline !important;
+}
+
+.right-side-bottom-navigation button {
+  color: #00000099 !important;
+  display: inline-block !important;
+  padding: 5px 8px !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+}
+
+.right-side-bottom-navigation button:hover {
+  color: #0d6efd !important;
+  text-decoration: underline !important;
+}
+
+.text-menu a {
+  color: black !important;
+  font-size: 12px !important;
+}
+
+.text-menu a:hover {
+  color: black !important;
+  text-decoration: none !important;
+  background-color: #e2e2e2 !important;
 }
