@@ -282,3 +282,12 @@ body {
   text-decoration: none !important;
   background-color: #e2e2e2 !important;
 }
+
+.linkedin-product {
+  margin: 10px 16px !important;
+  margin-bottom: 3px !important;
+}
+
+.linkedin-product:hover {
+  box-shadow: 0px 3px 5px #58585899 !important;
+}
