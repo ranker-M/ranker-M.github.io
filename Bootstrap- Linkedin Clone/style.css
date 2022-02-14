@@ -121,11 +121,46 @@ body {
 
 #sort-menu p {
   font-size: 14px !important;
+  color: black !important;
+  white-space: normal !important;
 }
 
 #sort-menu small {
   font-size: 12px !important;
+  white-space: normal !important;
 }
+
+#info-popup a {
+  color: black !important;
+  background-color: white !important;
+  border-left: white solid 2px;
+}
+
+#info-popup a:hover {
+  cursor: default;
+}
+
+#info-popup p {
+  font-size: 14px !important;
+  color: black !important;
+  white-space: normal !important;
+}
+
+#info-popup small {
+  font-size: 12px !important;
+  white-space: normal !important;
+}
+
+.info-background::after {
+  height: 15px !important;
+  width: 15px !important;
+  background: url(circle-info-solid.svg) no-repeat center !important;
+  margin-left: 0 !important;
+  vertical-align: 0 !important;
+  content: "";
+  border: none;
+}
+
 .hover-blue:hover {
   color: rgb(36, 104, 231) !important;
 }
@@ -147,6 +182,10 @@ body {
   box-shadow: inset 0 0 0 1px #0d6efd;
 }
 
+.box-shadow-none:focus {
+  box-shadow: none;
+}
+
 .btn-follow {
   color: #0d6efd;
   background-color: white;
@@ -166,16 +205,38 @@ body {
 }
 
 .btn-more-comments:hover {
-  color: #0d6efd;
-  background-color: #d3e6fc;
+  color: #0d6efd !important;
+  background-color: #d3e6fc !important;
 }
 
 .ellipsis-background::after {
   height: 15px !important;
   width: 15px !important;
   background: url(ellipsis-solid.svg) no-repeat center !important;
-  margin-left: 0.255em;
+  margin-left: 0 !important;
   vertical-align: 0 !important;
   content: "";
   border: none;
+}
+.btn-rightside-follow {
+  padding: 6px 16px !important;
+}
+
+.btn-rightside-follow:hover {
+  color: #6c757d !important;
+  background-color: #eeeeee !important;
+  box-shadow: inset 0 0 0 1px #6c757d !important;
+}
+
+.right-side-bottom-navigation a {
+  color: #00000099 !important;
+  display: inline-block !important;
+  padding: 5px 8px !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+}
+
+.right-side-bottom-navigation a:hover {
+  color: #0d6efd !important;
+  text-decoration: underline !important;
 }
