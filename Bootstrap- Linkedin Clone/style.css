@@ -23,7 +23,8 @@ body {
 .nav-icon .nav-link {
   border-bottom: 3px solid white;
 }
-.nav-icon .nav-link:focus {
+.nav-icon .nav-link:focus,
+.nav-icon .nav-link.active {
   border-bottom: 3px solid black;
 }
 
@@ -76,12 +77,21 @@ body {
   font-size: 14px !important;
 }
 
+.font-size-16 {
+  font-size: 16px !important;
+}
+
 .font-size-12 {
   font-size: 12px !important;
 }
 
 .hover-cursor:hover {
   cursor: pointer !important;
+}
+
+.hover-bg-normal:hover {
+  background: inherit !important;
+  cursor: default !important;
 }
 
 .accordion-button {
@@ -290,4 +300,14 @@ body {
 
 .linkedin-product:hover {
   box-shadow: 0px 3px 5px #58585899 !important;
+}
+
+.li-small li {
+  font-size: 14px !important;
+  color: #00000099 !important;
+}
+
+.li-small li strong {
+  font-size: 16px !important;
+  color: #000000c2 !important;
 }
