@@ -46,12 +46,24 @@ body {
 }
 
 .hover-underline:hover {
-  text-decoration: underline;
-  cursor: pointer;
+  text-decoration: underline !important;
+  cursor: pointer !important;
 }
 
 .hover-text-black:hover {
   color: black !important;
+}
+
+.font-size-14 {
+  font-size: 14px !important;
+}
+
+.font-size-12 {
+  font-size: 12px !important;
+}
+
+.hover-cursor:hover {
+  cursor: pointer !important;
 }
 
 .accordion-button {
@@ -107,6 +119,13 @@ body {
   background-color: #eeeeee !important;
 }
 
+#sort-menu p {
+  font-size: 14px !important;
+}
+
+#sort-menu small {
+  font-size: 12px !important;
+}
 .hover-blue:hover {
   color: rgb(36, 104, 231) !important;
 }
@@ -126,4 +145,37 @@ body {
   color: #0d6efd;
   background-color: #d3e6fc !important;
   box-shadow: inset 0 0 0 1px #0d6efd;
+}
+
+.btn-follow {
+  color: #0d6efd;
+  background-color: white;
+  border: none;
+  height: fit-content;
+}
+
+.btn-follow:hover {
+  color: #0d6efd;
+  background-color: #d3e6fc;
+}
+
+.btn-more-comments {
+  background-color: white;
+  border: none;
+  height: fit-content;
+}
+
+.btn-more-comments:hover {
+  color: #0d6efd;
+  background-color: #d3e6fc;
+}
+
+.ellipsis-background::after {
+  height: 15px !important;
+  width: 15px !important;
+  background: url(ellipsis-solid.svg) no-repeat center !important;
+  margin-left: 0.255em;
+  vertical-align: 0 !important;
+  content: "";
+  border: none;
 }
