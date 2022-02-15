@@ -68,6 +68,29 @@ body {
 #message-search-input:focus {
   box-shadow: none !important;
 }
+
+#navbar-search-bar {
+  background-color: #eef3f8 !important;
+}
+
+#navbar-search-bar:hover,
+#navbar-search-bar:focus-within {
+  box-shadow: none !important;
+  background-color: #eef3f8 !important;
+}
+
+#navbar-search-bar-input {
+  border: none !important;
+  background-color: inherit !important;
+  padding-left: 10px !important;
+}
+#navbar-search-bar-input::placeholder {
+  font-size: 14px !important;
+}
+#navbar-search-bar-input:focus {
+  box-shadow: none !important;
+}
+
 .profile-clickable:hover {
   background-color: rgb(218, 218, 218) !important;
   cursor: pointer !important;
@@ -218,11 +241,9 @@ body {
 #sort-menu a {
   color: black !important;
   background-color: white !important;
-  border-left: white solid 2px;
 }
 #sort-menu a.active,
 #sort-menu a:active {
-  border-left: green solid 2px;
   background-color: #eeeeee !important;
 }
 
@@ -237,6 +258,32 @@ body {
 }
 
 #sort-menu small {
+  font-size: 12px !important;
+  white-space: normal !important;
+}
+
+#sort-by-menu a {
+  color: black !important;
+  background-color: white !important;
+  border-left: white solid 2px;
+}
+#sort-by-menu a.active,
+#sort-by-menu a:active {
+  border-left: green solid 2px;
+  background-color: #eeeeee !important;
+}
+
+#sort-by-menu a:hover {
+  background-color: #eeeeee !important;
+}
+
+#sort-by-menu p {
+  font-size: 14px !important;
+  color: black !important;
+  white-space: normal !important;
+}
+
+#sort-by-menu small {
   font-size: 12px !important;
   white-space: normal !important;
 }
@@ -262,14 +309,14 @@ body {
   white-space: normal !important;
 }
 
-.info-background::after {
+.info-background::before {
   height: 15px !important;
   width: 15px !important;
   background: url(circle-info-solid.svg) no-repeat center !important;
   margin-left: 0 !important;
   vertical-align: 0 !important;
-  content: "";
-  border: none;
+  content: "" !important;
+  border: none !important;
 }
 
 .hover-blue:hover {
@@ -393,4 +440,8 @@ body {
 .li-small li strong {
   font-size: 16px !important;
   color: #000000c2 !important;
+}
+
+.nav-item .nav-link.get-hired:hover {
+  color: #5d3b09 !important;
 }

@@ -36,10 +36,17 @@
                             </g>
                         </svg>
                     </a>
-                    <form>
-                        <input class="form-control" type="text" id="search-input"
-                            placeholder="Search for jobs,companies..." aria-label="Search for jobs,companies...">
-                    </form>
+                    <div style="width: 280px !important;" id="navbar-search-bar"
+                        class="message-search-bar d-flex flex-nowrap justify-content-start align-items-center">
+                        <i class="fa-solid fa-search fa-lg search-bar-icon"
+                            style="color: rgba(0, 0, 0, 0.6) !important; margin-left: 10px !important;"></i>
+                        <form class="d-inline-block">
+                            <input class="form-control d-inline-block px-3"
+                                style="color: rgba(0, 0, 0, 0.6) !important;" type="text" id="navbar-search-bar-input"
+                                placeholder="Search" aria-label=" Search for jobs,companies...">
+                        </form>
+                    </div>
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -467,7 +474,7 @@
                                 </div>
                             </li>
                             <li class="nav-item hover-underline px-2">
-                                <a class="nav-link text-center d-flex flex-column justify-content-center align-items-center"
+                                <a class="nav-link text-center d-flex flex-column justify-content-center align-items-center get-hired"
                                     aria-current="page" href="#" style="color: #915907; max-width: 120px;">
                                     Get Hired Faster, Try Premium for Free</a>
                             </li>
@@ -683,22 +690,42 @@
                         <div class="d-flex justify-content-evenly align-items-center">
                             <a href="#" style="transition:0.1s;"
                                 class="link text-decoration-none profile-clickable p-2 py-3 rounded-3 d-flex justify-content-center align-items-center">
-                                <i class="fas fa-solid fa-image fa-2x"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                                    fill="#70b5f9" class="mercado-match" width="24" height="24" focusable="false">
+                                    <path
+                                        d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z">
+                                    </path>
+                                </svg>
                                 <span class="text-secondary ms-2">Photo</span>
                             </a>
                             <a href="#" style="transition:0.1s;"
                                 class="link text-decoration-none profile-clickable p-2 py-3 rounded-3 d-flex justify-content-center align-items-center">
-                                <i class="fa fa-brands fa-youtube fa-2x text-success"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                                    fill="#7fc15e" class="mercado-match" width="24" height="24" focusable="false">
+                                    <path
+                                        d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z">
+                                    </path>
+                                </svg>
                                 <span class="text-secondary ms-2">Video</span>
                             </a>
                             <a href="#" style="transition:0.1s;"
                                 class="link text-decoration-none profile-clickable p-2 py-3 rounded-3 d-flex justify-content-center align-items-center">
-                                <i class="fa fa-solid fa-calendar fa-2x text-warning"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                                    fill="#e7a33e" class="mercado-match" width="24" height="24" focusable="false">
+                                    <path
+                                        d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3zm13 1.75A1.25 1.25 0 1114.75 6 1.25 1.25 0 0116 4.75zm-8 0A1.25 1.25 0 116.75 6 1.25 1.25 0 018 4.75zM19 18a1 1 0 01-1 1H6a1 1 0 01-1-1V9h14zm-5.9-3a1 1 0 00-1-1H12a3.12 3.12 0 00-1 .2l-1-.2v-3h3.9v1H11v1.15a3.7 3.7 0 011.05-.15 1.89 1.89 0 012 1.78V15a1.92 1.92 0 01-1.84 2H12a1.88 1.88 0 01-2-1.75 1 1 0 010-.25h1a.89.89 0 001 1h.1a.94.94 0 001-.88z">
+                                    </path>
+                                </svg>
                                 <span class="text-secondary ms-2">Event</span>
                             </a>
                             <a href="#" style="transition:0.1s;"
                                 class="link text-decoration-none profile-clickable p-2 py-3 rounded-3 d-flex justify-content-center align-items-center">
-                                <i class="fas fa-indent fa-2x text-danger"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                                    fill="#fc9295" class="mercado-match" width="24" height="24" focusable="false">
+                                    <path
+                                        d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z">
+                                    </path>
+                                </svg>
                                 <span class="text-secondary ms-2">Write Article</span>
                             </a>
                         </div>
@@ -707,13 +734,13 @@
                 <!-- Start a post Ends -->
                 <!-- Sort by starts -->
                 <div class="d-flex flex-nowrap justify-content-center align-items-center my-2">
-                    <div class="w-100 h-auto border-top border-secondary border-1"></div>
+                    <div class="w-100 h-auto border-top border-1" style="border-color: #00000025 !important;"></div>
                     <div class="dropdown">
                         <button class=" dropdown-toggle border-0" type="button" id="dropdownMenuButton1"
                             data-bs-toggle="dropdown" aria-expanded="false" style="background-color: inherit;">
                             Sort by: <strong>Top</strong>
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="sort-menu">
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="sort-by-menu">
                             <li><a class="dropdown-item active" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                         </ul>
@@ -1370,14 +1397,15 @@
                         <div class="my-2">
                             <h6 class="d-inline" style="color: #000000E6 !important;">Add to your feed
                             </h6>
-                            <div class="dropdown d-inline float-end">
+                            <div class="dropstart d-inline float-end">
 
                                 <button class="text-secondary dropdown-toggle border-0 info-background" type="button"
                                     id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false"
                                     style="background-color: inherit; overflow: hidden !important;">
                                 </button>
 
-                                <ul class="dropdown-menu p-1 py-2" aria-labelledby="dropdownMenuButton3" id="info-popup"
+                                <ul class="dropdown-menu dropdown-menu-end p-1 py-2"
+                                    aria-labelledby="dropdownMenuButton3" id="info-popup"
                                     style="overflow: hidden !important;">
                                     <li><a class="text-secondary dropdown-item d-flex justify-content-start align-items-start p-0"
                                             href="#" style="overflow: hidden !important;">
