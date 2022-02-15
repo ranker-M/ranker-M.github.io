@@ -17,7 +17,7 @@
 
 <body>
     <!-- Navbar Starts -->
-    <div class="bg-white fixed-top">
+    <div class="bg-white fixed-top mb-4">
         <div class="container">
             <div class="row justify-content-center">
                 <nav class="col-10 navbar navbar-expand navbar-light p-0" style="height: 53px;"
@@ -560,7 +560,8 @@
                 </div>
 
                 <!-- Recent Starts -->
-                <div class="card text-center p-0 pt-2 rounded-3 mt-3">
+                <div class="card text-center p-0 pt-2 rounded-3 mt-3"
+                    style="position:sticky !important; top: 70px !important;">
                     <div class="card-body p-0">
                         <!-- Card Body starts -->
                         <div class="accordion p-0" id="accordionExample">
@@ -1373,15 +1374,15 @@
 
                                 <button class="text-secondary dropdown-toggle border-0 info-background" type="button"
                                     id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false"
-                                    style="background-color: inherit;">
+                                    style="background-color: inherit; overflow: hidden !important;">
                                 </button>
 
-                                <ul class="dropdown-menu p-1 py-2" aria-labelledby="dropdownMenuButton3"
-                                    id="info-popup">
+                                <ul class="dropdown-menu p-1 py-2" aria-labelledby="dropdownMenuButton3" id="info-popup"
+                                    style="overflow: hidden !important;">
                                     <li><a class="text-secondary dropdown-item d-flex justify-content-start align-items-start p-0"
-                                            href="#">
+                                            href="#" style="overflow: hidden !important;">
                                             <div class="d-flex flex-column text-muted ms-3"
-                                                style="width:300px !important">
+                                                style="width:300px !important; overflow: hidden !important;">
                                                 <p class="m-0">Follow things that interest you to personalize your feed.
                                                     <span class="link-primary hover-underline">Learn more.</span>
                                                 </p>
@@ -1458,8 +1459,9 @@
                     </div>
                 </div>
                 <!-- Bottom links of side navigation -->
-                <div class="d-flex align-items-center justify-content-center px-4
-                flex-wrap right-side-bottom-navigation mt-3" style="color: black; font-size: 12px;">
+                <div class="d-flex align-items-center justify-content-center px-4 
+                flex-wrap right-side-bottom-navigation mt-3"
+                    style="color: black; font-size: 12px; position:sticky !important; top: 70px !important;">
                     <a href="" class="text-reset text-decoration-none">About</a>
                     <a href="" class="text-reset text-decoration-none">Accessiblity</a>
                     <a href="" class="text-reset text-decoration-none">Help Center</a>
@@ -1540,7 +1542,8 @@
                 </div>
 
                 <!-- Linkedin Text-->
-                <div class="d-flex align-items-center justify-content-center mt-2">
+                <div class="d-flex align-items-center justify-content-center mt-2"
+                    style="position:sticky !important; top: 190px !important;">
                     <strong style="color:  #0a66c2 !important;">Linked</strong> <svg xmlns="http://www.w3.org/2000/svg"
                         width="16" height="16" viewBox="0 0 34 34" style="padding-left: 2px !important;">
                         <title>LinkedIn</title>
@@ -1564,14 +1567,18 @@
     <!-- Main page Ends -->
 
     <!-- Message Box starts -->
-    <div class="fixed-bottom">
-        <div class="d-inline-flex flex-column align-items-center float-end me-5 bg-white border p-2 border-1 rounded-3"
-            style="width: 300px !important;">
-            <div class="d-flex align-items-center">
-                <img src="https://i.pinimg.com/474x/13/93/04/139304c97828a21af1e84a509ceaab12.jpg" alt="someone's-face"
-                    width="36" height="36" class="rounded-circle" style="padding: 2px;">
-                <span class="ms-1 fw-bold">Messaging</span>
-                <div class="dropdown p-2 profile-clickable rounded-circle">
+    <div class="fixed-bottom d-inline ms-auto "
+        style="z-index: 1000 !important; width: fit-content !important; height: fit-content !important;">
+        <div class="d-inline-flex flex-column 
+        bg-white border p-0 border-1 rounded-3 "
+            style="width: 288px !important; border-top-left-radius: 10px !important; border-top-right-radius: 10px !important;">
+            <div class="d-flex align-items-center py-2 hover-bg-lighter px-2 border-bottom border-1">
+                <div style="width: 36px !important; height: 36px !important;">
+                    <img src="https://i.pinimg.com/474x/13/93/04/139304c97828a21af1e84a509ceaab12.jpg"
+                        alt="someone's-face" width="36" height="36" class="image-fluid rounded-circle">
+                </div>
+                <span class="ms-1 font-size-14" style="color: #000000E6 !important; font-weight: 600;">Messaging</span>
+                <div class="dropdown p-2 profile-clickable rounded-circle ms-auto">
                     <button class="text-secondary dropdown-toggle border-0 ellipsis-background p-0" type="button"
                         id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-expanded="false"
                         style="background-color: inherit;">
@@ -1600,7 +1607,7 @@
                 <div class="accordion" id="accordionExample2">
                     <div class="accordion-item border-0">
                         <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button p-0 ms-1" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button p-0" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseAnother" aria-expanded="true" aria-controls="collapseAnother">
                             </button>
                         </h2>
@@ -1608,15 +1615,142 @@
                     </div>
                 </div>
             </div>
-            <div id="collapseAnother" class="accordion-collapse collapse w-100 bg-white border p-2 border-1 "
-                aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
-                <div class="accordion-body d-inline" style="width: 150px !important;">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                    collapse plugin adds the appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the showing and hiding via CSS
-                    transitions. You can modify any of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go within the
-                    <code>.accordion-body</code>, though the transition does limit overflow.
+            <div id="collapseAnother" class="accordion-collapse collapse w-100 bg-white" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample2">
+                <div class="accordion-body d-inline-block p-0 w-100" style="height: 800px !important;">
+                    <div
+                        class="message-search-bar d-flex flex-nowrap justify-content-center align-items-center mx-2 mb-2 mt-3">
+                        <i class="fa-solid fa-search fa-lg search-bar-icon"></i>
+                        <form class="d-inline-block">
+                            <input class="form-control d-inline-block px-3" type="text" id="message-search-input"
+                                placeholder="Search messages" aria-label="Search for jobs,companies...">
+                        </form>
+                        <i class="fa-solid fa-sliders fa-lg search-bar-icon hover-cursor"></i>
+                    </div>
+
+                    <div class="person-message-box d-flex flex-nowrap p-2 profile-clickable border-bottom border-1">
+                        <div style="width: 48px !important; height: 48px !important;">
+                            <img src="https://i.pinimg.com/474x/13/93/04/139304c97828a21af1e84a509ceaab12.jpg"
+                                alt="someone's-face" width="48" height="48" class="image-fluid rounded-circle">
+                        </div>
+                        <div class="d-flex flex-column p-1 px-2 w-100">
+                            <div class="w-100">
+                                <span class="font-size-14" style="color: #111 !important; font-weight: 600;">Someone
+                                    Smith</span>
+                                <span class="float-end" style="color: #00000099 !important;">Feb 8</span>
+                            </div>
+                            <span style="color: #00000099 !important;">You: somethin something</span>
+                        </div>
+                    </div>
+
+                    <div class="person-message-box d-flex flex-nowrap p-2 profile-clickable border-bottom border-1">
+                        <div style="width: 48px !important; height: 48px !important;">
+                            <img src="https://i.pinimg.com/474x/13/93/04/139304c97828a21af1e84a509ceaab12.jpg"
+                                alt="someone's-face" width="48" height="48" class="image-fluid rounded-circle">
+                        </div>
+                        <div class="d-flex flex-column p-1 px-2 w-100">
+                            <div class="w-100">
+                                <span class="font-size-14" style="color: #111 !important; font-weight: 600;">Someone
+                                    Smith</span>
+                                <span class="float-end" style="color: #00000099 !important;">Feb 8</span>
+                            </div>
+                            <span style="color: #00000099 !important;">You: somethin something</span>
+                        </div>
+                    </div>
+
+                    <div class="person-message-box d-flex flex-nowrap p-2 profile-clickable border-bottom border-1">
+                        <div style="width: 48px !important; height: 48px !important;">
+                            <img src="https://i.pinimg.com/474x/13/93/04/139304c97828a21af1e84a509ceaab12.jpg"
+                                alt="someone's-face" width="48" height="48" class="image-fluid rounded-circle">
+                        </div>
+                        <div class="d-flex flex-column p-1 px-2 w-100">
+                            <div class="w-100">
+                                <span class="font-size-14" style="color: #111 !important; font-weight: 600;">Someone
+                                    Smith</span>
+                                <span class="float-end" style="color: #00000099 !important;">Feb 8</span>
+                            </div>
+                            <span style="color: #00000099 !important;">You: somethin something</span>
+                        </div>
+                    </div>
+
+                    <div class="person-message-box d-flex flex-nowrap p-2 profile-clickable border-bottom border-1">
+                        <div style="width: 48px !important; height: 48px !important;">
+                            <img src="https://i.pinimg.com/474x/13/93/04/139304c97828a21af1e84a509ceaab12.jpg"
+                                alt="someone's-face" width="48" height="48" class="image-fluid rounded-circle">
+                        </div>
+                        <div class="d-flex flex-column p-1 px-2 w-100">
+                            <div class="w-100">
+                                <span class="font-size-14" style="color: #111 !important; font-weight: 600;">Someone
+                                    Smith</span>
+                                <span class="float-end" style="color: #00000099 !important;">Feb 8</span>
+                            </div>
+                            <span style="color: #00000099 !important;">You: somethin something</span>
+                        </div>
+                    </div>
+
+                    <div class="person-message-box d-flex flex-nowrap p-2 profile-clickable border-bottom border-1">
+                        <div style="width: 48px !important; height: 48px !important;">
+                            <img src="https://i.pinimg.com/474x/13/93/04/139304c97828a21af1e84a509ceaab12.jpg"
+                                alt="someone's-face" width="48" height="48" class="image-fluid rounded-circle">
+                        </div>
+                        <div class="d-flex flex-column p-1 px-2 w-100">
+                            <div class="w-100">
+                                <span class="font-size-14" style="color: #111 !important; font-weight: 600;">Someone
+                                    Smith</span>
+                                <span class="float-end" style="color: #00000099 !important;">Feb 8</span>
+                            </div>
+                            <span style="color: #00000099 !important;">You: somethin something</span>
+                        </div>
+                    </div>
+
+                    <div class="person-message-box d-flex flex-nowrap p-2 profile-clickable border-bottom border-1">
+                        <div style="width: 48px !important; height: 48px !important;">
+                            <img src="https://i.pinimg.com/474x/13/93/04/139304c97828a21af1e84a509ceaab12.jpg"
+                                alt="someone's-face" width="48" height="48" class="image-fluid rounded-circle">
+                        </div>
+                        <div class="d-flex flex-column p-1 px-2 w-100">
+                            <div class="w-100">
+                                <span class="font-size-14" style="color: #111 !important; font-weight: 600;">Someone
+                                    Smith</span>
+                                <span class="float-end" style="color: #00000099 !important;">Feb 8</span>
+                            </div>
+                            <span style="color: #00000099 !important;">You: somethin something</span>
+                        </div>
+                    </div>
+
+                    <div class="person-message-box d-flex flex-nowrap p-2 profile-clickable border-bottom border-1">
+                        <div style="width: 48px !important; height: 48px !important;">
+                            <img src="https://i.pinimg.com/474x/13/93/04/139304c97828a21af1e84a509ceaab12.jpg"
+                                alt="someone's-face" width="48" height="48" class="image-fluid rounded-circle">
+                        </div>
+                        <div class="d-flex flex-column p-1 px-2 w-100">
+                            <div class="w-100">
+                                <span class="font-size-14" style="color: #111 !important; font-weight: 600;">Someone
+                                    Smith</span>
+                                <span class="float-end" style="color: #00000099 !important;">Feb 8</span>
+                            </div>
+                            <span style="color: #00000099 !important;">You: somethin something</span>
+                        </div>
+                    </div>
+
+                    <div class="person-message-box d-flex flex-nowrap p-2 profile-clickable border-bottom border-1">
+                        <div style="width: 48px !important; height: 48px !important;">
+                            <img src="https://i.pinimg.com/474x/13/93/04/139304c97828a21af1e84a509ceaab12.jpg"
+                                alt="someone's-face" width="48" height="48" class="image-fluid rounded-circle">
+                        </div>
+                        <div class="d-flex flex-column p-1 px-2 w-100">
+                            <div class="w-100">
+                                <span class="font-size-14" style="color: #111 !important; font-weight: 600;">Someone
+                                    Smith</span>
+                                <span class="float-end" style="color: #00000099 !important;">Feb 8</span>
+                            </div>
+                            <span style="color: #00000099 !important;">You: somethin something</span>
+                        </div>
+                    </div>
+
+
+
+
                 </div>
             </div>
         </div>
