@@ -112,14 +112,14 @@ body {
   white-space: normal !important;
 }
 
-.hover-underline-child:hover strong,
+.hover-underline-child:hover span,
 .hover-underline-child:hover small {
   text-decoration: underline !important;
   text-decoration-color: #0d6efd !important;
   cursor: pointer !important;
 }
 
-.hover-text-black:hover {
+.hover-text-black:hover span {
   color: black !important;
 }
 
@@ -377,7 +377,7 @@ body {
   border: none;
 }
 .btn-rightside-follow {
-  padding: 6px 16px !important;
+  padding: 3px 15px !important;
 }
 
 .btn-rightside-follow:hover {
@@ -460,3 +460,25 @@ body {
 .comment-input input::placeholder {
   font-size: 14px !important;
 }
+
+.recent-headers {
+  color: #0a66c2 !important;
+  font-weight: 600 !important;
+}
+.recent-headers:hover {
+  color: #0a66c2 !important;
+  text-decoration: underline !important;
+  cursor: pointer !important;
+}
+
+.btn-outline-primary {
+  color: #0a66c2 !important;
+}
+
+.slight-dark {
+  color: #000000e6 !important;
+  font-weight: 600 !important;
+}
+/* .slight-dark:hover {
+  text-decoration: inherit !important;
+} */
