@@ -1,0 +1,20 @@
+// font Bai Jamjuree
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap");
+
+// variables
+@import "./partials/variables";
+
+// break points
+@import "./partials/breakpoints";
+
+// base classes:
+@import "./partials/base-classes";
+
+// components
+@import "./components/buttons";
+
+//grid layout system
+@import "./partials/gridSystem";
+
+// utilities
+@import "./partials/utilities";
