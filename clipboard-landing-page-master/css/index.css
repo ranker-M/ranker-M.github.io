@@ -52,7 +52,7 @@ p {
 }
 
 .bg-main {
-  background-image: url("./images/bg-header-mobile.png");
+  background-image: url("../images/bg-header-mobile.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,7 +60,7 @@ p {
 }
 @media (min-width: 376px) {
   .bg-main {
-    background-image: url("./images/bg-header-desktop.png");
+    background-image: url("../images/bg-header-desktop.png");
   }
 }
 
