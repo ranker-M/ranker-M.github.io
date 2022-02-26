@@ -67,9 +67,9 @@ p {
 
 // Cover Background
 .bg-main {
-  background-image: url("./images/bg-header-mobile.png");
+  background-image: url("../images/bg-header-mobile.png");
   @include sm {
-    background-image: url("./images/bg-header-desktop.png");
+    background-image: url("../images/bg-header-desktop.png");
   }
 
   background-position: top;
