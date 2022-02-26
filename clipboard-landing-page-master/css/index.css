@@ -52,14 +52,15 @@ p {
 }
 
 .bg-main {
-  background-image: url("../../images/bg-header-mobile.png");
+  background-image: url("./images/bg-header-mobile.png");
   background-position: top;
   background-repeat: no-repeat;
+  background-size: cover;
   max-height: 560px;
 }
-@media (min-width: 375px) {
+@media (min-width: 376px) {
   .bg-main {
-    background-image: url("../../images/bg-header-desktop.png");
+    background-image: url("./images/bg-header-desktop.png");
   }
 }
 
@@ -199,7 +200,7 @@ div.profile-links span {
   min-height: 24px;
   text-align: center;
 }
-@media (min-width: 375px) {
+@media (min-width: 376px) {
   div.profile-links {
     flex-wrap: nowrap;
   }
