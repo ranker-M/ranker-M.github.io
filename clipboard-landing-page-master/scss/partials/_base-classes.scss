@@ -22,22 +22,32 @@ h6 {
 }
 
 h1 {
-  font-size: 46px;
+  font-size: 32px;
+  @include lg {
+    font-size: 46px;
+  }
 }
 h2 {
-  font-size: 36px;
+  font-size: 28px;
+  @include lg {
+    font-size: 36px;
+  }
 }
 h3 {
   font-size: 24px;
-}
-div {
-  padding: 0px;
 }
 
 p {
   margin: 0px;
   margin-bottom: 30px;
-  font-size: 18px;
+  font-size: 16px;
+  @include lg {
+    font-size: 18px;
+  }
+}
+
+div {
+  padding: 0px;
 }
 
 // Base Classes
@@ -91,10 +101,13 @@ p {
   @include lg {
     max-width: 752px;
     max-height: 36.0625rem;
-    margin-left: -8rem;
+    margin-left: -10rem;
   }
   @include xl {
-    margin-left: -15rem;
+    margin-left: -18rem;
+  }
+  @include xxl {
+    margin-left: -27rem;
   }
 }
 
@@ -120,8 +133,11 @@ p {
 
 // Keep tarck
 div.keep-track {
-  margin-top: 150px;
+  margin-top: 320px;
   margin-bottom: 80px;
+  @include md {
+    margin-top: 150px;
+  }
 }
 
 // Desktop container
