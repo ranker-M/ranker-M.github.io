@@ -26,9 +26,9 @@ The challenge is to build out Clipboard landing page and get it looking as close
 
 ### Screenshot
 
-<img src="./images/Clipboard-landing-page-desktop.jpg" alt="Solution Desktop screenshot" width="300"> </img>
-<img src="./images/Clipboard-landing-page-active.jpg" alt="Solution Desktop Active screenshot" width="300"> </img>
-<img src="./images/Clipboard-landing-page-mobile.jpg" alt="Solution Mobile screenshot" height="800"> </img>
+<img src="./images/Clipboard-landing-page-desktop.jpg" alt="Solution Desktop screenshot" width="400"> </img>
+<img src="./images/Clipboard-landing-page-active.jpg" alt="Solution Desktop Active screenshot" width="400"> </img>
+<img src="./images/Clipboard-landing-page-mobile.jpg" alt="Solution Mobile screenshot" height="1000"> </img>
 
 ### Links
 
@@ -51,11 +51,11 @@ The challenge is to build out Clipboard landing page and get it looking as close
 
 In this project I learned how to use most of the Scss features such as mixins, partials, extend, loops, functions, variables and others.
 
-I created a library for utilities and other most used css declarations to experience for loops and functions. I also created different classes for different breakpoints so I can change these library classes for different screen sizes. I faced some problems while using same classes for different breakpoints. I had to rearrange the flow of my document so classes override each other. Otherwise small breakpoints were always override bigger breakpoints since they were created after the bigger breakpoints, cascading algorithm gave small breakpoint classes bigger priority in the document. I learned a lot about creating a library for css by using Sass while experimenting this project.
+I created a library for utilities and other most used css declarations to experience for loops and functions. I also created different classes for different breakpoints so I can change these features for different screen sizes. I faced some problems while using same classes for different breakpoints. I had to rearrange the flow of my document so classes can override each other properly. Otherwise small breakpoints were always override bigger breakpoints since they were created after the bigger breakpoints, cascading algorithm gave small breakpoint classes bigger priority in the document. I learned a lot about creating a library for css by using Sass while experimenting this project.
 
-I also used Gulp javascript tool to convert Sass code into Css code. It gave me valuable insights about this proccess. Rather than using Visual Studio extensions to solve this problem, I learned much more with using this manually.
+I also used Gulp javascript tool to convert Sass code into Css code. It gave me valuable insights about this proccess. Rather than using Visual Studio extensions to solve this problem, I learned much more with making it manually.
 
-I used Figma to understan sizes of components and texts in the design images. It was very helpful to me to create a pixel-perfect page.
+I used Figma to understand sizes of components and texts in the design images. It was very helpful to me to create a pixel-perfect page.
 
 ### Continued development
 
