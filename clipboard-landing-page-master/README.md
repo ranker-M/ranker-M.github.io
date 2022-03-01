@@ -26,9 +26,9 @@ The challenge is to build out Clipboard landing page and get it looking as close
 
 ### Screenshot
 
-<img src="./images/Clipboard-landing-page-desktop.jpg" alt="Solution Desktop screenshot" width="400"> </img>
-<img src="./images/Clipboard-landing-page-active.jpg" alt="Solution Desktop Active screenshot" width="400"> </img>
-<img src="./images/Clipboard-landing-page-mobile.jpg" alt="Solution Mobile screenshot" height="1000"> </img>
+<img src="./images/Clipboard-landing-page_page.jpg" alt="Solution Desktop screenshot" width="350"> </img>
+<img src="./images/Clipboard-landing-page-active_page.jpg" alt="Solution Desktop Active screenshot" width="350"> </img>
+<img src="./images/Clipboard-landing-mobile-page.jpg" alt="Solution Mobile screenshot" height="1000"> </img>
 
 ### Links
 
