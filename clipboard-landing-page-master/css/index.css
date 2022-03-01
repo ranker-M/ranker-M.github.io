@@ -8,13 +8,22 @@ body {
 }
 
 h1,
+h2,
 h3 {
   color: #4c545d;
   font-weight: 600;
 }
 
 h1 {
-  font-size: 1.5625rem;
+  font-size: 46px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
 }
 
 div {
@@ -24,7 +33,7 @@ div {
 p {
   margin: 0px;
   margin-bottom: 30px;
-  font-size: 0.875rem;
+  font-size: 18px;
 }
 
 .link, .svg-link {
@@ -65,16 +74,11 @@ p {
 }
 
 .desktop-img {
-  max-width: 480px;
-}
-@media (min-width: 480px) {
-  .desktop-img {
-    margin-left: -5rem;
-  }
+  max-width: 560px;
 }
 @media (min-width: 960px) {
   .desktop-img {
-    max-width: 50rem;
+    max-width: 752px;
     max-height: 36.0625rem;
     margin-left: -8rem;
   }
@@ -100,7 +104,7 @@ p {
 }
 
 .history-of-every {
-  margin-top: 150px;
+  margin-top: 98px;
 }
 
 div.keep-track {
@@ -185,7 +189,7 @@ div.profile-links {
   max-width: 800px;
   margin: 0px auto;
   padding: 15px 0px;
-  font-size: 14px;
+  font-size: 18px;
   border-top: 1px solid;
   margin-top: 20px;
 }
@@ -215,50 +219,41 @@ div.profile-links span {
   text-decoration: none;
   border: none;
   border-radius: 50px;
-  padding: 14px 32px 12px 32px;
   background-color: #26baa4;
-  font-size: 14px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
   font-weight: 400;
   box-shadow: 0px 2px 1px #156659;
   transition: 0.2s;
   white-space: nowrap;
   width: 100%;
-  max-width: 250px;
+  max-width: 227px;
+  height: 56px;
 }
 .btn-primary:hover {
   cursor: pointer;
   background-color: #2bd4ba;
 }
-@media (min-width: 480px) {
-  .btn-primary {
-    width: fit-content;
-  }
-}
-
 .btn-secondary {
   display: block;
   color: white;
   text-decoration: none;
   border: none;
   border-radius: 50px;
-  padding: 14px 32px 12px 32px;
   background-color: #6173ff;
-  font-size: 14px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
   font-weight: 400;
   box-shadow: 0px 2px 1px #001dfa;
   transition: 0.2s;
   white-space: nowrap;
   width: 100%;
-  max-width: 250px;
+  max-width: 227px;
+  height: 56px;
 }
 .btn-secondary:hover {
   cursor: pointer;
   background-color: #808eff;
-}
-@media (min-width: 480px) {
-  .btn-secondary {
-    width: fit-content;
-  }
 }
 @media (min-width: 480px) {
 
@@ -284,12 +279,6 @@ div.profile-links span {
     box-sizing: border-box;
     flex-grow: 0;
     width: 41.6666666667%;
-  }
-
-  .col-md-10 {
-    box-sizing: border-box;
-    flex-grow: 0;
-    width: 83.3333333333%;
   }
 
   .col-md-12 {
@@ -374,6 +363,10 @@ div.profile-links span {
 .my-4 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mb-5 {
+  margin-bottom: 4rem;
 }
 
 .my-6 {

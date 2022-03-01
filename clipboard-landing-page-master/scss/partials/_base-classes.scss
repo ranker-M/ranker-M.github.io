@@ -22,7 +22,13 @@ h6 {
 }
 
 h1 {
-  font-size: 1.5625rem;
+  font-size: 46px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 24px;
 }
 div {
   padding: 0px;
@@ -31,7 +37,7 @@ div {
 p {
   margin: 0px;
   margin-bottom: 30px;
-  font-size: 0.875rem;
+  font-size: 18px;
 }
 
 // Base Classes
@@ -80,14 +86,10 @@ p {
 
 // Desktop img
 .desktop-img {
-  max-width: 480px;
-
-  @include md {
-    margin-left: -5rem;
-  }
+  max-width: 560px;
 
   @include lg {
-    max-width: 50rem;
+    max-width: 752px;
     max-height: 36.0625rem;
     margin-left: -8rem;
   }
@@ -113,7 +115,7 @@ p {
 
 // history of every
 .history-of-every {
-  margin-top: 150px;
+  margin-top: 98px;
 }
 
 // Keep tarck
@@ -207,7 +209,7 @@ div.profile-links {
   max-width: 800px;
   margin: 0px auto;
   padding: 15px 0px;
-  font-size: 14px;
+  font-size: 18px;
   border-top: 1px solid;
   margin-top: 20px;
 
