@@ -55,7 +55,7 @@ I created a library for utilities and other most used css declarations to experi
 
 I also used Gulp javascript tool to convert Sass code into Css code. It gave me valuable insights about this proccess. Rather than using Visual Studio extensions to solve this problem, I learned much more with making it manually.
 
-I used Figma to understand sizes of components and texts in the design images. It was very helpful to me to create a pixel-perfect page.
+I used Figma to understand sizes of components and texts in the design images. It was very helpful for me to create more accurate page.
 
 ### Continued development
 
