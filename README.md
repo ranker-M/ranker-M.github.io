@@ -38,14 +38,3 @@
                           
 
 - **Survey Form-Library Registration**: [live page](https://ranker-m.github.io/Survey%20Form-Library%20Registration/),  [repo](https://github.com/ranker-M/ranker-M.github.io/tree/main/Survey%20Form-Library%20Registration)
-
-- **File Metadata Microservice**: [live page](https://boilerplate-project-filemetadata.ranker-m.repl.co),  [repo](https://replit.com/@ranker-M/boilerplate-project-filemetadata#.replit)
-                          
-                          
-- **Exercise tracker**: [live page](https://boilerplate-project-exercisetracker-1.ranker-m.repl.co), [repo](https://replit.com/@ranker-M/boilerplate-project-exercisetracker-1#.replit)
-                          
-
-- **URL Shortener Microservice**: [live page](https://boilerplate-project-urlshortener.ranker-m.repl.co),  [repo](https://replit.com/@ranker-M/boilerplate-project-urlshortener#.replit)
-
-
-- **Request Header Parser Microservice**: [live page](https://boilerplate-project-headerparser.ranker-m.repl.co),  [repo](https://replit.com/@ranker-M/boilerplate-project-headerparser#.replit)                      
