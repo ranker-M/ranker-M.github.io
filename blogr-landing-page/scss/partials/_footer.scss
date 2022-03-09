@@ -1,0 +1,65 @@
+@import "../partials/variables";
+@import "../partials/breakpoints";
+
+footer.footer {
+  color: white;
+  background-color: $neutral-footer-background;
+  width: 100%;
+  border-top-right-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 50px 0px;
+  margin-top: 90px;
+  box-sizing: border-box;
+
+  @include lg {
+    flex-direction: row;
+    border-top-right-radius: 50px;
+    justify-content: start;
+    align-items: start;
+    padding: 50px 100px;
+  }
+
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    font-family: "Overpass", sans-serif;
+
+    margin: 10px 0px;
+
+    @include lg {
+      flex: 1;
+      place-items: start;
+    }
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      margin-top: 20px;
+      margin-bottom: 50px;
+      height: 100%;
+      width: auto;
+    }
+
+    h3 {
+      color: #ccc;
+      font-size: 20px;
+    }
+    a {
+      font-family: "Ubuntu", sans-serif;
+      color: #aaa;
+      text-decoration: none;
+      padding: 6px 0px;
+      font-size: 18px;
+
+      &:hover {
+        color: #ddd;
+        text-decoration: underline;
+      }
+    }
+  }
+}

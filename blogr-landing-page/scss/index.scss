@@ -1,0 +1,16 @@
+// font-family
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+// font-family: 'Overpass', sans-serif;
+// font-family: 'Ubuntu', sans-serif;
+
+// variables
+@import "./partials/_variables.scss";
+
+// base classes
+@import "./partials/base-classes";
+
+// components
+@import "./components/cover";
+@import "./components/buttons";
+@import "./partials/main-flow";
+@import "./partials/footer";

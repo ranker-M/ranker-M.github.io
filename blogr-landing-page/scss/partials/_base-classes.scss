@@ -1,0 +1,30 @@
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Overpass", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  max-width: 1440px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu", sans-serif;
+  color: $primary-headings;
+}
+p,
+span,
+a {
+  font-family: "Ubuntu", sans-serif;
+  color: $text-light-bg;
+  // line-height: 1.8;
+  // word-spacing: 1.8;
+  font-size: 14px;
+  font-weight: 400;
+}

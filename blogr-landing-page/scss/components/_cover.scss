@@ -1,0 +1,282 @@
+@import "../partials/variables";
+@import "../partials/breakpoints";
+
+.cover {
+  position: relative;
+  width: 100%;
+  height: 600px; //600px
+  box-sizing: border-box;
+  background: $bg-gradient-very-light-red;
+  border-bottom-left-radius: 100px;
+  background: url("../../images/bg-pattern-intro-mobile.svg"),
+    linear-gradient(
+      135deg,
+      $bg-gradient-very-light-red 0%,
+      $bg-gradient-very-light-red 10%,
+      $bg-gradient-light-red 80%
+    );
+  background-position: 35% 34%;
+  background-size: 350%;
+  background-repeat: no-repeat;
+
+  @include lg {
+    // cover
+    background: url("../../images/bg-pattern-intro-desktop.svg"),
+      linear-gradient(
+        90deg,
+        $bg-gradient-very-light-red 0%,
+        $bg-gradient-very-light-red 10%,
+        $bg-gradient-light-red 60%
+      );
+    background-position: 26% 52%;
+    background-size: 220%;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 100px;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 55px 25px;
+    box-sizing: border-box;
+    .collapse-menu {
+      width: 34px;
+      height: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      span {
+        transition: transform 0.3s;
+        display: block;
+        background-color: white;
+        height: 2px;
+      }
+
+      &.close-style {
+        span {
+          &:nth-child(1) {
+            transform: rotate(45deg);
+            transform-origin: 10% 10%;
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            transform: rotate(-45deg);
+            transform-origin: 10% 90%;
+          }
+        }
+      }
+    }
+
+    @include lg {
+      // navbar
+      margin: 0px auto;
+      max-width: 1200px;
+      justify-content: start;
+      padding: 30px 0px;
+      // padding-left: 47px;
+
+      .collapse-menu {
+        display: none;
+      }
+    }
+  }
+
+  .hidden-menu {
+    display: flex;
+    box-sizing: border-box;
+    width: 87%;
+    height: fit-content;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 20px rgba($color: #000000, $alpha: 0.3);
+    display: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 32px 25px;
+
+    .dropdown-button {
+      font-family: "Ubuntu", sans-serif;
+      display: flex;
+      place-items: center;
+      font-size: 14px;
+      color: $primary-headings;
+      background-color: transparent;
+      border: none;
+      font-weight: 600;
+      padding: 18px 0px;
+      margin: 0px auto;
+
+      &::after {
+        content: "";
+        display: block;
+        background-image: url("../../images/icon-arrow-dark.svg");
+        background-position: center;
+        background-size: cover;
+        width: 10px;
+        height: 7px;
+        margin-left: 8px;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.opened::after {
+        transform: rotate(180deg);
+      }
+
+      &.closed::after {
+        transform: rotate(0deg);
+      }
+
+      &.opened + .dropdown-menu {
+        visibility: visible;
+        height: fit-content;
+        padding: 15px 0px;
+        a {
+          padding: 15px 0px;
+          display: block;
+        }
+      }
+    }
+
+    .dropdown-menu {
+      display: flex;
+      visibility: hidden;
+      width: 100%;
+      height: 0px;
+      flex-direction: column;
+      place-items: center;
+      border-radius: 5px;
+      background-color: $neutral-footer-text;
+      transition: 0.5s;
+
+      a {
+        display: none;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        transition: 0.5s;
+        padding: 0px;
+        color: $primary-headings-hover;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+
+    hr {
+      display: block;
+      width: 100%;
+      background-color: transparent;
+      border-top: 1px solid lightgray;
+    }
+
+    @include lg {
+      // hidden menu
+      display: flex !important;
+      justify-content: start;
+      flex-direction: row;
+      background-color: inherit;
+      border: none;
+      box-shadow: none;
+      margin-left: 50px;
+      width: 100%;
+      position: relative;
+      left: 0px;
+      transform: none;
+      top: 0px;
+
+      .dropdown-button {
+        color: #eee;
+        width: fit-content;
+        margin: 0px;
+        margin-right: 20px;
+        font-size: 16px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &::after {
+          background-image: url("../../images/icon-arrow-light.svg");
+        }
+
+        &.opened + .dropdown-menu {
+          padding: 5px 25px;
+
+          &:nth-child(4) {
+            left: 125px;
+          }
+
+          &:nth-child(6) {
+            left: 230px;
+          }
+        }
+      }
+
+      hr {
+        display: none;
+      }
+
+      .dropdown-menu {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: white;
+        position: absolute;
+        top: 80px;
+        border-radius: 5px;
+        box-shadow: 0px 8px 20px rgba($color: #000000, $alpha: 0.3);
+      }
+    }
+  }
+
+  .publish-platform {
+    width: 295px;
+    margin: 0px auto;
+    margin-top: 50px;
+    text-align: center;
+    color: $neutral-text;
+    h1 {
+      color: white;
+      font-family: "Overpass", sans-serif;
+      font-weight: 300;
+      font-size: 34px;
+    }
+
+    p {
+      padding: 0px 1px;
+      font-family: "Overpass", sans-serif;
+      font-weight: 300;
+      margin-bottom: 50px;
+      color: #ddd;
+      font-size: 18px;
+    }
+
+    @include lg {
+      width: fit-content;
+      h1 {
+        font-size: 46px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

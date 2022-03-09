@@ -1,0 +1,206 @@
+@import "../partials/variables";
+@import "../partials/breakpoints";
+
+.designed-future {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 200px;
+
+  @include lg {
+    flex-direction: row;
+    margin-left: 100px;
+  }
+
+  h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 700;
+    font-size: 24px;
+    margin: 0px;
+    order: 1;
+    position: relative;
+    top: -400px;
+
+    @include lg {
+      font-size: 28px;
+      left: 100%;
+      top: -50px;
+      transform: translate(-15%);
+    }
+  }
+  .text-section {
+    order: 2;
+    padding: 0px 35px;
+
+    @include lg {
+      flex: 1;
+      text-align: start;
+      order: 1;
+      max-width: 550px;
+    }
+
+    h3 {
+      padding: 0px;
+      font-size: 24px;
+      margin-bottom: 0px;
+
+      &:not(:first-child) {
+        margin-top: 45px;
+      }
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 0px;
+      line-height: 1.8;
+      word-spacing: 2;
+    }
+  }
+
+  .image-section {
+    order: 1;
+
+    img:nth-child(2) {
+      display: none;
+    }
+
+    @include lg {
+      flex: 1;
+      order: 2;
+      position: relative;
+      height: 480px;
+
+      img:first-child {
+        display: none;
+      }
+
+      img:nth-child(2) {
+        display: block;
+        position: absolute;
+        width: 925px;
+        transform: translateY(-15%);
+        left: 50px;
+      }
+    }
+  }
+}
+
+.state-of-art {
+  @extend .designed-future;
+  margin-top: 260px;
+  background: url("../../images/bg-pattern-circles.svg"),
+    linear-gradient(
+      0deg,
+      $bg-gradient-dark-blue 0%,
+      $bg-gradient-body-gray-blue 100%
+    );
+
+  background-size: 155%, 100%;
+  background-position: 45% -300%;
+  background-repeat: no-repeat;
+
+  border-radius: 0px 100px 0px 100px;
+  position: relative;
+  padding-bottom: 100px;
+
+  @include lg {
+    right: 0px;
+    margin-bottom: 150px;
+    padding: 0px;
+    height: 500px;
+    margin-top: 350px;
+    margin-left: 0px;
+
+    background-size: 85%, 100%;
+    background-position: -120% 90%;
+  }
+
+  .text-section {
+    h1 {
+      font-size: 36px;
+      color: white;
+      margin-top: -5px;
+      margin-bottom: 0px;
+    }
+    p {
+      color: $text-dark-bg;
+      font-size: 16px;
+      margin-bottom: 0px;
+      line-height: 2;
+      word-spacing: 2;
+    }
+
+    @include lg {
+      order: 2;
+      margin-left: -50px;
+    }
+  }
+
+  .image-section {
+    margin-top: -50%;
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 8px;
+
+    img {
+      overflow: hidden;
+    }
+
+    @include lg {
+      margin-top: 0px;
+      position: relative;
+      left: 0px;
+      order: 1;
+      flex: 1;
+      height: 500px;
+
+      img:first-child {
+        display: inline;
+        position: absolute;
+        width: 80%;
+        left: 100px;
+        top: -80px;
+      }
+
+      img:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+}
+
+.laptop {
+  @extend .designed-future;
+  margin-top: 50px;
+
+  @include lg {
+    margin-top: 250px;
+    margin-bottom: 300px;
+    margin-left: -100px;
+  }
+
+  .text-section {
+    order: 2;
+    h3 {
+      margin-bottom: 0px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.8;
+      word-spacing: 1.8;
+      font-weight: 300;
+    }
+  }
+
+  .image-section {
+    order: 1;
+
+    img:nth-child(2) {
+      position: absolute;
+      width: 974px;
+      left: -180px;
+    }
+  }
+}

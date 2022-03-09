@@ -1,0 +1,104 @@
+@use "sass:color";
+@import "../partials/variables";
+@import "../partials/breakpoints";
+
+.btn {
+  font-size: 16px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  transition: 0.3s;
+  white-space: nowrap;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-white {
+  @extend .btn;
+  color: $primary-text;
+  background-color: $neutral-text;
+  margin-right: 10px;
+  &:hover {
+    background-color: $primary-hover-bg;
+    color: white;
+  }
+}
+
+.btn-transparent {
+  @extend .btn;
+
+  color: $neutral-text;
+  box-shadow: inline 1px $neutral-text;
+  background-color: transparent;
+  border: 1px solid $neutral-text;
+  &:hover {
+    background-color: white;
+    color: $primary-text;
+  }
+}
+
+.btn-hidden-white {
+  @extend .btn;
+  width: fit-content;
+  margin: 0px auto;
+  padding: 15px 40px;
+  color: $primary-headings;
+  margin-bottom: 5px;
+  background-color: white;
+  border: 1px solid white;
+
+  &:hover {
+    background-color: $primary-hover-bg;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 25px;
+  }
+
+  @include lg {
+    background-color: transparent;
+    border: none;
+    color: #eee;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: 10px;
+    &:hover {
+      background-color: white;
+      color: $primary-text;
+    }
+  }
+}
+
+.btn-hidden-gradient {
+  @extend .btn;
+
+  background: linear-gradient(
+    90deg,
+    $bg-gradient-very-light-red,
+    $bg-gradient-light-red
+  );
+  color: white;
+  width: fit-content;
+  margin: 0px auto;
+  padding: 15px 40px;
+
+  &:hover {
+    color: $primary-text;
+    background: white;
+  }
+
+  @include lg {
+    margin: 0px;
+    border: none;
+    background: white;
+    color: $primary-text;
+
+    &:hover {
+      background-color: $primary-hover-bg;
+      color: white;
+    }
+  }
+}
