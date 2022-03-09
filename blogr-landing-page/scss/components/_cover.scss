@@ -8,7 +8,7 @@
   box-sizing: border-box;
   background: $bg-gradient-very-light-red;
   border-bottom-left-radius: 100px;
-  background: url("../../images/bg-pattern-intro-mobile.svg"),
+  background: url("../images/bg-pattern-intro-mobile.svg"),
     linear-gradient(
       135deg,
       $bg-gradient-very-light-red 0%,
@@ -21,7 +21,7 @@
 
   @include lg {
     // cover
-    background: url("../../images/bg-pattern-intro-desktop.svg"),
+    background: url("../images/bg-pattern-intro-desktop.svg"),
       linear-gradient(
         90deg,
         $bg-gradient-very-light-red 0%,
@@ -123,7 +123,7 @@
       &::after {
         content: "";
         display: block;
-        background-image: url("../../images/icon-arrow-dark.svg");
+        background-image: url("../images/icon-arrow-dark.svg");
         background-position: center;
         background-size: cover;
         width: 10px;
@@ -214,7 +214,7 @@
         }
 
         &::after {
-          background-image: url("../../images/icon-arrow-light.svg");
+          background-image: url("../images/icon-arrow-light.svg");
         }
 
         &.opened + .dropdown-menu {

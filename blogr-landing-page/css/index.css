@@ -5,9 +5,14 @@ html {
   margin: 0px;
   font-family: "Overpass", sans-serif;
   box-sizing: border-box;
-  overflow-x: hidden;
   max-width: 1440px;
-  margin: auto;
+}
+@media screen and (min-width: 600px) {
+  body,
+html {
+    overflow-x: hidden;
+    margin: auto;
+  }
 }
 
 h1,
@@ -36,14 +41,14 @@ a {
   box-sizing: border-box;
   background: #ff8f70;
   border-bottom-left-radius: 100px;
-  background: url("../../images/bg-pattern-intro-mobile.svg"), linear-gradient(135deg, #ff8f70 0%, #ff8f70 10%, #ff3d54 80%);
+  background: url("../images/bg-pattern-intro-mobile.svg"), linear-gradient(135deg, #ff8f70 0%, #ff8f70 10%, #ff3d54 80%);
   background-position: 35% 34%;
   background-size: 350%;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 600px) {
   .cover {
-    background: url("../../images/bg-pattern-intro-desktop.svg"), linear-gradient(90deg, #ff8f70 0%, #ff8f70 10%, #ff3d54 60%);
+    background: url("../images/bg-pattern-intro-desktop.svg"), linear-gradient(90deg, #ff8f70 0%, #ff8f70 10%, #ff3d54 60%);
     background-position: 26% 52%;
     background-size: 220%;
     background-repeat: no-repeat;
@@ -129,7 +134,7 @@ a {
 .cover .hidden-menu .dropdown-button::after {
   content: "";
   display: block;
-  background-image: url("../../images/icon-arrow-dark.svg");
+  background-image: url("../images/icon-arrow-dark.svg");
   background-position: center;
   background-size: cover;
   width: 10px;
@@ -209,7 +214,7 @@ a {
     text-decoration: underline;
   }
   .cover .hidden-menu .dropdown-button::after {
-    background-image: url("../../images/icon-arrow-light.svg");
+    background-image: url("../images/icon-arrow-light.svg");
   }
   .cover .hidden-menu .dropdown-button.opened + .dropdown-menu {
     padding: 5px 25px;
@@ -440,7 +445,7 @@ a {
 
 .state-of-art {
   margin-top: 260px;
-  background: url("../../images/bg-pattern-circles.svg"), linear-gradient(0deg, #3f4164 0%, #2c2d3f 100%);
+  background: url("../images/bg-pattern-circles.svg"), linear-gradient(0deg, #3f4164 0%, #2c2d3f 100%);
   background-size: 155%, 100%;
   background-position: 45% -300%;
   background-repeat: no-repeat;

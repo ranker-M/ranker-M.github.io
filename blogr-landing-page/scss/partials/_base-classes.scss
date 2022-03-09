@@ -1,12 +1,16 @@
+@import "././breakpoints";
+
 body,
 html {
   padding: 0px;
   margin: 0px;
   font-family: "Overpass", sans-serif;
   box-sizing: border-box;
-  overflow-x: hidden;
   max-width: 1440px;
-  margin: auto;
+  @include lg {
+    overflow-x: hidden;
+    margin: auto;
+  }
 }
 
 h1,
