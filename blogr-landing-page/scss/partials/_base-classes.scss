@@ -6,11 +6,12 @@ html {
   margin: 0px;
   font-family: "Overpass", sans-serif;
   box-sizing: border-box;
-  max-width: 1440px;
+  // max-width: 1440px;
   @include lg {
     overflow-x: hidden;
     margin: auto;
   }
+  min-width: 295px;
 }
 
 h1,

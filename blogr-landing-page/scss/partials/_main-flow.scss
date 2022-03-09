@@ -11,7 +11,13 @@
 
   @include lg {
     flex-direction: row;
-    margin-left: 100px;
+    margin-left: 17%;
+  }
+
+  @include xl {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   h2 {
@@ -27,7 +33,11 @@
       font-size: 28px;
       left: 100%;
       top: -50px;
-      transform: translate(-15%);
+      transform: translateX(-15%);
+    }
+
+    @include xl {
+      font-size: 36px;
     }
   }
   .text-section {
@@ -49,12 +59,20 @@
       &:not(:first-child) {
         margin-top: 45px;
       }
+
+      @include xl {
+        font-size: 32px;
+      }
     }
     p {
       font-size: 16px;
       margin-bottom: 0px;
       line-height: 1.8;
       word-spacing: 2;
+
+      @include xl {
+        font-size: 24px;
+      }
     }
   }
 
@@ -69,7 +87,7 @@
       flex: 1;
       order: 2;
       position: relative;
-      height: 480px;
+      height: 100%;
 
       img:first-child {
         display: none;
@@ -77,10 +95,10 @@
 
       img:nth-child(2) {
         display: block;
-        position: absolute;
-        width: 925px;
-        transform: translateY(-15%);
-        left: 50px;
+        position: static;
+        width: 100%;
+        max-width: 925px;
+        margin-left: auto;
       }
     }
   }
@@ -96,8 +114,8 @@
       $bg-gradient-body-gray-blue 100%
     );
 
-  background-size: 140%, 100%;
-  background-position: 45% -720%;
+  background-size: 155%, 100%;
+  background-position: 50% -6620%;
   background-repeat: no-repeat;
 
   border-radius: 0px 100px 0px 100px;
@@ -108,12 +126,20 @@
     right: 0px;
     margin-bottom: 150px;
     padding: 0px;
-    height: 500px;
-    margin-top: 350px;
+    height: 400px;
+    margin-top: 150px;
     margin-left: 0px;
 
     background-size: 85%, 100%;
+
     background-position: -120% 90%;
+    min-height: 400px;
+  }
+
+  @include xl {
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
   }
 
   .text-section {
@@ -122,6 +148,10 @@
       color: white;
       margin-top: -5px;
       margin-bottom: 0px;
+
+      @include xl {
+        font-size: 42px;
+      }
     }
     p {
       color: $text-dark-bg;
@@ -129,48 +159,59 @@
       margin-bottom: 0px;
       line-height: 2;
       word-spacing: 2;
+
+      @include xl {
+        font-size: 24px;
+      }
     }
 
     @include lg {
       order: 2;
       margin-left: -50px;
     }
-  }
 
+    @include xl {
+      font-size: 32px;
+    }
+  }
   .image-section {
-    margin-top: -50%;
-    width: 90%;
-    height: auto;
-    position: relative;
-    left: 8px;
+    height: 200px;
 
     img {
-      overflow: hidden;
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 416px;
+      max-height: 436px;
+      transform: translateY(-50%);
     }
 
     @include lg {
-      margin-top: 0px;
-      position: relative;
-      left: 0px;
+      margin-left: -3%;
       order: 1;
       flex: 1;
-      height: 500px;
-
       img:first-child {
-        display: inline;
-        position: absolute;
-        width: 80%;
-        left: 100px;
-        top: -80px;
+        display: block;
+        position: relative;
+        top: -70%;
+        height: auto;
+        width: 100%;
+        margin: auto;
+        transform: none;
+        max-width: 500px;
+        max-height: 507px;
       }
+    }
 
-      img:nth-child(2) {
-        display: none;
+    @include xl {
+      img:first-child {
+        max-width: 800px;
+        max-height: 820px;
+        top: -150%;
       }
     }
   }
 }
-
 .laptop {
   @extend .designed-future;
   margin-top: 50px;
@@ -178,19 +219,31 @@
   @include lg {
     margin-top: 250px;
     margin-bottom: 300px;
-    margin-left: -100px;
+    margin-left: -17%;
+    margin-right: 0px;
+  }
+
+  @include xl {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .text-section {
     order: 2;
     h3 {
       margin-bottom: 0px;
+      @include xl {
+        font-size: 32px;
+      }
     }
     p {
       font-size: 16px;
       line-height: 1.8;
       word-spacing: 1.8;
       font-weight: 300;
+      @include xl {
+        font-size: 24px;
+      }
     }
   }
 
@@ -198,9 +251,15 @@
     order: 1;
 
     img:nth-child(2) {
-      position: absolute;
-      width: 974px;
-      left: -180px;
+      position: static;
+      width: 100%;
+    }
+
+    @include xl {
+      img:nth-child(2) {
+        margin-left: 0px;
+        margin-right: auto;
+      }
     }
   }
 }

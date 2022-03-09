@@ -5,9 +5,9 @@ html {
   margin: 0px;
   font-family: "Overpass", sans-serif;
   box-sizing: border-box;
-  max-width: 1440px;
+  min-width: 295px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   body,
 html {
     overflow-x: hidden;
@@ -46,13 +46,18 @@ a {
   background-size: 350%;
   background-repeat: no-repeat;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .cover {
     background: url("../images/bg-pattern-intro-desktop.svg"), linear-gradient(90deg, #ff8f70 0%, #ff8f70 10%, #ff3d54 60%);
     background-position: 26% 52%;
     background-size: 220%;
     background-repeat: no-repeat;
     border-bottom-left-radius: 100px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .cover {
+    height: 1000px;
   }
 }
 .cover .navbar {
@@ -90,7 +95,7 @@ a {
   transform: rotate(-45deg);
   transform-origin: 10% 90%;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .cover .navbar {
     margin: 0px auto;
     max-width: 1200px;
@@ -99,6 +104,11 @@ a {
   }
   .cover .navbar .collapse-menu {
     display: none;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .cover .navbar {
+    max-width: 1600px;
   }
 }
 .cover .hidden-menu {
@@ -188,7 +198,7 @@ a {
   background-color: transparent;
   border-top: 1px solid lightgray;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .cover .hidden-menu {
     display: flex !important;
     justify-content: start;
@@ -241,6 +251,26 @@ a {
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
   }
 }
+@media screen and (min-width: 1800px) {
+  .cover .hidden-menu .dropdown-button {
+    font-size: 32px;
+    margin-right: 50px;
+    font-weight: 500;
+  }
+  .cover .hidden-menu .dropdown-button.opened + .dropdown-menu {
+    top: 100px;
+  }
+  .cover .hidden-menu .dropdown-button.opened + .dropdown-menu a {
+    font-size: 24px;
+    padding: 20px 30px;
+  }
+  .cover .hidden-menu .dropdown-button.opened + .dropdown-menu:nth-child(4) {
+    left: 210px;
+  }
+  .cover .hidden-menu .dropdown-button.opened + .dropdown-menu:nth-child(6) {
+    left: 420px;
+  }
+}
 .cover .publish-platform {
   width: 295px;
   margin: 0px auto;
@@ -262,13 +292,26 @@ a {
   color: #ddd;
   font-size: 18px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .cover .publish-platform {
     width: fit-content;
   }
   .cover .publish-platform h1 {
     font-size: 46px;
     margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .cover .publish-platform {
+    margin-top: 180px;
+  }
+  .cover .publish-platform h1 {
+    font-size: 68px;
+  }
+  .cover .publish-platform p {
+    font-size: 36px;
+    margin-bottom: 100px;
+    margin-top: 10px;
   }
 }
 
@@ -285,6 +328,12 @@ a {
 .btn:hover, .btn-hidden-gradient:hover, .btn-hidden-white:hover, .btn-transparent:hover, .btn-white:hover {
   cursor: pointer;
 }
+@media screen and (min-width: 1800px) {
+  .btn, .btn-hidden-gradient, .btn-hidden-white, .btn-transparent, .btn-white {
+    font-size: 26px;
+    padding: 30px 40px;
+  }
+}
 
 .btn-white {
   color: #ff525d;
@@ -294,6 +343,11 @@ a {
 .btn-white:hover {
   background-color: #ff7a85;
   color: white;
+}
+@media screen and (min-width: 1800px) {
+  .btn-white {
+    margin-right: 50px;
+  }
 }
 
 .btn-transparent {
@@ -320,9 +374,9 @@ a {
   background-color: #ff7a85;
   color: white;
   padding: 15px 40px;
-  border-radius: 25px;
+  border-radius: 50px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .btn-hidden-white {
     background-color: transparent;
     border: none;
@@ -348,7 +402,7 @@ a {
   color: #ff525d;
   background: white;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .btn-hidden-gradient {
     margin: 0px;
     border: none;
@@ -369,10 +423,17 @@ a {
   width: 100%;
   margin-top: 200px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .designed-future, .laptop, .state-of-art {
     flex-direction: row;
-    margin-left: 100px;
+    margin-left: 17%;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .designed-future, .laptop, .state-of-art {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .designed-future h2, .laptop h2, .state-of-art h2 {
@@ -384,19 +445,24 @@ a {
   position: relative;
   top: -400px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .designed-future h2, .laptop h2, .state-of-art h2 {
     font-size: 28px;
     left: 100%;
     top: -50px;
-    transform: translate(-15%);
+    transform: translateX(-15%);
+  }
+}
+@media screen and (min-width: 1800px) {
+  .designed-future h2, .laptop h2, .state-of-art h2 {
+    font-size: 36px;
   }
 }
 .designed-future .text-section, .laptop .text-section, .state-of-art .text-section {
   order: 2;
   padding: 0px 35px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .designed-future .text-section, .laptop .text-section, .state-of-art .text-section {
     flex: 1;
     text-align: start;
@@ -412,11 +478,21 @@ a {
 .designed-future .text-section h3:not(:first-child), .laptop .text-section h3:not(:first-child), .state-of-art .text-section h3:not(:first-child) {
   margin-top: 45px;
 }
+@media screen and (min-width: 1800px) {
+  .designed-future .text-section h3, .laptop .text-section h3, .state-of-art .text-section h3 {
+    font-size: 32px;
+  }
+}
 .designed-future .text-section p, .laptop .text-section p, .state-of-art .text-section p {
   font-size: 16px;
   margin-bottom: 0px;
   line-height: 1.8;
   word-spacing: 2;
+}
+@media screen and (min-width: 1800px) {
+  .designed-future .text-section p, .laptop .text-section p, .state-of-art .text-section p {
+    font-size: 24px;
+  }
 }
 .designed-future .image-section, .laptop .image-section, .state-of-art .image-section {
   order: 1;
@@ -424,45 +500,53 @@ a {
 .designed-future .image-section img:nth-child(2), .laptop .image-section img:nth-child(2), .state-of-art .image-section img:nth-child(2) {
   display: none;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .designed-future .image-section, .laptop .image-section, .state-of-art .image-section {
     flex: 1;
     order: 2;
     position: relative;
-    height: 480px;
+    height: 100%;
   }
   .designed-future .image-section img:first-child, .laptop .image-section img:first-child, .state-of-art .image-section img:first-child {
     display: none;
   }
   .designed-future .image-section img:nth-child(2), .laptop .image-section img:nth-child(2), .state-of-art .image-section img:nth-child(2) {
     display: block;
-    position: absolute;
-    width: 925px;
-    transform: translateY(-15%);
-    left: 50px;
+    position: static;
+    width: 100%;
+    max-width: 925px;
+    margin-left: auto;
   }
 }
 
 .state-of-art {
   margin-top: 260px;
   background: url("../images/bg-pattern-circles.svg"), linear-gradient(0deg, #3f4164 0%, #2c2d3f 100%);
-  background-size: 140%, 100%;
-  background-position: 45% -720%;
+  background-size: 155%, 100%;
+  background-position: 50% -6620%;
   background-repeat: no-repeat;
   border-radius: 0px 100px 0px 100px;
   position: relative;
   padding-bottom: 100px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .state-of-art {
     right: 0px;
     margin-bottom: 150px;
     padding: 0px;
-    height: 500px;
-    margin-top: 350px;
+    height: 400px;
+    margin-top: 150px;
     margin-left: 0px;
     background-size: 85%, 100%;
     background-position: -120% 90%;
+    min-height: 400px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .state-of-art {
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
   }
 }
 .state-of-art .text-section h1 {
@@ -471,6 +555,11 @@ a {
   margin-top: -5px;
   margin-bottom: 0px;
 }
+@media screen and (min-width: 1800px) {
+  .state-of-art .text-section h1 {
+    font-size: 42px;
+  }
+}
 .state-of-art .text-section p {
   color: #b5b5c0;
   font-size: 16px;
@@ -478,51 +567,74 @@ a {
   line-height: 2;
   word-spacing: 2;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1800px) {
+  .state-of-art .text-section p {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
   .state-of-art .text-section {
     order: 2;
     margin-left: -50px;
   }
 }
+@media screen and (min-width: 1800px) {
+  .state-of-art .text-section {
+    font-size: 32px;
+  }
+}
 .state-of-art .image-section {
-  margin-top: -50%;
-  width: 90%;
-  height: auto;
-  position: relative;
-  left: 8px;
+  height: 200px;
 }
 .state-of-art .image-section img {
-  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 416px;
+  max-height: 436px;
+  transform: translateY(-50%);
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .state-of-art .image-section {
-    margin-top: 0px;
-    position: relative;
-    left: 0px;
+    margin-left: -3%;
     order: 1;
     flex: 1;
-    height: 500px;
   }
   .state-of-art .image-section img:first-child {
-    display: inline;
-    position: absolute;
-    width: 80%;
-    left: 100px;
-    top: -80px;
+    display: block;
+    position: relative;
+    top: -70%;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    transform: none;
+    max-width: 500px;
+    max-height: 507px;
   }
-  .state-of-art .image-section img:nth-child(2) {
-    display: none;
+}
+@media screen and (min-width: 1800px) {
+  .state-of-art .image-section img:first-child {
+    max-width: 800px;
+    max-height: 820px;
+    top: -150%;
   }
 }
 
 .laptop {
   margin-top: 50px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .laptop {
     margin-top: 250px;
     margin-bottom: 300px;
-    margin-left: -100px;
+    margin-left: -17%;
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .laptop {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .laptop .text-section {
@@ -531,19 +643,34 @@ a {
 .laptop .text-section h3 {
   margin-bottom: 0px;
 }
+@media screen and (min-width: 1800px) {
+  .laptop .text-section h3 {
+    font-size: 32px;
+  }
+}
 .laptop .text-section p {
   font-size: 16px;
   line-height: 1.8;
   word-spacing: 1.8;
   font-weight: 300;
 }
+@media screen and (min-width: 1800px) {
+  .laptop .text-section p {
+    font-size: 24px;
+  }
+}
 .laptop .image-section {
   order: 1;
 }
 .laptop .image-section img:nth-child(2) {
-  position: absolute;
-  width: 974px;
-  left: -180px;
+  position: static;
+  width: 100%;
+}
+@media screen and (min-width: 1800px) {
+  .laptop .image-section img:nth-child(2) {
+    margin-left: 0px;
+    margin-right: auto;
+  }
 }
 
 footer.footer {
@@ -551,15 +678,24 @@ footer.footer {
   background-color: #25252d;
   width: 100%;
   border-top-right-radius: 100px;
+  padding: 50px 0px;
+  margin-top: 90px;
+}
+@media screen and (min-width: 768px) {
+  footer.footer {
+    border-top-right-radius: 50px;
+    padding: 50px 100px;
+  }
+}
+footer.footer .footer-wrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
   place-items: center;
-  padding: 50px 0px;
-  margin-top: 90px;
   box-sizing: border-box;
 }
-@media screen and (min-width: 600px) {
-  footer.footer {
+@media screen and (min-width: 768px) {
+  footer.footer .footer-wrapper {
     flex-direction: row;
     border-top-right-radius: 50px;
     justify-content: start;
@@ -567,40 +703,57 @@ footer.footer {
     padding: 50px 100px;
   }
 }
-footer.footer .footer-col {
+@media screen and (min-width: 1800px) {
+  footer.footer .footer-wrapper {
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+footer.footer .footer-wrapper .footer-col {
   display: flex;
   flex-direction: column;
   place-items: center;
   font-family: "Overpass", sans-serif;
   margin: 10px 0px;
 }
-@media screen and (min-width: 600px) {
-  footer.footer .footer-col {
+@media screen and (min-width: 768px) {
+  footer.footer .footer-wrapper .footer-col {
     flex: 1;
     place-items: start;
   }
 }
-footer.footer .footer-col:last-child {
+footer.footer .footer-wrapper .footer-col:last-child {
   margin-bottom: 20px;
 }
-footer.footer .footer-col .logo {
+footer.footer .footer-wrapper .footer-col .logo {
   margin-top: 20px;
   margin-bottom: 50px;
   height: 100%;
   width: auto;
 }
-footer.footer .footer-col h3 {
+footer.footer .footer-wrapper .footer-col h3 {
   color: #ccc;
   font-size: 20px;
 }
-footer.footer .footer-col a {
+@media screen and (min-width: 1800px) {
+  footer.footer .footer-wrapper .footer-col h3 {
+    font-size: 32px;
+  }
+}
+footer.footer .footer-wrapper .footer-col a {
   font-family: "Ubuntu", sans-serif;
   color: #aaa;
   text-decoration: none;
   padding: 6px 0px;
   font-size: 18px;
 }
-footer.footer .footer-col a:hover {
+footer.footer .footer-wrapper .footer-col a:hover {
   color: #ddd;
   text-decoration: underline;
+}
+@media screen and (min-width: 1800px) {
+  footer.footer .footer-wrapper .footer-col a {
+    font-size: 24px;
+  }
 }

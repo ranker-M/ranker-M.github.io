@@ -15,6 +15,11 @@
   &:hover {
     cursor: pointer;
   }
+
+  @include xl {
+    font-size: 26px;
+    padding: 30px 40px;
+  }
 }
 
 .btn-white {
@@ -25,6 +30,10 @@
   &:hover {
     background-color: $primary-hover-bg;
     color: white;
+  }
+
+  @include xl {
+    margin-right: 50px;
   }
 }
 
@@ -55,7 +64,7 @@
     background-color: $primary-hover-bg;
     color: white;
     padding: 15px 40px;
-    border-radius: 25px;
+    border-radius: 50px;
   }
 
   @include lg {
