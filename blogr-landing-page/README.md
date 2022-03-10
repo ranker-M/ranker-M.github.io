@@ -29,9 +29,9 @@ Your users should be able to:
 
 ### Screenshot
 
-<img src="./screenshots/blogr-mobile.jpg" alt="Mobile screenshot" height="1000"> </img>
-<img src="./screenshots/blogr-laptop.jpg" alt="Laptop screenshot" width="350"> </img>
-<img src="./screenshots/blogr-4k.jpg" alt="4K screenshot" width="350"> </img>
+<img src="./Screenshots/blogr-mobile.jpg" alt="Mobile screenshot" height="1000"> </img>
+<img src="./Screenshots/blogr-laptop.jpg" alt="Laptop screenshot" width="350"> </img>
+<img src="./Screenshots/blogr-4k.jpg" alt="4K screenshot" width="350"> </img>
 
 ### Links
 
