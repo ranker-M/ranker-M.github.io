@@ -14,8 +14,6 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
   - [Continued development](#continued-development)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -65,8 +63,6 @@ The second problem I faced was mobile first approach I tried to use while develo
 ### Continued development
 
 As I mentioned previous section, I will try to be more planned before starting coding and I will create page element by element. I mean creating simpler elements before complex ones. Such as, button-menu-navbar-cover section and etc. I will also use mobile first approach again with considering points I stated last section.
-
-## Author
 
 ## Author
 
