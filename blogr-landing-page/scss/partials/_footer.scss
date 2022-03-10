@@ -6,7 +6,7 @@ footer.footer {
   background-color: $neutral-footer-background;
   width: 100%;
   border-top-right-radius: 100px;
-  padding: 50px 0px;
+  padding: 20px 50px;
   margin-top: 90px;
 
   @include lg {
@@ -27,11 +27,11 @@ footer.footer {
       border-top-right-radius: 50px;
       justify-content: start;
       align-items: start;
-      padding: 50px 100px;
+      padding: 0px 0px;
+      max-width: 1400px;
     }
 
     @include xl {
-      max-width: 1400px;
       margin-left: auto;
       margin-right: auto;
     }
