@@ -1,0 +1,105 @@
+@import "../partials/variables";
+@import "../partials/breakpoints";
+
+.footer {
+  background-color: $footer-bg;
+  padding-top: 200px;
+
+  @include md {
+    padding-left: 0px;
+    padding-bottom: 50px;
+  }
+
+  @include xl {
+    padding-left: 120px;
+    padding-bottom: 100px;
+  }
+
+  .row {
+    max-width: 1400px;
+    margin: 0px auto;
+  }
+
+  .row > *:not(:first-child) {
+    @include md {
+      margin-top: 90px !important;
+    }
+  }
+
+  .row > *:last-child {
+    @include md {
+      margin-top: 0px !important;
+    }
+    @include xl {
+      margin-top: 90px !important;
+    }
+  }
+
+  p {
+    opacity: 0.6;
+    cursor: pointer;
+    &:hover {
+      opacity: 1 !important;
+    }
+  }
+
+  a.link {
+    color: white !important;
+    opacity: 0.6 !important;
+    text-decoration: none !important;
+    padding: 0.25rem;
+    transition: 0.2s;
+    white-space: nowrap;
+
+    &:hover {
+      opacity: 1 !important;
+    }
+  }
+}
+.early-access {
+  .row div {
+    @include lg {
+      padding: 3rem 5rem !important;
+    }
+  }
+
+  .row > * {
+    background: $intro-bg;
+    position: relative;
+    top: 120px;
+  }
+}
+
+#email-input {
+  border: none !important;
+  padding: 1rem 1.5rem !important;
+
+  @include md {
+    padding: 1rem 2.5rem !important;
+  }
+
+  &::placeholder {
+    opacity: 0.9;
+  }
+
+  &:focus-visible {
+    outline: none !important;
+  }
+}
+
+#input-error {
+  color: $light-red-error;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.icons {
+  i {
+    transition: 0.3s;
+  }
+  i:hover {
+    cursor: pointer;
+    color: $cyan-btn-gradient;
+    border-color: $cyan-btn-gradient !important;
+  }
+}

@@ -1,0 +1,91 @@
+@import "./variables";
+@import "./breakpoints";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+html,
+body {
+  background-color: $main-bg !important;
+  color: $primary-text;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .nav-link,
+  .btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+  }
+
+  .nav-link {
+    font-weight: 400 !important;
+  }
+}
+
+.ws-nowrap {
+  white-space: nowrap;
+}
+
+.shadow-bold {
+  box-shadow: 6px 6px 6px 0px hsl(217, 28%, 9%);
+}
+
+.fs-32 {
+  font-size: 14px;
+}
+
+.stay-productive {
+  margin-top: 50px;
+  margin-bottom: 120px;
+
+  a {
+    color: $cyan-btn-gradient !important;
+    text-decoration: none;
+    border-bottom: 1px solid $cyan-btn-gradient;
+    padding-bottom: 5px;
+    transition: 0.2s;
+
+    &:hover {
+      color: white !important;
+      border-color: white !important;
+
+      img {
+        &:first-child {
+          display: none;
+        }
+        &:last-child {
+          display: inline;
+        }
+      }
+    }
+  }
+
+  .arrow {
+    display: inline;
+    margin-left: 5px;
+    margin-bottom: 3px;
+    width: 16px;
+    height: 16px;
+    &:last-child {
+      display: none;
+    }
+  }
+
+  p {
+    @include xl {
+      width: 95% !important;
+    }
+  }
+
+  .title {
+    @include xl {
+      width: 75% !important;
+      font-size: 2.5rem !important;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import "../partials/variables";
+@import "../partials/breakpoints";
+
+.intro {
+  padding-top: 0px !important;
+  padding-bottom: 100px !important;
+  background: url("../../images/bg-curvy-desktop.svg"),
+    linear-gradient($intro-bg 49.5%, $main-bg 49.5%) !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% 40% !important;
+
+  @include md {
+    background: url("../../images/bg-curvy-desktop.svg") !important;
+    background-position: 50% 100% !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+  }
+
+  p {
+    @include md {
+      width: 75% !important;
+    }
+  }
+}
+
+.intro-wrapper {
+  background-color: $intro-bg !important;
+
+  .nav-link {
+    color: white !important;
+    opacity: 0.5 !important;
+    transition: 0.1s;
+
+    &:hover {
+      text-decoration: underline !important;
+      opacity: 1 !important;
+    }
+  }
+
+  .brand {
+    @include md {
+      width: 15% !important;
+    }
+  }
+}
+
+.nav-pills .nav-item a {
+  color: white !important;
+  opacity: 0.75 !important;
+}

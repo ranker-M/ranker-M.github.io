@@ -70,3 +70,4 @@ I want to improve structure of the projects I made. I will focus on mobile first
 
 - Linkedin - [Meriç Gündüz](https://www.linkedin.com/in/meriç-gündüz-198a99186/)
 - Frontend Mentor - [@ranker-M](https://www.frontendmentor.io/profile/ranker-M)
+- Github -[@ranker-M](https://github.com/ranker-M)

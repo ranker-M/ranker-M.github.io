@@ -1,0 +1,27 @@
+@import "../partials/variables";
+
+.testimonials {
+  background-color: $testimon-bg;
+  position: relative;
+  box-shadow: 3px 2px 0px 2px $intro-bg, 5px 5px 0px 5px hsl(218, 28%, 12%);
+
+  &:first-child::after {
+    content: "";
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    background: url("../../images/bg-quotes.png") no-repeat;
+    background-size: cover;
+    z-index: -1;
+    top: -15px;
+    left: 5px;
+
+    @include md {
+      top: -25px;
+      left: 0px;
+      width: 40px;
+      height: 30px;
+      background-size: cover;
+    }
+  }
+}

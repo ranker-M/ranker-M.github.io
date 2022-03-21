@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+html,
+body {
+  background-color: #181f2a !important;
+  color: white;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+html h1,
+html h2,
+html h3,
+html h4,
+html h5,
+html h6,
+html .nav-link,
+html .btn,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body .nav-link,
+body .btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+html .nav-link,
+body .nav-link {
+  font-weight: 400 !important;
+}
+
+.ws-nowrap {
+  white-space: nowrap;
+}
+
+.shadow-bold {
+  -webkit-box-shadow: 6px 6px 6px 0px #11151d;
+          box-shadow: 6px 6px 6px 0px #11151d;
+}
+
+.fs-32 {
+  font-size: 14px;
+}
+
+.stay-productive {
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+
+.stay-productive a {
+  color: #65e2d9 !important;
+  text-decoration: none;
+  border-bottom: 1px solid #65e2d9;
+  padding-bottom: 5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.stay-productive a:hover {
+  color: white !important;
+  border-color: white !important;
+}
+
+.stay-productive a:hover img:first-child {
+  display: none;
+}
+
+.stay-productive a:hover img:last-child {
+  display: inline;
+}
+
+.stay-productive .arrow {
+  display: inline;
+  margin-left: 5px;
+  margin-bottom: 3px;
+  width: 16px;
+  height: 16px;
+}
+
+.stay-productive .arrow:last-child {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .stay-productive p {
+    width: 95% !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .stay-productive .title {
+    width: 75% !important;
+    font-size: 2.5rem !important;
+  }
+}
+
+.intro {
+  padding-top: 0px !important;
+  padding-bottom: 100px !important;
+  background: url("../../images/bg-curvy-desktop.svg"), -webkit-gradient(linear, left top, left bottom, color-stop(49.5%, #1c2431), color-stop(49.5%, #181f2a)) !important;
+  background: url("../../images/bg-curvy-desktop.svg"), linear-gradient(#1c2431 49.5%, #181f2a 49.5%) !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% 40% !important;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    background: url("../../images/bg-curvy-desktop.svg") !important;
+    background-position: 50% 100% !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro p {
+    width: 75% !important;
+  }
+}
+
+.intro-wrapper {
+  background-color: #1c2431 !important;
+}
+
+.intro-wrapper .nav-link {
+  color: white !important;
+  opacity: 0.5 !important;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.intro-wrapper .nav-link:hover {
+  text-decoration: underline !important;
+  opacity: 1 !important;
+}
+
+@media (min-width: 768px) {
+  .intro-wrapper .brand {
+    width: 15% !important;
+  }
+}
+
+.nav-pills .nav-item a {
+  color: white !important;
+  opacity: 0.75 !important;
+}
+
+@use "sass:color";
+.btn-gradient, .btn-early {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background: linear-gradient(90deg, #65e2d9, #339ecc);
+  padding: 0.75rem 5rem !important;
+  white-space: nowrap;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.btn-gradient:hover, .btn-early:hover {
+  -webkit-filter: brightness(1.8);
+          filter: brightness(1.8);
+}
+
+.btn-early {
+  padding: 0.75rem 1.5rem !important;
+  width: 100% !important;
+}
+
+@media (min-width: 768px) {
+  .btn-early {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+  }
+}
+
+.btn:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.testimonials {
+  background-color: #202a3c;
+  position: relative;
+  -webkit-box-shadow: 3px 2px 0px 2px #1c2431, 5px 5px 0px 5px #161c27;
+          box-shadow: 3px 2px 0px 2px #1c2431, 5px 5px 0px 5px #161c27;
+}
+
+.testimonials:first-child::after {
+  content: "";
+  width: 20px;
+  height: 15px;
+  position: absolute;
+  background: url("../../images/bg-quotes.png") no-repeat;
+  background-size: cover;
+  z-index: -1;
+  top: -15px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .testimonials:first-child::after {
+    top: -25px;
+    left: 0px;
+    width: 40px;
+    height: 30px;
+    background-size: cover;
+  }
+}
+
+.footer {
+  background-color: #0b1523;
+  padding-top: 200px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding-left: 0px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding-left: 120px;
+    padding-bottom: 100px;
+  }
+}
+
+.footer .row {
+  max-width: 1400px;
+  margin: 0px auto;
+}
+
+@media (min-width: 768px) {
+  .footer .row > *:not(:first-child) {
+    margin-top: 90px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer .row > *:last-child {
+    margin-top: 0px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer .row > *:last-child {
+    margin-top: 90px !important;
+  }
+}
+
+.footer p {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.footer p:hover {
+  opacity: 1 !important;
+}
+
+.footer a.link {
+  color: white !important;
+  opacity: 0.6 !important;
+  text-decoration: none !important;
+  padding: 0.25rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+
+.footer a.link:hover {
+  opacity: 1 !important;
+}
+
+@media (min-width: 992px) {
+  .early-access .row div {
+    padding: 3rem 5rem !important;
+  }
+}
+
+.early-access .row > * {
+  background: #1c2431;
+  position: relative;
+  top: 120px;
+}
+
+#email-input {
+  border: none !important;
+  padding: 1rem 1.5rem !important;
+}
+
+@media (min-width: 768px) {
+  #email-input {
+    padding: 1rem 2.5rem !important;
+  }
+}
+
+#email-input::-webkit-input-placeholder {
+  opacity: 0.9;
+}
+
+#email-input:-ms-input-placeholder {
+  opacity: 0.9;
+}
+
+#email-input::-ms-input-placeholder {
+  opacity: 0.9;
+}
+
+#email-input::placeholder {
+  opacity: 0.9;
+}
+
+#email-input:focus-visible {
+  outline: none !important;
+}
+
+#input-error {
+  color: #ff4242;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.icons i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.icons i:hover {
+  cursor: pointer;
+  color: #65e2d9;
+  border-color: #65e2d9 !important;
+}
+/*# sourceMappingURL=custom.css.map */
