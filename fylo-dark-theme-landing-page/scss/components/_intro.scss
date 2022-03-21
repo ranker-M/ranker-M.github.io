@@ -4,14 +4,14 @@
 .intro {
   padding-top: 0px !important;
   padding-bottom: 100px !important;
-  background: url("../../images/bg-curvy-desktop.svg"),
+  background: url("../images/bg-curvy-desktop.svg"),
     linear-gradient($intro-bg 49.5%, $main-bg 49.5%) !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: 50% 40% !important;
 
   @include md {
-    background: url("../../images/bg-curvy-desktop.svg") !important;
+    background: url("../images/bg-curvy-desktop.svg") !important;
     background-position: 50% 100% !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;

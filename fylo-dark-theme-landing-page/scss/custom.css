@@ -100,8 +100,8 @@ body .nav-link {
 .intro {
   padding-top: 0px !important;
   padding-bottom: 100px !important;
-  background: url("../../images/bg-curvy-desktop.svg"), -webkit-gradient(linear, left top, left bottom, color-stop(49.5%, #1c2431), color-stop(49.5%, #181f2a)) !important;
-  background: url("../../images/bg-curvy-desktop.svg"), linear-gradient(#1c2431 49.5%, #181f2a 49.5%) !important;
+  background: url("../images/bg-curvy-desktop.svg"), -webkit-gradient(linear, left top, left bottom, color-stop(49.5%, #1c2431), color-stop(49.5%, #181f2a)) !important;
+  background: url("../images/bg-curvy-desktop.svg"), linear-gradient(#1c2431 49.5%, #181f2a 49.5%) !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: 50% 40% !important;
@@ -109,7 +109,7 @@ body .nav-link {
 
 @media (min-width: 768px) {
   .intro {
-    background: url("../../images/bg-curvy-desktop.svg") !important;
+    background: url("../images/bg-curvy-desktop.svg") !important;
     background-position: 50% 100% !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
@@ -149,7 +149,6 @@ body .nav-link {
   opacity: 0.75 !important;
 }
 
-@use "sass:color";
 .btn-gradient, .btn-early {
   width: -webkit-fit-content !important;
   width: -moz-fit-content !important;
@@ -197,7 +196,7 @@ body .nav-link {
   width: 20px;
   height: 15px;
   position: absolute;
-  background: url("../../images/bg-quotes.png") no-repeat;
+  background: url("../images/bg-quotes.png") no-repeat;
   background-size: cover;
   z-index: -1;
   top: -15px;
