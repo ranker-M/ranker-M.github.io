@@ -14,8 +14,6 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
   - [Continued development](#continued-development)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -55,7 +53,7 @@ After creating two projects with using only Scss, I realized that frameworks rea
 
 ### Continued development
 
-I think I am still lacking in pure css and I should create more complicated components via css. I still sometimes struggle to use declerations correctly and I cannot find the optimal solution for the problem I faced. Nevertheless, I am still learning and using frameworks really help me to focus deeper to design rather than coding. And since it is much easier to shape the web page, I can see the result much faster. Sass and Bootstrap almost give me everything I need to make the page. I will experience more css frameworks from now on and see the best one which fits my needs for the projects I work. Also, I will be aware of scss file structure since it become really bad when not organised properly. And I will try to customize Bootstrap variables by using Sass for one of the project I will work. It may be much easier to create the page that way.
+I think I am still lacking in pure css and I should create more complicated components via css. I still sometimes struggle to use declerations correctly and I cannot find the optimal solution for the problem I faced. Nevertheless, I am still learning and using frameworks really help me to focus deeper to design rather than coding. And since it is much easier to shape the web page, I can see the result much faster. Sass and Bootstrap almost give me everything I need to make a web page. I will experience more css frameworks from now on and see the best one which fits my needs for the projects I work. Also, I will be aware of scss file structure since it become really bad when not organised properly. And I will try to customize Bootstrap variables by using Sass for one of the project I will work. It may be much easier to create the page that way.
 
 ## Author
 
