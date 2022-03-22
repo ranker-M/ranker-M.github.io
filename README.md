@@ -9,7 +9,7 @@
 
 - **Fylo Dark Theme Landing Page**: [live page](https://ranker-m.github.io/fylo-dark-theme-landing-page/), [repo](https://github.com/ranker-M/ranker-M.github.io/tree/main/fylo-dark-theme-landing-page)
 
-- **LinkedIn Bootstrap Clone**: [live page](http://mericgunduz.me/Bootstrap-%20Linkedin%20Clone/), [repo](https://github.com/ranker-M/ranker-M.github.io/tree/main/Bootstrap-%20Linkedin%20Clone)
+- **LinkedIn Bootstrap Clone**: [live page](https://ranker-m.github.io/Bootstrap-%20Linkedin%20Clone/), [repo](https://github.com/ranker-M/ranker-M.github.io/tree/main/Bootstrap-%20Linkedin%20Clone)
 
 - **Personal Portfolio Page**: [live page](https://ranker-m.github.io/Personal%20Portfolio%20Page/), [repo](https://github.com/ranker-M/ranker-M.github.io/tree/main/Personal%20Portfolio%20Page)
 
