@@ -5,10 +5,13 @@
 
 - **Clipboard Landing Page**: [live page](https://ranker-m.github.io/clipboard-landing-page-master/), [repo](https://github.com/ranker-M/ranker-M.github.io/tree/main/clipboard-landing-page-master)
 
+- **Blogr Landing Page**: [live page](https://ranker-m.github.io/blogr-landing-page/), [repo](https://github.com/ranker-M/ranker-M.github.io/tree/main/blogr-landing-page)
+
+- **Fylo Dark Theme Landing Page**: [live page](https://ranker-m.github.io/fylo-dark-theme-landing-page/), [repo](https://github.com/ranker-M/ranker-M.github.io/tree/main/fylo-dark-theme-landing-page)
+
 - **LinkedIn Bootstrap Clone**: [live page](http://mericgunduz.me/Bootstrap-%20Linkedin%20Clone/), [repo](https://github.com/ranker-M/ranker-M.github.io/tree/main/Bootstrap-%20Linkedin%20Clone)
 
 - **Personal Portfolio Page**: [live page](https://ranker-m.github.io/Personal%20Portfolio%20Page/), [repo](https://github.com/ranker-M/ranker-M.github.io/tree/main/Personal%20Portfolio%20Page)
-
 
 - **Timestamp Microservice**: [live page](https://boilerplate-project-timestamp.ranker-m.repl.co), [repo](https://replit.com/@ranker-M/boilerplate-project-timestamp#.replit)
                           
