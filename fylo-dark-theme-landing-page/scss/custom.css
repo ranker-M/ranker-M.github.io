@@ -331,6 +331,17 @@ body .nav-link {
 .icons i {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 40px !important;
+  height: 40px !important;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
 }
 
 .icons i:hover {
