@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary: #47ea4e;
+}
+
+.btn-primary {
+  @apply text-white py-5 font-medium px-10 text-sm border rounded-full border-primary bg-primary uppercase w-fit cursor-pointer tracking-2px hover:text-primary hover:bg-transparent transition duration-200 ease-in;
+}
+
+.nav-button {
+  @apply p-2 hover:text-primary transition duration-300 ease-linear;
+}
+
+.toggle-menu.opened span:nth-child(2) {
+  transform: translateX(-1rem);
+}
+
+.toggle-menu:hover.closed span:nth-child(2) {
+  transform: translateX(-0.5rem);
+}
+
+.toggle-menu:hover.opened span:nth-child(2) {
+  transform: translateX(-0.5rem);
+}
+
+.intro {
+  height: calc(100vh - 5rem);
+  margin-top: 5rem;
+}
+
+.side-menu.closed {
+  transform: translateX(18rem);
+}

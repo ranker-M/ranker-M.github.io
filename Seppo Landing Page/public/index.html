@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="box-border">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Seppo Landing Page</title>
+</head>
+
+<body class="font-body box-border">
+
+    <!-- Navbar starts -->
+    <header class="w-full px-7 bg-black text-white h-20 fixed flex items-center justify-between top-0">
+        <img class="cursor-pointer" src="./images/seppo-logo.png" alt="seppo logo" width="88px" height="50px">
+
+        <!-- Toggle Menu starts -->
+        <div class="toggle-menu w-6 h-5 bg-black flex flex-col justify-between cursor-pointer closed"
+            id="toggle-button">
+            <span class="block w-full h-thin bg-white"></span>
+            <span class="block w-full h-thin bg-white ml-2 transition duration-300"></span>
+            <span class="block w-full h-thin bg-white"></span>
+        </div>
+        <!-- Toggle Menu ends -->
+    </header>
+    <!-- Navbar ends -->
+    <!-- Side Menu Starts -->
+    <div class="side-menu fixed h-screen w-72 bg-black right-0 pt-5 flex flex-col justify-start items-center text-white text-sm font-medium transition duration-200 closed"
+        id="side-menu">
+        <a href="#home" class="nav-button">Home</a>
+        <a href="#services" class="nav-button">Services</a>
+        <a href="#about" class="nav-button">About</a>
+        <a href="#clients" class="nav-button">Clients</a>
+        <a href="#news" class="nav-button">News</a>
+        <a href="#portfolio" class="nav-button">Portfolio</a>
+        <a href="#pricing" class="nav-button">Pricing</a>
+        <a href="#team" class="nav-button">Team</a>
+        <a href="#skills" class="nav-button">Skills</a>
+        <a href="#millstones" class="nav-button">Milestones</a>
+        <a href="#contact" class="nav-button">Contact</a>
+
+    </div>
+    <!-- Side Menu Ends -->
+
+    <!-- Intro starts -->
+    <div
+        class="intro box-border w-full bg-black bg-[url('./images/intro-bg.jpg')] bg-cover bg-no-repeat bg-center flex justify-center items-center">
+
+        <div class="container flex items-center flex-col justify-center">
+            <h1 class="text-white text-6xl text-center box-border py-5 mb-10 font-black leading-title">Technology<br> &
+                Visual
+                Agency
+            </h1>
+            <button class="btn-primary">Learn More</button>
+        </div>
+    </div>
+
+    <div class="h-screen w-100 bg-white"></div>
+    <!-- Intro ends -->
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
