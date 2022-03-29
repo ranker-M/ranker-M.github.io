@@ -11,53 +11,109 @@
 <body class="font-body box-border">
 
     <!-- Navbar starts -->
-    <header class="w-full px-7 bg-black text-white h-20 fixed flex items-center justify-between top-0">
-        <img class="cursor-pointer" src="./images/seppo-logo.png" alt="seppo logo" width="88px" height="50px">
+    <header class="w-full px-7 bg-header text-white h-20 fixed top-0 z-10">
+        <div class="w-full h-full flex items-center justify-between max-w-screen-1.5xl mx-auto">
+            <img class="cursor-pointer" src="./images/seppo-logo.png" alt="seppo logo" width="88px" height="50px">
 
-        <!-- Toggle Menu starts -->
-        <div class="toggle-menu w-6 h-5 bg-black flex flex-col justify-between cursor-pointer closed"
-            id="toggle-button">
-            <span class="block w-full h-thin bg-white"></span>
-            <span class="block w-full h-thin bg-white ml-2 transition duration-300"></span>
-            <span class="block w-full h-thin bg-white"></span>
+            <!-- Toggle Menu starts -->
+            <div class="toggle-menu lg:hidden w-6 h-5 bg-black flex flex-col justify-between cursor-pointer closed"
+                id="toggle-button">
+                <span class="block w-full h-thin bg-white"></span>
+                <span class="block w-full h-thin bg-white ml-2 transition duration-300"></span>
+                <span class="block w-full h-thin bg-white"></span>
+            </div>
+            <!-- Toggle Menu ends -->
+            <!-- Side Menu Starts -->
+            <div class="side-menu fixed h-screen w-72 lg:static lg:flex-row lg:w-full lg:h-full lg:justify-end lg:p-0 bg-black right-0 pt-5 flex flex-col justify-start items-center text-white text-sm font-medium transition duration-200 top-20 closed"
+                id="side-menu">
+                <a href="#home" class="nav-button">Home</a>
+                <a href="#services" class="nav-button">Services</a>
+                <a href="#about" class="nav-button">About</a>
+                <a href="#clients" class="nav-button">Clients</a>
+                <a href="#news" class="nav-button">News</a>
+                <a href="#portfolio" class="nav-button">Portfolio</a>
+                <a href="#pricing" class="nav-button">Pricing</a>
+                <a href="#team" class="nav-button">Team</a>
+                <a href="#skills" class="nav-button">Skills</a>
+                <a href="#millstones" class="nav-button">Milestones</a>
+                <a href="#contact" class="nav-button">Contact</a>
+            </div>
+            <!-- Side Menu Ends -->
         </div>
-        <!-- Toggle Menu ends -->
+
     </header>
     <!-- Navbar ends -->
-    <!-- Side Menu Starts -->
-    <div class="side-menu fixed h-screen w-72 bg-black right-0 pt-5 flex flex-col justify-start items-center text-white text-sm font-medium transition duration-200 closed"
-        id="side-menu">
-        <a href="#home" class="nav-button">Home</a>
-        <a href="#services" class="nav-button">Services</a>
-        <a href="#about" class="nav-button">About</a>
-        <a href="#clients" class="nav-button">Clients</a>
-        <a href="#news" class="nav-button">News</a>
-        <a href="#portfolio" class="nav-button">Portfolio</a>
-        <a href="#pricing" class="nav-button">Pricing</a>
-        <a href="#team" class="nav-button">Team</a>
-        <a href="#skills" class="nav-button">Skills</a>
-        <a href="#millstones" class="nav-button">Milestones</a>
-        <a href="#contact" class="nav-button">Contact</a>
-
-    </div>
-    <!-- Side Menu Ends -->
 
     <!-- Intro starts -->
     <div
-        class="intro box-border w-full bg-black bg-[url('./images/intro-bg.jpg')] bg-cover bg-no-repeat bg-center flex justify-center items-center">
+        class="intro box-border w-full bg-black bg-[url('./images/intro-bg.jpg')] bg-cover bg-no-repeat bg-center flex justify-center items-center ">
 
-        <div class="container flex items-center flex-col justify-center">
-            <h1 class="text-white text-6xl text-center box-border py-5 mb-10 font-black leading-title">Technology<br> &
+        <div class="container flex items-center flex-col justify-center lg:items-start lg:ml-20">
+            <h1
+                class="text-white text-6xl lg:text-7xl lg:text-left text-center box-border py-5 mb-10 font-black leading-title lg:leading-opened">
+                Technology<br> &
                 Visual
                 Agency
             </h1>
             <button class="btn-primary">Learn More</button>
         </div>
     </div>
-
-    <div class="h-screen w-100 bg-white"></div>
     <!-- Intro ends -->
 
+    <!-- Services starts -->
+    <section class="w-full bg-black bg-back-left-lines bg-no-repeat bg-left-bottom">
+
+        <h1
+            class="text-white bg-primary relative top-0 left-0 w-fit text-xl tracking-widest text-center p-14 pl-24 pr-36">
+            Services
+            <span class="absolute h-48 rotate-[22.5deg] w-20 bg-black right-[-2rem] top-0"></span>
+        </h1>
+
+        <!-- Three cards starts -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-20 gap-7 py-24 w-full px-52 lg:py-36 h-full text-white">
+            <div class="number-card">
+                <p class="number">1</p>
+                <h3 class="title">Preciese</h3>
+                <p class="text">Curabitur cursus mattis ligula a
+                    maximus
+                    pellentesque in purus malesuada pharetra eros.</p>
+                <div class="w-32 h-20 flex justify-start items-center group">
+                    <a href="#" class="more-btn group-hover:p-6 group-hover:px-16"><span
+                            class="more-text group-hover:translate-x-[-0.6rem]">More</span></a>
+                </div>
+            </div>
+
+            <div class="number-card">
+                <p class="number">2</p>
+                <h3 class="title">Support</h3>
+                <p class="text">Est sem integer suscipit enim quis dictum feugiat etiam pellentesque curabitur donec
+                    porttitor.</p>
+                <div class="w-32 h-20 flex justify-start items-center group">
+                    <a href="#" class="more-btn group-hover:p-6 group-hover:px-16"><span
+                            class="more-text group-hover:translate-x-[-0.6rem]">More</span></a>
+                </div>
+            </div>
+
+            <div class="number-card">
+                <p class="number">3</p>
+                <h3 class="title">Responsive</h3>
+                <p class="text">Donec vel est sem integer suscipit enim quis lorem posuere vestibulum metus tempor
+                    vitae.</p>
+                <div class="w-32 h-20 flex justify-start items-center group">
+                    <a href="#" class="more-btn group-hover:p-6 group-hover:px-16"><span
+                            class="more-text group-hover:translate-x-[-0.6rem]">More</span></a>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- Three cards ends -->
+
+    </section>
+    <!-- Services ends -->
+
+
+    <div class="h-screen w-100 bg-white"></div>
 
     <script src="./js/index.js"></script>
 </body>

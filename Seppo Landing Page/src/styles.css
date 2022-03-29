@@ -13,7 +13,7 @@
 }
 
 .nav-button {
-  @apply p-2 hover:text-primary transition duration-300 ease-linear;
+  @apply p-4 hover:text-primary transition duration-300 ease-linear font-semibold;
 }
 
 .toggle-menu.opened span:nth-child(2) {
@@ -35,4 +35,36 @@
 
 .side-menu.closed {
   transform: translateX(18rem);
+}
+
+@media screen and (min-width: 1024px) {
+  .side-menu.closed {
+    transform: translateX(0px);
+  }
+}
+
+/* Service part number cards */
+.number-card {
+  @apply flex flex-col justify-center items-center max-w-xs m-auto lg:justify-start lg:items-start;
+}
+
+.number-card .number {
+  @apply text-9xl overflow-hidden block h-40 font-bold mb-[-10px] text-[256px] text-black;
+  text-shadow: 1px 0px rgb(153, 153, 153), -1px 0px rgb(153, 153, 153),
+    0px 1px rgb(153, 153, 153), 0px -1px rgb(153, 153, 153);
+}
+
+.number-card .title {
+  @apply text-5xl font-bold leading-slightly-opened py-5;
+}
+
+.number-card .text {
+  @apply text-lg font-medium text-p-secondary leading-9 mb-3 text-center lg:text-left;
+}
+
+.number-card .more-btn {
+  @apply mt-5 relative h-8 p-4 block border-white border-2 rounded-full w-fit transition-all duration-300;
+}
+.number-card .more-text {
+  @apply ml-7 left-6 absolute top-1/2 translate-y-[-50%] transition-all duration-300 tracking-2px text-lg;
 }
