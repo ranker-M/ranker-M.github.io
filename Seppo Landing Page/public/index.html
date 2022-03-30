@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="box-border">
+<html lang="en" class="box-border scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -63,10 +63,9 @@
     <!-- Services starts -->
     <section class="w-full bg-black bg-back-left-lines bg-no-repeat bg-left-bottom">
 
-        <h1
-            class="text-white bg-primary relative top-0 left-0 w-fit text-xl tracking-widest text-center p-14 pl-24 pr-36">
+        <h1 class="left-up-title">
             Services
-            <span class="absolute h-48 rotate-[22.5deg] w-20 bg-black right-[-2rem] top-0"></span>
+            <span class="title-effect"></span>
         </h1>
 
         <!-- Three cards starts -->
@@ -113,7 +112,45 @@
     <!-- Services ends -->
 
 
-    <div class="h-screen w-100 bg-white"></div>
+    <!-- About section starts -->
+    <section class="about w-full min-h-screen h-fit bg-white">
+        <!-- Title starts -->
+        <h1 class="left-up-title">
+            About
+            <span class="title-effect"></span>
+        </h1>
+        <!-- Title ends -->
+
+        <div
+            class="relative grid grid-cols-1 lg:grid-cols-2 lg:gap-20 gap-7 py-12 lg:py-24 w-full max-w-screen-xl mx-auto px-5 h-full text-white">
+
+            <div
+                class="left-side text-black flex flex-col justify-center items-center text-center lg:text-left lg:items-start">
+                <h5 class="text-p-secondary text-base tracking-2px font-semibold">WHO WE ARE</h5>
+                <h1 class="text-black text-5xl lg:text-6xl leading-opened font-extrabold py-5 pb-9">Live up to your
+                    creative potential.
+                </h1>
+                <p class="text-p-secondary text-lg lg:text-base leading-9 font-medium mb-16">Code the energy hidden in
+                    matter
+                    citizens
+                    of
+                    distant epochs from which we spring drake equation perga
+                    inconspicuous motespatch clean designed code and energy matter.</p>
+                <button class="btn-primary">Learn More</button>
+            </div>
+
+            <div class="relative right-side w-full h-full ">
+                <div class="lg:absolute w-full lg:top-[-16rem] lg:h-[90vh]">
+                    <img src="./images/about-image.jpg" class="mx-auto lg:sticky lg:top-52" alt="section image"
+                        width="auto" height="100%">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- About section ends -->
+
+    <div class="h-screen w-100 bg-green-600"></div>
 
     <script src="./js/index.js"></script>
 </body>

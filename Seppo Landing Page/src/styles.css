@@ -44,6 +44,20 @@
 }
 
 /* Service part number cards */
+
+.left-up-title {
+  @apply text-white bg-primary relative top-0 left-0 w-fit text-xl tracking-widest text-center p-14 pl-24 pr-20;
+}
+
+.title-effect {
+  @apply absolute h-full w-36 bg-white right-[-9rem] top-0;
+  background: linear-gradient(
+    135deg,
+    var(--primary) 50%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
+
 .number-card {
   @apply flex flex-col justify-center items-center max-w-xs m-auto lg:justify-start lg:items-start;
 }
