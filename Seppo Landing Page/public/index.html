@@ -8,7 +8,7 @@
     <title>Seppo Landing Page</title>
 </head>
 
-<body class="font-body box-border">
+<body class="font-body box-border text-p-secondary text-lg lg:text-base leading-9 font-medium">
 
     <!-- Navbar starts -->
     <header class="w-full px-7 bg-header text-white h-20 fixed top-0 z-10">
@@ -69,14 +69,14 @@
         </h1>
 
         <!-- Three cards starts -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-20 gap-7 py-24 w-full px-52 lg:py-36 h-full text-white">
+        <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-20 gap-7 py-24 w-full lg:px-52 lg:py-36 h-full text-white">
             <div class="number-card">
                 <p class="number">1</p>
                 <h3 class="title">Preciese</h3>
                 <p class="text">Curabitur cursus mattis ligula a
                     maximus
                     pellentesque in purus malesuada pharetra eros.</p>
-                <div class="w-32 h-20 flex justify-start items-center group">
+                <div class="w-32 h-12 my-3 flex justify-start items-center group">
                     <a href="#" class="more-btn group-hover:p-6 group-hover:px-16"><span
                             class="more-text group-hover:translate-x-[-0.6rem]">More</span></a>
                 </div>
@@ -87,7 +87,7 @@
                 <h3 class="title">Support</h3>
                 <p class="text">Est sem integer suscipit enim quis dictum feugiat etiam pellentesque curabitur donec
                     porttitor.</p>
-                <div class="w-32 h-20 flex justify-start items-center group">
+                <div class="w-32 h-12 my-3 flex justify-start items-center group">
                     <a href="#" class="more-btn group-hover:p-6 group-hover:px-16"><span
                             class="more-text group-hover:translate-x-[-0.6rem]">More</span></a>
                 </div>
@@ -98,7 +98,7 @@
                 <h3 class="title">Responsive</h3>
                 <p class="text">Donec vel est sem integer suscipit enim quis lorem posuere vestibulum metus tempor
                     vitae.</p>
-                <div class="w-32 h-20 flex justify-start items-center group">
+                <div class="w-32 h-12 my-3 flex justify-start items-center group">
                     <a href="#" class="more-btn group-hover:p-6 group-hover:px-16"><span
                             class="more-text group-hover:translate-x-[-0.6rem]">More</span></a>
                 </div>
@@ -127,7 +127,9 @@
             <div
                 class="left-side text-black flex flex-col justify-center items-center text-center lg:text-left lg:items-start">
                 <h5 class="text-p-secondary text-base tracking-2px font-semibold">WHO WE ARE</h5>
-                <h1 class="text-black text-5xl lg:text-6xl leading-opened font-extrabold py-5 pb-9">Live up to your
+                <h1 class="text-black text-title-mobile lg:text-6xl leading-opened font-extrabold py-5 pb-9">Live up
+                    to<br>
+                    your
                     creative potential.
                 </h1>
                 <p class="text-p-secondary text-lg lg:text-base leading-9 font-medium mb-16">Code the energy hidden in
@@ -149,6 +151,96 @@
 
     </section>
     <!-- About section ends -->
+
+
+    <!-- Testimonials starts -->
+    <section
+        class="testimonial relative w-full h-screen bg-[url('./images/quote_image.jpg')] bg-cover bg-no-repeat bg-center grid justify-center items-center">
+        <div class="lg:absolute w-full lg:top-[-1rem] lg:h-[90vh]">
+            <div class="mx-auto w-[95%] lg:w-3/4 lg:sticky lg:top-52 bg-black p-[10%] lg:p-32 text-2xl leading-9">
+                <img src="./images/quote-icon.png" alt="quote icon" class="mb-16 block" width="87px" height="74px">
+                <div class="testimonial-text flex flex-col">
+                    <p class="text-testimonial-p text-[20px] sm:text-[28px] mb-16">
+                        Vivamus quis ante varius, pretium lectus ut, tempor eros maecenas vitae purus lobortis, pulvinar
+                        lorem eu, porta elit suspendisse blandit porta magna, nec scelerisque urna viverra lorem
+                        gravida.
+                    </p>
+
+                    <div class="flex justify-between items-center text-lg">
+                        <div class="flex flex-col sm:flex-row justify-start items-start sm:items-center">
+                            <img src="./images/quote_image-1.jpg" class="inline-block mr-6 rounded-full"
+                                alt="profile image" width="70px" height="70px">
+                            <p class="mr-3 inline-block">Jane Williams</p>
+                            <p class="text-sm sm:text-lg tracking-4px text-white">DESIGNER</p>
+                        </div>
+
+                        <div class="button-group flex justify-center items-center">
+                            <img src="./images/nav_left-icon.png"
+                                class="inline-block ml-auto cursor-pointer m-3 transition duration-300 opacity-70 hover:opacity-100"
+                                alt="left icon" width="30px" height="30px">
+                            <img src="./images/nav_right-icon.png"
+                                class=" inline-block ml-auto cursor-pointer m-3 transition duration-300 opacity-70 hover:opacity-100"
+                                alt="right icon" width="30px" height="30px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials ends -->
+
+    <!-- News section starts -->
+    <section class="news w-full min-h-screen h-fit bg-white">
+        <!-- Title starts -->
+        <h1 class="left-up-title">
+            News
+            <span class="title-effect"></span>
+        </h1>
+        <!-- Title ends -->
+
+        <div class="relative grid grid-cols-1 lg:grid-cols-3 lg:gap-32 py-12 lg:py-24 w-full max-w-[400px] lg:max-w-screen-1.5xl mx-auto lg:px-10 h-full text-white
+            text-center lg:text-left">
+
+            <div class="flex flex-col justify-start items-center mb-10 lg:mb-0">
+                <div class="news-image">
+                </div>
+                <h2 class="news-title">
+                    How to write rogue mote of dust love</h2>
+                <p class="mt-5 text-[20px]">Bearable only through love hydrogen atoms bits of
+                    moving fluff
+                    culture
+                    shores of the cosmic ocean
+                    paroxysm of global death ...</p>
+            </div>
+
+            <div class="flex flex-col justify-start items-center mb-10 lg:mb-0">
+                <div class="news-image !bg-[url('./images/news-img-2.jpg')]">
+                </div>
+                <h2 class="news-title">
+                    Epochs encyclopa galactica stellar
+                </h2>
+                <p class="mt-5 text-[20px]">Bearable only through love hydrogen atoms bits of
+                    moving fluff
+                    culture
+                    shores of the cosmic ocean
+                    paroxysm of global death ...</p>
+            </div>
+
+            <div class="flex flex-col justify-start items-center mb-10 lg:mb-0">
+                <div class="news-image !bg-[url('./images/news-img-3.jpg')]">
+                </div>
+                <h2 class="news-title">
+                    How to write rogue mote of dust love</h2>
+                <p class="mt-5 text-[20px]">Bearable only through love hydrogen atoms bits of
+                    moving fluff
+                    culture
+                    shores of the cosmic ocean
+                    paroxysm of global death ...</p>
+            </div>
+        </div>
+        <button class="btn-primary mx-auto block mb-40">GO TO BLOG</button>
+    </section>
+    <!-- News section ends -->
 
     <div class="h-screen w-100 bg-green-600"></div>
 

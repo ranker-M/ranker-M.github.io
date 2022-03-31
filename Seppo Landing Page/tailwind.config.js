@@ -10,11 +10,16 @@ module.exports = {
         "p-secondary": "#b3b3b3",
         "header": "#060606"
       },
+      fontSize: {
+        "title-mobile": ["40px", "105%"],
+        "testimonial-p": ["28px", "170%"]
+      },
       lineHeight: {
         'title': '120%'
       },
       letterSpacing: {
-        "2px": "2px"
+        "2px": "2px",
+        "4px": "4px"
       },
       height: {
         "thin": "3px"
@@ -28,7 +33,7 @@ module.exports = {
       },
       backgroundImage: {
         'back-left-lines': "url('./images/on_black_left.png')",
-      },
+      }
     },
   },
   plugins: [],

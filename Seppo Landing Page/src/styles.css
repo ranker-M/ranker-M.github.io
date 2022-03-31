@@ -8,6 +8,10 @@
   --primary: #47ea4e;
 }
 
+p {
+  @apply text-p-secondary text-lg leading-9;
+}
+
 .btn-primary {
   @apply text-white py-5 font-medium px-10 text-sm border rounded-full border-primary bg-primary uppercase w-fit cursor-pointer tracking-2px hover:text-primary hover:bg-transparent transition duration-200 ease-in;
 }
@@ -81,4 +85,13 @@
 }
 .number-card .more-text {
   @apply ml-7 left-6 absolute top-1/2 translate-y-[-50%] transition-all duration-300 tracking-2px text-lg;
+}
+
+/* News section */
+.news-image {
+  @apply mb-10 bg-[url('./images/news-img-1.jpg')] bg-[length:100%_auto] lg:bg-[length:auto_100%] bg-no-repeat bg-center w-full h-[350px] lg:h-[600px] cursor-pointer transition-all duration-300 hover:opacity-80 hover:bg-[length:110%_auto] hover:lg:bg-[length:auto_110%];
+}
+
+.news-title {
+  @apply text-black text-[32px] lg:text-4xl leading-slightly-opened font-semibold transition duration-300 tracking-[-1px] hover:opacity-80 cursor-pointer;
 }
