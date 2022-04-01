@@ -11,7 +11,7 @@
 <body class="font-body box-border text-p-secondary text-lg lg:text-base leading-9 font-medium">
 
     <!-- Navbar starts -->
-    <header class="w-full px-7 bg-header text-white h-20 fixed top-0 z-10">
+    <header class="w-full px-7 bg-header text-white h-20 fixed top-0 z-50">
         <div class="w-full h-full flex items-center justify-between max-w-screen-1.5xl mx-auto">
             <img class="cursor-pointer" src="./images/seppo-logo.png" alt="seppo logo" width="88px" height="50px">
 
@@ -241,6 +241,50 @@
         <button class="btn-primary mx-auto block mb-40">GO TO BLOG</button>
     </section>
     <!-- News section ends -->
+
+    <!-- Portfolio section starts -->
+    <section class="relative portfolio w-full min-h-[80vh] h-fit bg-white">
+        <!-- Title starts -->
+        <h1 class="left-up-title !absolute z-10">
+            Portfolio
+            <span class="title-effect"></span>
+        </h1>
+        <!-- Title ends -->
+
+        <div class="grid grid-cols-1 lg:grid-cols-portfolio w-full h-fit min-h-[80vh] bg-black">
+            <div class="portfolio-wrapper group !h-[180vh] lg:!h-[80vh]">
+                <div class="portfolio-inner group-hover:opacity-100">
+                    <p class="portfolio-text">INTERIOR</p>
+                    <p class="portfolio-title">Living Room</p>
+                </div>
+            </div>
+            <div class="!bg-[url('./images/portfolio_item_02.jpg')] portfolio-wrapper group">
+                <div class="portfolio-inner group-hover:opacity-100">
+                    <p class="portfolio-text">FASHION</p>
+                    <p class="portfolio-title">Modeling</p>
+                </div>
+            </div>
+            <div class="grid grid-rows-1 lg:grid-rows-2 w-full h-full">
+                <div class="!bg-[url('./images/portfolio_item_03.jpg')] portfolio-wrapper group">
+                    <div class="portfolio-inner group-hover:opacity-100">
+                        <p class="portfolio-text">CREATIVE</p>
+                        <p class="portfolio-title">Psd Mockup</p>
+                    </div>
+                </div>
+                <div class="!bg-[url('./images/portfolio_item_04.jpg')] portfolio-wrapper group">
+                    <div class="portfolio-inner group-hover:opacity-100">
+                        <p class="portfolio-text">ARCHITECTURE</p>
+                        <p class="portfolio-title">Pillars</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Portfolio section ends -->
+
+
 
     <div class="h-screen w-100 bg-green-600"></div>
 

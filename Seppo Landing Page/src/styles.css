@@ -50,7 +50,7 @@ p {
 /* Service part number cards */
 
 .left-up-title {
-  @apply text-white bg-primary relative top-0 left-0 w-fit text-xl tracking-widest text-center p-14 pl-24 pr-20;
+  @apply text-white bg-primary relative p-14 top-0 left-0 w-fit text-xl tracking-widest text-center pl-24 pr-20;
 }
 
 .title-effect {
@@ -94,4 +94,21 @@ p {
 
 .news-title {
   @apply text-black text-[32px] lg:text-4xl leading-slightly-opened font-semibold transition duration-300 tracking-[-1px] hover:opacity-80 cursor-pointer;
+}
+
+/* Portfolio section */
+.portfolio-wrapper{
+  @apply bg-[url('./images/portfolio_item_01.jpg')] h-[80vh] bg-cover bg-no-repeat bg-center w-full lg:h-full  cursor-pointer;
+}
+
+.portfolio-inner{
+  @apply bg-black w-full h-full opacity-0 flex flex-col justify-end p-20 transition-all duration-300;
+}
+
+.portfolio-text{
+  @apply text-p-secondary text-sm tracking-2px align-bottom;
+}
+
+.portfolio-title{
+@apply text-p-secondary text-3xl font-bold leading-[170%];
 }

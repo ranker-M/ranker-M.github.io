@@ -506,6 +506,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: fixed;
 }
 
+.\!absolute {
+  position: absolute !important;
+}
+
 .relative {
   position: relative;
 }
@@ -520,6 +524,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .top-20 {
   top: 5rem;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .z-10 {
@@ -564,12 +572,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: auto;
 }
 
-.mb-40 {
-  margin-bottom: 10rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
 }
 
 .box-border {
@@ -626,8 +634,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: fit-content;
 }
 
+.\!h-\[180vh\] {
+  height: 180vh !important;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[80vh\] {
+  min-height: 80vh;
 }
 
 .w-full {
@@ -668,6 +684,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -746,6 +766,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('./images/news-img-3.jpg') !important;
 }
 
+.\!bg-\[url\(\'\.\/images\/portfolio_item_02\.jpg\'\)\] {
+  background-image: url('./images/portfolio_item_02.jpg') !important;
+}
+
+.\!bg-\[url\(\'\.\/images\/portfolio_item_03\.jpg\'\)\] {
+  background-image: url('./images/portfolio_item_03.jpg') !important;
+}
+
+.\!bg-\[url\(\'\.\/images\/portfolio_item_04\.jpg\'\)\] {
+  background-image: url('./images/portfolio_item_04.jpg') !important;
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -760,10 +792,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-no-repeat {
   background-repeat: no-repeat;
-}
-
-.p-32 {
-  padding: 8rem;
 }
 
 .p-\[10\%\] {
@@ -783,11 +811,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
-}
-
-.px-52 {
-  padding-left: 13rem;
-  padding-right: 13rem;
 }
 
 .py-12 {
@@ -1204,6 +1227,57 @@ p {
   }
 }
 
+/* Portfolio section */
+
+.portfolio-wrapper {
+  height: 80vh;
+  width: 100%;
+  cursor: pointer;
+  background-image: url('./images/portfolio_item_01.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  .portfolio-wrapper {
+    height: 100%;
+  }
+}
+
+.portfolio-inner {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  padding: 5rem;
+  opacity: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.portfolio-text {
+  vertical-align: bottom;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 2px;
+  --tw-text-opacity: 1;
+  color: rgb(179 179 179 / var(--tw-text-opacity));
+}
+
+.portfolio-title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  line-height: 170%;
+  --tw-text-opacity: 1;
+  color: rgb(179 179 179 / var(--tw-text-opacity));
+}
+
 .hover\:opacity-100:hover {
   opacity: 1;
 }
@@ -1222,6 +1296,10 @@ p {
   padding-right: 4rem;
 }
 
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+}
+
 @media (min-width: 640px) {
   .sm\:flex-row {
     flex-direction: row;
@@ -1231,13 +1309,13 @@ p {
     align-items: center;
   }
 
+  .sm\:text-\[28px\] {
+    font-size: 28px;
+  }
+
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .sm\:text-\[28px\] {
-    font-size: 28px;
   }
 }
 
@@ -1287,6 +1365,10 @@ p {
     height: 90vh;
   }
 
+  .lg\:\!h-\[80vh\] {
+    height: 80vh !important;
+  }
+
   .lg\:w-full {
     width: 100%;
   }
@@ -1305,6 +1387,14 @@ p {
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-portfolio {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);
+  }
+
+  .lg\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
@@ -1335,6 +1425,11 @@ p {
     padding: 8rem;
   }
 
+  .lg\:px-52 {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+
   .lg\:py-36 {
     padding-top: 9rem;
     padding-bottom: 9rem;
@@ -1348,11 +1443,6 @@ p {
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-  }
-
-  .lg\:px-52 {
-    padding-left: 13rem;
-    padding-right: 13rem;
   }
 
   .lg\:text-left {

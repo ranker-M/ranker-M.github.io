@@ -33,6 +33,10 @@ module.exports = {
       },
       backgroundImage: {
         'back-left-lines': "url('./images/on_black_left.png')",
+      },
+      gridTemplateColumns: {
+        // Complex site-specific column configuration
+        'portfolio': 'minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr)',
       }
     },
   },
