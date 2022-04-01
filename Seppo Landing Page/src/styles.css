@@ -112,3 +112,37 @@ p {
 .portfolio-title{
 @apply text-p-secondary text-3xl font-bold leading-[170%];
 }
+
+
+/* Pricing section */
+.pricing-box{
+  @apply relative w-full h-full px-[15%] border-2 border-black pb-5;
+}
+
+.pricing-number-wrapper{
+  @apply absolute top-[-5rem] right-[-2.5rem] bg-white h-52 w-24;
+}
+
+.price-number{
+  @apply text-[200px] font-bold text-white bg-white block h-52 w-24 text-center leading-[200px];
+  text-shadow: 1px 0px rgb(153, 153, 153), -1px 0px rgb(153, 153, 153),
+    0px 1px rgb(153, 153, 153), 0px -1px rgb(153, 153, 153);
+}
+
+.okay-list{
+  @apply py-[10px] text-black;
+}
+
+.okay-list::before{
+  content: "\2713";
+  @apply w-[18px] h-[18px] mr-[25px] font-black text-primary;
+}
+
+.not-okay-list{
+  @apply py-[10px] text-gray;
+}
+
+.not-okay-list::before{
+  content: "\2716";
+  @apply w-[18px] h-[18px] mr-[25px] font-black text-gray;
+}

@@ -8,7 +8,8 @@ module.exports = {
       colors: {
         primary: '#47ea4e',
         "p-secondary": "#b3b3b3",
-        "header": "#060606"
+        "header": "#060606",
+        "gray": "#808080"
       },
       fontSize: {
         "title-mobile": ["40px", "105%"],
@@ -37,6 +38,8 @@ module.exports = {
       gridTemplateColumns: {
         // Complex site-specific column configuration
         'portfolio': 'minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr)',
+        'pricing': 'minmax(0, 350px) minmax(0, 350px) minmax(0, 350px)',
+        'pricing-mobile': 'minmax(0, 350px)',
       }
     },
   },
