@@ -668,6 +668,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 75vh;
 }
 
+.min-h-\[90vh\] {
+  min-height: 90vh;
+}
+
+.min-h-\[85vh\] {
+  min-height: 85vh;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1489,6 +1497,22 @@ p {
 
   .lg\:\!h-\[80vh\] {
     height: 80vh !important;
+  }
+
+  .lg\:\!h-\[90vh\] {
+    height: 90vh !important;
+  }
+
+  .lg\:\!h-\[800px\] {
+    height: 800px !important;
+  }
+
+  .lg\:\!h-\[85vh\] {
+    height: 85vh !important;
+  }
+
+  .lg\:\!h-\[20vh\] {
+    height: 20vh !important;
   }
 
   .lg\:w-full {
