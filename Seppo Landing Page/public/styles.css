@@ -538,10 +538,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 0.75rem;
 }
 
-.m-5 {
-  margin: 1.25rem;
-}
-
 .m-8 {
   margin: 2rem;
 }
@@ -623,12 +619,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }
 
-.mb-9 {
-  margin-bottom: 2.25rem;
-}
-
 .\!mr-0 {
   margin-right: 0px !important;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .box-border {
@@ -743,6 +739,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[85\%\] {
   width: 85%;
+}
+
+.\!w-full {
+  width: 100% !important;
 }
 
 .w-\[300px\] {
@@ -945,11 +945,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2.5rem;
 }
 
-.py-\[75px\] {
-  padding-top: 75px;
-  padding-bottom: 75px;
-}
-
 .py-\[30px\] {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1016,11 +1011,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[100px\] {
   font-size: 100px;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-\[30px\] {
@@ -1189,6 +1179,22 @@ p {
   .side-menu.closed {
     transform: translateX(0px);
   }
+}
+
+.social-media-box a i {
+  margin-right: 1.5rem;
+  font-size: 25px;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.social-media-box a i:hover {
+  opacity: 0.5;
 }
 
 /* Service part number cards */
@@ -1653,7 +1659,62 @@ p {
   }
 }
 
-.social-media-box a i {
+/* Contact Us */
+
+form {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin-bottom: 2.25rem;
+  border-bottom-width: 3px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  padding: 0.5rem;
+  font-size: 15px;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+form input::-moz-placeholder, form textarea::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+form input::placeholder, form textarea::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+form input:focus, form textarea:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+form input:focus::-moz-placeholder, form textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+
+form input:focus:-ms-input-placeholder, form textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+form input:focus::placeholder, form textarea:focus::placeholder {
+  color: transparent;
+}
+
+/* Footer */
+
+.social-media-footer a i {
   margin-right: 1.5rem;
   font-size: 28px;
   --tw-text-opacity: 1;
@@ -1665,7 +1726,7 @@ p {
   transition-duration: 300ms;
 }
 
-.social-media-box a i:hover {
+.social-media-footer a i:hover {
   --tw-text-opacity: 1;
   color: rgb(71 234 78 / var(--tw-text-opacity));
 }
@@ -1714,19 +1775,9 @@ p {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
-
-  .sm\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
 }
 
 @media (min-width: 768px) {
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .md\:text-\[46px\] {
     font-size: 46px;
   }
