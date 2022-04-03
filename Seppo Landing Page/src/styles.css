@@ -172,3 +172,27 @@ p {
 .skill-slide-fill{
   @apply bg-black h-full;
 }
+
+
+/* Milestones section */
+.milestone-card{
+  @apply flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left;
+}
+
+.milestone-number{
+  @apply text-6xl leading-[60px] lg:text-[80px] lg:leading-[80px] font-black text-black;
+  text-shadow: 1px 0px rgb(179,179,179), -1px 0px rgb(179,179,179),
+  0px 1px rgb(179,179,179), 0px -1px rgb(179,179,179);
+}
+
+.milestone-title{
+  @apply text-white lg:max-w-[240px] text-[28px] leading-[115%] pb-5 font-bold mt-5 lg:mt-0;
+}
+
+.milestone-right{
+  @apply max-w-[350px] lg:max-w-none;
+}
+
+.social-media-box a i{ 
+  @apply text-white hover:text-primary transition duration-300 text-[28px] mr-6;
+}

@@ -538,6 +538,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 0.75rem;
 }
 
+.m-5 {
+  margin: 1.25rem;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -556,6 +564,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-9 {
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
 }
 
 .ml-2 {
@@ -600,6 +613,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-12 {
   margin-top: 3rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
+.\!mr-0 {
+  margin-right: 0px !important;
 }
 
 .box-border {
@@ -660,6 +689,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 180vh !important;
 }
 
+.h-\[60px\] {
+  height: 60px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -712,6 +745,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 85%;
 }
 
+.w-\[300px\] {
+  width: 300px;
+}
+
 .max-w-screen-1\.5xl {
   max-width: 1450px;
 }
@@ -722,6 +759,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[400px\] {
   max-width: 400px;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
 }
 
 .cursor-pointer {
@@ -780,14 +821,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 9999px;
 }
 
+.border-l-2 {
+  border-left-width: 2px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .bg-header {
   --tw-bg-opacity: 1;
   background-color: rgb(6 6 6 / var(--tw-bg-opacity));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -795,9 +848,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-green-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#111\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 17 17 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/images\/intro-bg\.jpg\'\)\] {
@@ -882,24 +945,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2.5rem;
 }
 
+.py-\[75px\] {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.py-\[30px\] {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
 
 .pb-9 {
   padding-bottom: 2.25rem;
-}
-
-.pr-5 {
-  padding-right: 1.25rem;
-}
-
-.pr-8 {
-  padding-right: 2rem;
-}
-
-.pr-10 {
-  padding-right: 2.5rem;
 }
 
 .text-center {
@@ -955,6 +1016,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[100px\] {
   font-size: 100px;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-\[30px\] {
+  font-size: 30px;
 }
 
 .font-medium {
@@ -1506,6 +1576,105 @@ p {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+/* Milestones section */
+
+.milestone-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .milestone-card {
+    flex-direction: row;
+  }
+
+  .milestone-card {
+    align-items: flex-start;
+  }
+
+  .milestone-card {
+    text-align: left;
+  }
+}
+
+.milestone-number {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 900;
+  line-height: 60px;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .milestone-number {
+    font-size: 80px;
+  }
+
+  .milestone-number {
+    line-height: 80px;
+  }
+}
+
+.milestone-number{
+  text-shadow: 1px 0px rgb(179,179,179), -1px 0px rgb(179,179,179),
+  0px 1px rgb(179,179,179), 0px -1px rgb(179,179,179);
+}
+
+.milestone-title {
+  margin-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 115%;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .milestone-title {
+    margin-top: 0px;
+  }
+
+  .milestone-title {
+    max-width: 240px;
+  }
+}
+
+.milestone-right {
+  max-width: 350px;
+}
+
+@media (min-width: 1024px) {
+  .milestone-right {
+    max-width: none;
+  }
+}
+
+.social-media-box a i {
+  margin-right: 1.5rem;
+  font-size: 28px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.social-media-box a i:hover {
+  --tw-text-opacity: 1;
+  color: rgb(71 234 78 / var(--tw-text-opacity));
+}
+
+.hover\:text-primary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(71 234 78 / var(--tw-text-opacity));
+}
+
 .hover\:opacity-100:hover {
   opacity: 1;
 }
@@ -1544,6 +1713,22 @@ p {
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-\[46px\] {
+    font-size: 46px;
   }
 }
 
@@ -1679,6 +1864,16 @@ p {
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .lg\:py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .lg\:py-\[75px\] {
+    padding-top: 75px;
+    padding-bottom: 75px;
   }
 
   .lg\:text-left {
