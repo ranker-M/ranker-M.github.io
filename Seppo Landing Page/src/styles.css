@@ -146,3 +146,29 @@ p {
   content: "\2716";
   @apply w-[18px] h-[18px] mr-[25px] font-black text-gray;
 }
+
+/* Skills section */
+.skill-wrapper{
+  @apply flex flex-col lg:flex-row justify-between items-center mb-12 lg:mb-8;
+}
+
+.percentage{
+  @apply  text-[40px] lg:text-5xl inline-block text-p-secondary;
+}
+
+.skill{
+  @apply w-full lg:w-[75%] h-full;
+}
+
+.skill-name{
+  @apply text-2xl leading-9 text-center lg:text-left mb-3;
+}
+
+.skill-slide{
+  @apply w-full h-3;
+  box-shadow: inset 0px 4px 0px 0px #cacaca4d;
+}
+
+.skill-slide-fill{
+  @apply bg-black h-full;
+}
