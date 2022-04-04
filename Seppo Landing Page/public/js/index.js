@@ -1,3 +1,4 @@
+// Side menu toggle button
 const toggleButton = document.querySelector("#toggle-button");
 const sideMenu = document.querySelector("#side-menu");
 
@@ -13,20 +14,12 @@ function toggleButtonHandle() {
 
 toggleButton.addEventListener("click", toggleButtonHandle);
 
-
+// Scroll effect for elements
 window.onscroll = function (e) {
-
-
     const social = document.querySelectorAll(".green-social-media");
     const movingImg = document.querySelectorAll(".moving-images");
-    // var currentPosition = window.pageYOffset + social.getBoundingClientRect().top
-    // let relativity = (vertical_position - currentPosition) / 10 - 200;
-    // console.log("relative position: ", relativity);
-    // social.style.transform = "translateX(" + relativity + "px)";
-    // member.style.transform = "translateY(" + (relativity + 250) + "px)";
-    // about.style.transform = "translateY(" + (relativity + 250) + "px)";
 
-
+    // Works only when large than 1024px lg breakpoint
     if (document.documentElement.clientWidth >= 1024) {
         social.forEach((el, key) => {
             if (key == 1) {
@@ -36,6 +29,9 @@ window.onscroll = function (e) {
         movingImg.forEach((el, key) => {
             if (el.classList.contains("about-img")) {
                 slideScroll(el, false, -150, 1.5);
+            }
+            else if (el.classList.contains("testimonial-box")) {
+                slideScroll(el, false, 0, 2);
             } else slideScroll(el, false);
         });
     } else {

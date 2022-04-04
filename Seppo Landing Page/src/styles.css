@@ -33,8 +33,8 @@ p {
 }
 
 .intro {
-  height: calc(100vh - 5rem);
-  margin-top: 5rem;
+  height: calc(100vh - 78px);
+  margin-top: 78px;
 }
 
 .side-menu.closed {
@@ -214,7 +214,7 @@ form{
 }
 
 form input,form textarea{
-  @apply text-black border-b-[3px] border-black border-solid placeholder:text-black focus:outline-none mb-9 p-2 focus:placeholder:text-transparent text-[15px];
+  @apply text-black border-b-[3px] border-black border-solid placeholder:text-black focus:outline-none mb-5 lg:mb-9 p-2 focus:placeholder:text-transparent text-[15px];
 }
 
 /* Footer */

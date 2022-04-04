@@ -530,6 +530,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 10rem !important;
 }
 
+.top-\[78px\] {
+  top: 78px;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -659,6 +663,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -683,8 +699,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-20 {
-  height: 5rem;
+.h-\[78px\] {
+  height: 78px;
 }
 
 .h-full {
@@ -851,6 +867,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-28 {
   gap: 7rem;
+}
+
+.gap-0 {
+  gap: 0px;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .scroll-smooth {
@@ -1215,8 +1239,8 @@ p {
 }
 
 .intro {
-  height: calc(100vh - 5rem);
-  margin-top: 5rem;
+  height: calc(100vh - 78px);
+  margin-top: 78px;
 }
 
 .side-menu.closed {
@@ -1837,7 +1861,7 @@ form {
 }
 
 form input, form textarea {
-  margin-bottom: 2.25rem;
+  margin-bottom: 1.25rem;
   border-bottom-width: 3px;
   border-style: solid;
   --tw-border-opacity: 1;
@@ -1878,6 +1902,12 @@ form input:focus:-ms-input-placeholder, form textarea:focus:-ms-input-placeholde
 
 form input:focus::placeholder, form textarea:focus::placeholder {
   color: transparent;
+}
+
+@media (min-width: 1024px) {
+  form input, form textarea {
+    margin-bottom: 2.25rem;
+  }
 }
 
 /* Footer */
@@ -1956,25 +1986,8 @@ form input:focus::placeholder, form textarea:focus::placeholder {
     position: static;
   }
 
-  .lg\:absolute {
-    position: absolute;
-  }
-
   .lg\:relative {
     position: relative;
-  }
-
-  .lg\:sticky {
-    position: -webkit-sticky;
-    position: sticky;
-  }
-
-  .lg\:top-\[-1rem\] {
-    top: -1rem;
-  }
-
-  .lg\:top-52 {
-    top: 13rem;
   }
 
   .lg\:-order-none {
@@ -2003,10 +2016,6 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 
   .lg\:h-full {
     height: 100%;
-  }
-
-  .lg\:h-\[90vh\] {
-    height: 90vh;
   }
 
   .lg\:\!h-\[85vh\] {
@@ -2109,6 +2118,14 @@ form input:focus::placeholder, form textarea:focus::placeholder {
   .lg\:py-\[75px\] {
     padding-top: 75px;
     padding-bottom: 75px;
+  }
+
+  .lg\:pb-48 {
+    padding-bottom: 12rem;
+  }
+
+  .lg\:pb-32 {
+    padding-bottom: 8rem;
   }
 
   .lg\:text-left {
