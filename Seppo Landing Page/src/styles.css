@@ -150,6 +150,19 @@ p {
   @apply w-[18px] h-[18px] mr-[25px] font-black text-gray;
 }
 
+/* Team Section */
+.green-social-media{
+  @apply bg-primary py-[25px] px-[50px] static lg:left-1/2 lg:translate-x-[-50%] lg:col-span-2 flex w-full sm:w-[80%] mx-auto lg:relative left-[-20rem] top-[-10rem] justify-center lg:w-fit lg:mx-0 z-20 mb-14 lg:mb-0;
+}
+
+.green-social-media a i{
+  @apply text-white;
+}
+
+.member-text-box{
+  @apply lg:relative left-[-8rem] bottom-[-3rem] p-[10%] lg:p-10 bg-white flex flex-col justify-center h-fit my-auto lg:py-16 lg:px-28 mx-auto lg:mx-0 w-full sm:w-[80%] lg:w-full;
+}
+
 /* Skills section */
 .skill-wrapper{
   @apply flex flex-col lg:flex-row justify-between items-center mb-12 lg:mb-8;

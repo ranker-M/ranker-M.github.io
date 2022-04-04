@@ -526,12 +526,40 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 5rem;
 }
 
+.\!left-\[10rem\] {
+  left: 10rem !important;
+}
+
 .z-50 {
   z-index: 50;
 }
 
 .z-10 {
   z-index: 10;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-3 {
+  order: 3;
+}
+
+.order-4 {
+  order: 4;
+}
+
+.order-5 {
+  order: 5;
+}
+
+.order-6 {
+  order: 6;
 }
 
 .m-3 {
@@ -607,12 +635,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
+.mb-9 {
+  margin-bottom: 2.25rem;
 }
 
 .mb-3 {
@@ -621,6 +645,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .\!mr-0 {
   margin-right: 0px !important;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
 }
 
 .mt-8 {
@@ -761,8 +793,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 400px;
 }
 
+.max-w-\[700px\] {
+  max-width: 700px;
+}
+
 .max-w-6xl {
   max-width: 72rem;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -851,11 +891,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-green-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#111\] {
@@ -958,6 +993,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2.25rem;
 }
 
+.pt-\[200px\] {
+  padding-top: 200px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1013,6 +1052,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 100px;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-\[30px\] {
   font-size: 30px;
 }
@@ -1039,6 +1083,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-opened {
   line-height: 120%;
+}
+
+.leading-\[150\%\] {
+  line-height: 150%;
 }
 
 .tracking-2px {
@@ -1512,6 +1560,126 @@ p {
   color: rgb(128 128 128 / var(--tw-text-opacity));
 }
 
+/* Team Section */
+
+.green-social-media {
+  position: static;
+  left: -20rem;
+  top: -10rem;
+  z-index: 20;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.5rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 234 78 / var(--tw-bg-opacity));
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media (min-width: 640px) {
+  .green-social-media {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .green-social-media {
+    position: relative;
+  }
+
+  .green-social-media {
+    left: 50%;
+  }
+
+  .green-social-media {
+    grid-column: span 2 / span 2;
+  }
+
+  .green-social-media {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .green-social-media {
+    margin-bottom: 0px;
+  }
+
+  .green-social-media {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .green-social-media {
+    --tw-translate-x: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
+.green-social-media a i {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.member-text-box {
+  left: -8rem;
+  bottom: -3rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 10%;
+}
+
+@media (min-width: 640px) {
+  .member-text-box {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .member-text-box {
+    position: relative;
+  }
+
+  .member-text-box {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .member-text-box {
+    width: 100%;
+  }
+
+  .member-text-box {
+    padding: 2.5rem;
+  }
+
+  .member-text-box {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .member-text-box {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+
 /* Skills section */
 
 .skill-wrapper {
@@ -1792,21 +1960,29 @@ form input:focus::placeholder, form textarea:focus::placeholder {
     position: absolute;
   }
 
+  .lg\:relative {
+    position: relative;
+  }
+
   .lg\:sticky {
     position: -webkit-sticky;
     position: sticky;
   }
 
-  .lg\:top-\[-16rem\] {
-    top: -16rem;
+  .lg\:top-\[-1rem\] {
+    top: -1rem;
   }
 
   .lg\:top-52 {
     top: 13rem;
   }
 
-  .lg\:top-\[-1rem\] {
-    top: -1rem;
+  .lg\:-order-none {
+    order: 0;
+  }
+
+  .lg\:order-none {
+    order: 0;
   }
 
   .lg\:ml-20 {
@@ -1849,6 +2025,10 @@ form input:focus::placeholder, form textarea:focus::placeholder {
     max-width: 1450px;
   }
 
+  .lg\:max-w-screen-xl {
+    max-width: 1280px;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1887,6 +2067,10 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 
   .lg\:gap-32 {
     gap: 8rem;
+  }
+
+  .lg\:gap-10 {
+    gap: 2.5rem;
   }
 
   .lg\:p-0 {
