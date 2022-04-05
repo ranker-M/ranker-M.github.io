@@ -59,13 +59,40 @@ p {
   @apply text-black hover:opacity-50 transition duration-300 text-[25px] mr-6;
 }
 
+/* Testimonials */
+.hide-item{
+  @apply absolute max-w-screen-1.5xl;
+  animation: vanish 1s forwards;
+}
+
+@keyframes vanish {
+  0% {
+    opacity: 100%;
+  }
+  100%{
+    position: absolute;
+    opacity: 0%;
+  }
+}
+
+.client-img{
+  @apply flex flex-col sm:flex-row justify-start items-start sm:items-center;
+}
+
+.client-job{
+  @apply text-sm sm:text-lg tracking-4px text-white;
+}
+
+.client-text{
+  @apply text-testimonial-p text-[20px] sm:text-[28px] mb-16;
+}
 /* Service part number cards */
 .left-up-title {
-  @apply text-white bg-primary relative p-14 top-0 left-0 w-fit text-xl tracking-widest text-center pl-24 pr-20;
+  @apply text-white bg-primary relative top-0 left-0 w-fit text-xl tracking-widest text-center  p-8 pl-16 pr-12 lg:p-14 lg:pl-24 lg:pr-20 ;
 }
 
 .title-effect {
-  @apply absolute h-full w-36 bg-white right-[-9rem] top-0;
+  @apply absolute h-full w-24 lg:w-36 bg-white right-[-6rem] lg:right-[-9rem] top-0;
   background: linear-gradient(
     135deg,
     var(--primary) 50%,

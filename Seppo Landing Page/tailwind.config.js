@@ -40,6 +40,24 @@ module.exports = {
         'portfolio': 'minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr)',
         'pricing': 'minmax(0, 350px) minmax(0, 350px) minmax(0, 350px)',
         'pricing-mobile': 'minmax(0, 350px)',
+      },
+      animation: {
+        vanish: 'vanish 1s forwards',
+      },
+      keyframes: {
+        vanish: {
+          "0%": {
+            opacity: "100%"
+          },
+          "99%": {
+            opacity: "0%"
+          },
+          "100%": {
+            // position: "absolute",
+            // visibility: "hidden",
+            // left: "-20rem"
+          }
+        }
       }
     },
   },

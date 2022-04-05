@@ -19,7 +19,7 @@ window.onscroll = function (e) {
     const social = document.querySelectorAll(".green-social-media");
     const movingImg = document.querySelectorAll(".moving-images");
 
-    // Works only when large than 1024px lg breakpoint
+    // Works only when large than 1024px (lg breakpoint)
     if (document.documentElement.clientWidth >= 1024) {
         social.forEach((el, key) => {
             if (key == 1) {
@@ -60,6 +60,7 @@ window.onscroll = function (e) {
 
 function slideScroll(el, horizontal = false, offset = 0, speed = 1, direction = 1) {
     var vertical_position = 0;
+    // Vertical position for all browser versions
     if (scrollY)//usual
         vertical_position = scrollY;
     else if (document.documentElement.clientHeight)//ie
@@ -67,6 +68,7 @@ function slideScroll(el, horizontal = false, offset = 0, speed = 1, direction = 
     else if (document.body)//ie quirks
         vertical_position = document.body.scrollTop;
 
+    // Moving element according to scroll position
     let currentPosition = window.pageYOffset + el.getBoundingClientRect().top;
     let relativity = (vertical_position - currentPosition) / (8 / speed) * direction;
     if (horizontal) {
@@ -77,7 +79,38 @@ function slideScroll(el, horizontal = false, offset = 0, speed = 1, direction = 
 }
 
 function resetTransform(el) {
+    // Resetting transform value for mobile design
     el.style.transform = "translate3d(0px,0px,0px)";
 }
 
 
+// Testimonial slide feature
+let index = 0;
+
+function changeSlide(page = 1) {
+    const clientText = document.querySelectorAll(".client-text");
+    const clientImg = document.querySelectorAll(".client-img");
+    const clientJob = document.querySelectorAll(".client-job");
+    index += page;
+    if (index < 0)
+        index = clientText.length - 1;
+    else if (index > clientText.length - 1)
+        index = 0;
+
+    changeClass(clientText, index);
+    changeClass(clientImg, index);
+    // changeClass(clientJob, index);
+}
+
+function changeClass(array, number) {
+    console.log(number);
+    array.forEach((el, key) => {
+        if (key == number) el.classList.remove("hide-item");
+        else el.classList.add("hide-item");
+    });
+}
+
+const leftButton = document.getElementById("slide-left-button");
+const rightButton = document.getElementById("slide-right-button");
+leftButton.addEventListener("click", () => changeSlide(-1));
+rightButton.addEventListener("click", () => changeSlide(1));

@@ -813,6 +813,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: pointer;
 }
 
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -827,10 +834,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-col {
   flex-direction: column;
-}
-
-.items-start {
-  align-items: flex-start;
 }
 
 .items-center {
@@ -1047,11 +1050,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
-.text-testimonial-p {
-  font-size: 28px;
-  line-height: 170%;
-}
-
 .text-\[20px\] {
   font-size: 20px;
 }
@@ -1103,10 +1101,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .tracking-2px {
   letter-spacing: 2px;
-}
-
-.tracking-4px {
-  letter-spacing: 4px;
 }
 
 .text-p-secondary {
@@ -1266,6 +1260,81 @@ p {
   opacity: 0.5;
 }
 
+/* Testimonials */
+
+.hide-item {
+  position: absolute;
+  max-width: 1450px;
+  -webkit-animation: vanish 1s forwards;
+          animation: vanish 1s forwards;
+}
+
+@-webkit-keyframes vanish {
+  0% {
+    opacity: 100%;
+  }
+
+  100%{
+    position: absolute;
+    opacity: 0%;
+  }
+}
+
+@keyframes vanish {
+  0% {
+    opacity: 100%;
+  }
+
+  100%{
+    position: absolute;
+    opacity: 0%;
+  }
+}
+
+.client-img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+@media (min-width: 640px) {
+  .client-img {
+    flex-direction: row;
+  }
+
+  .client-img {
+    align-items: center;
+  }
+}
+
+.client-job {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 4px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .client-job {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+.client-text {
+  margin-bottom: 4rem;
+  line-height: 170%;
+  font-size: 20px;
+}
+
+@media (min-width: 640px) {
+  .client-text {
+    font-size: 28px;
+  }
+}
+
 /* Service part number cards */
 
 .left-up-title {
@@ -1277,9 +1346,9 @@ p {
   width: fit-content;
   --tw-bg-opacity: 1;
   background-color: rgb(71 234 78 / var(--tw-bg-opacity));
-  padding: 3.5rem;
-  padding-left: 6rem;
-  padding-right: 5rem;
+  padding: 2rem;
+  padding-left: 4rem;
+  padding-right: 3rem;
   text-align: center;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1288,14 +1357,41 @@ p {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 1024px) {
+  .left-up-title {
+    padding: 3.5rem;
+  }
+
+  .left-up-title {
+    padding-left: 6rem;
+  }
+
+  .left-up-title {
+    padding-right: 5rem;
+  }
+}
+
 .title-effect {
   position: absolute;
-  right: -9rem;
+  right: -6rem;
   top: 0px;
   height: 100%;
-  width: 9rem;
+  width: 6rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 1024px) {
+  .title-effect {
+    right: -9rem;
+  }
+
+  .title-effect {
+    width: 9rem;
+  }
+}
+
+.title-effect {
   background: linear-gradient(
     135deg,
     var(--primary) 50%,
@@ -1955,25 +2051,6 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
-}
-
-@media (min-width: 640px) {
-  .sm\:flex-row {
-    flex-direction: row;
-  }
-
-  .sm\:items-center {
-    align-items: center;
-  }
-
-  .sm\:text-\[28px\] {
-    font-size: 28px;
-  }
-
-  .sm\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
 }
 
 @media (min-width: 768px) {
