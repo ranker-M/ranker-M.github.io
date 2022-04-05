@@ -860,6 +860,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0px;
 }
 
+.gap-24 {
+  gap: 6rem;
+}
+
+.gap-28 {
+  gap: 7rem;
+}
+
 .scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -1053,9 +1061,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 100px;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.text-\[35px\] {
+  font-size: 35px;
 }
 
 .text-\[26px\] {
@@ -1638,9 +1645,16 @@ p {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .pricing-box {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -2290,12 +2304,21 @@ form input:focus::placeholder, form textarea:focus::placeholder {
     font-size: 20px;
   }
 
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .lg\:leading-opened {
     line-height: 120%;
   }
 
   .lg\:leading-9 {
     line-height: 2.25rem;
+  }
+
+  .lg\:leading-\[150\%\] {
+    line-height: 150%;
   }
 }
 
