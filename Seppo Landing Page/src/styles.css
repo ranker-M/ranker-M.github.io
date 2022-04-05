@@ -17,7 +17,11 @@ p {
 }
 
 .nav-button {
-  @apply p-4 hover:text-primary transition duration-300 ease-linear font-semibold;
+  @apply p-4 hover:text-primary transition duration-150 ease-linear font-semibold;
+}
+
+.nav-button.active{
+  @apply text-primary;
 }
 
 .toggle-menu.opened span:nth-child(2) {

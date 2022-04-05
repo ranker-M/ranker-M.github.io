@@ -522,16 +522,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
-.top-20 {
-  top: 5rem;
+.top-\[78px\] {
+  top: 78px;
 }
 
 .\!left-\[10rem\] {
   left: 10rem !important;
-}
-
-.top-\[78px\] {
-  top: 78px;
 }
 
 .z-50 {
@@ -659,20 +655,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 2.5rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .mt-7 {
   margin-top: 1.75rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .box-border {
@@ -1217,11 +1205,16 @@ p {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
+  transition-duration: 150ms;
   transition-timing-function: linear;
 }
 
 .nav-button:hover {
+  --tw-text-opacity: 1;
+  color: rgb(71 234 78 / var(--tw-text-opacity));
+}
+
+.nav-button.active {
   --tw-text-opacity: 1;
   color: rgb(71 234 78 / var(--tw-text-opacity));
 }

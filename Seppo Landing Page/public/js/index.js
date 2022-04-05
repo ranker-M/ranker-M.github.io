@@ -43,6 +43,17 @@ window.onscroll = function (e) {
             resetTransform(el);
         });
     }
+
+    // Scrollspy effect on navbar
+    const sections = document.querySelectorAll("body section");
+    const navbar = document.getElementById("side-menu");
+
+    sections.forEach((el, key) => {
+        let distance = key != 0 ? el.getBoundingClientRect().y : el.getBoundingClientRect().y - 78;
+        if (distance <= 0 && distance >= (-el.clientHeight)) {
+            navbar.children[key].classList.add("active");
+        } else navbar.children[key].classList.remove("active");
+    })
 }
 
 
@@ -67,3 +78,5 @@ function slideScroll(el, horizontal = false, offset = 0, speed = 1, direction = 
 function resetTransform(el) {
     el.style.transform = "translate3d(0px,0px,0px)";
 }
+
+
