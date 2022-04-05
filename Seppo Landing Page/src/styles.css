@@ -42,11 +42,15 @@ p {
 }
 
 .side-menu.closed {
-  transform: translateX(18rem);
+  transform: translateX(0px);
+}
+
+.side-menu.opened {
+  transform: translateX(-18rem);
 }
 
 @media screen and (min-width: 1024px) {
-  .side-menu.closed {
+  .side-menu.opened {
     transform: translateX(0px);
   }
 }

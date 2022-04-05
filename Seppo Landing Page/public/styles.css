@@ -518,8 +518,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
-.right-0 {
-  right: 0px;
+.right-\[-18rem\] {
+  right: -18rem;
 }
 
 .top-\[78px\] {
@@ -1237,11 +1237,15 @@ p {
 }
 
 .side-menu.closed {
-  transform: translateX(18rem);
+  transform: translateX(0px);
+}
+
+.side-menu.opened {
+  transform: translateX(-18rem);
 }
 
 @media screen and (min-width: 1024px) {
-  .side-menu.closed {
+  .side-menu.opened {
     transform: translateX(0px);
   }
 }
@@ -1920,6 +1924,10 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 .social-media-footer a i:hover {
   --tw-text-opacity: 1;
   color: rgb(71 234 78 / var(--tw-text-opacity));
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
 }
 
 .hover\:text-primary:hover {

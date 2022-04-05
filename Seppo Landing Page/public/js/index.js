@@ -49,7 +49,8 @@ window.onscroll = function (e) {
     const navbar = document.getElementById("side-menu");
 
     sections.forEach((el, key) => {
-        let distance = key != 0 ? el.getBoundingClientRect().y : el.getBoundingClientRect().y - 78;
+        // let distance = key != 0 ? el.getBoundingClientRect().y : el.getBoundingClientRect().y - 78;
+        let distance = el.getBoundingClientRect().y - 78;
         if (distance <= 0 && distance >= (-el.clientHeight)) {
             navbar.children[key].classList.add("active");
         } else navbar.children[key].classList.remove("active");
