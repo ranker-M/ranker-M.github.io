@@ -21,7 +21,7 @@ p {
 }
 
 .nav-button {
-  @apply p-4 hover:text-primary transition duration-150 ease-linear font-semibold;
+  @apply p-2 sm:p-4 hover:text-primary transition duration-150 ease-linear font-semibold;
 }
 
 .nav-button.active{
