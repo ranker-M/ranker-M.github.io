@@ -651,10 +651,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 3rem;
 }
 
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
 .mt-7 {
   margin-top: 1.75rem;
 }
@@ -717,8 +713,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: fit-content;
 }
 
-.\!h-\[180vh\] {
-  height: 180vh !important;
+.\!h-\[750px\] {
+  height: 750px !important;
 }
 
 .h-\[60px\] {
@@ -757,16 +753,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 95%;
 }
 
+.w-\[90\%\] {
+  width: 90%;
+}
+
 .w-\[75\%\] {
   width: 75%;
 }
 
 .w-\[45\%\] {
   width: 45%;
-}
-
-.w-\[90\%\] {
-  width: 90%;
 }
 
 .w-\[65\%\] {
@@ -856,16 +852,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1.75rem;
 }
 
-.gap-28 {
-  gap: 7rem;
+.gap-16 {
+  gap: 4rem;
 }
 
 .gap-0 {
   gap: 0px;
-}
-
-.overflow-x-hidden {
-  overflow-x: hidden;
 }
 
 .scroll-smooth {
@@ -965,6 +957,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 10%;
 }
 
+.p-\[5\%\] {
+  padding: 5%;
+}
+
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
@@ -1030,9 +1026,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
+.text-\[40px\] {
+  font-size: 40px;
 }
 
 .text-base {
@@ -1050,10 +1045,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
-.text-\[20px\] {
-  font-size: 20px;
-}
-
 .text-\[21px\] {
   font-size: 21px;
 }
@@ -1067,8 +1058,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
-.text-\[30px\] {
-  font-size: 30px;
+.text-\[26px\] {
+  font-size: 26px;
 }
 
 .font-medium {
@@ -1097,6 +1088,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-\[150\%\] {
   line-height: 150%;
+}
+
+.leading-\[170\%\] {
+  line-height: 170%;
 }
 
 .tracking-2px {
@@ -1147,6 +1142,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 :root {
   --primary: #47ea4e;
+}
+
+*{
+  box-sizing: border-box;
 }
 
 p {
@@ -1338,6 +1337,7 @@ p {
 /* Service part number cards */
 
 .left-up-title {
+  position: absolute;
   position: relative;
   top: 0px;
   left: 0px;
@@ -1373,12 +1373,22 @@ p {
 
 .title-effect {
   position: absolute;
-  right: -6rem;
+  right: -7rem;
   top: 0px;
   height: 100%;
-  width: 6rem;
+  width: 8rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px) {
+  .title-effect {
+    right: -6rem;
+  }
+
+  .title-effect {
+    width: 6rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1388,6 +1398,16 @@ p {
 
   .title-effect {
     width: 9rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .title-effect {
+    right: -11rem;
+  }
+
+  .title-effect {
+    width: 12rem;
   }
 }
 
@@ -1555,13 +1575,19 @@ p {
 /* Portfolio section */
 
 .portfolio-wrapper {
-  height: 80vh;
+  height: 375px;
   width: 100%;
   cursor: pointer;
   background-image: url('./images/portfolio_item_01.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 640px) {
+  .portfolio-wrapper {
+    height: 80vh;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1578,7 +1604,7 @@ p {
   justify-content: flex-end;
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  padding: 5rem;
+  padding: 3rem;
   opacity: 0;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1608,7 +1634,7 @@ p {
 .pricing-box {
   position: relative;
   height: 100%;
-  width: 100%;
+  width: 90%;
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -1617,14 +1643,26 @@ p {
   padding-bottom: 1.25rem;
 }
 
+@media (min-width: 1280px) {
+  .pricing-box {
+    width: 100%;
+  }
+}
+
 .pricing-number-wrapper {
   position: absolute;
   top: -5rem;
-  right: -2.5rem;
+  right: -1rem;
   height: 13rem;
   width: 6rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 1024px) {
+  .pricing-number-wrapper {
+    right: -2.5rem;
+  }
 }
 
 .price-number {
@@ -2053,6 +2091,25 @@ form input:focus::placeholder, form textarea:focus::placeholder {
   opacity: 1;
 }
 
+@media (min-width: 640px) {
+  .sm\:\!h-\[180vh\] {
+    height: 180vh !important;
+  }
+
+  .sm\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .sm\:text-\[30px\] {
+    font-size: 30px;
+  }
+
+  .sm\:leading-\[2\.25rem\] {
+    line-height: 2.25rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:text-\[46px\] {
     font-size: 46px;
@@ -2086,6 +2143,10 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:ml-10 {
+    margin-left: 2.5rem;
   }
 
   .lg\:hidden {
@@ -2168,9 +2229,9 @@ form input:focus::placeholder, form textarea:focus::placeholder {
     padding: 8rem;
   }
 
-  .lg\:px-52 {
-    padding-left: 13rem;
-    padding-right: 13rem;
+  .lg\:px-36 {
+    padding-left: 9rem;
+    padding-right: 9rem;
   }
 
   .lg\:py-36 {
@@ -2225,11 +2286,25 @@ form input:focus::placeholder, form textarea:focus::placeholder {
     line-height: 1;
   }
 
+  .lg\:text-\[20px\] {
+    font-size: 20px;
+  }
+
   .lg\:leading-opened {
     line-height: 120%;
   }
 
   .lg\:leading-9 {
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:w-full {
+    width: 100%;
+  }
+
+  .\32xl\:gap-24 {
+    gap: 6rem;
   }
 }

@@ -71,6 +71,7 @@ function slideScroll(el, horizontal = false, offset = 0, speed = 1, direction = 
     // Moving element according to scroll position
     let currentPosition = window.pageYOffset + el.getBoundingClientRect().top;
     let relativity = (vertical_position - currentPosition) / (8 / speed) * direction;
+    relativity = abs(relativity) > 150 ? relativity > 0 ? 150 : -150 : relativity;
     if (horizontal) {
         el.style.transform = "translateX(" + (relativity + offset) + "px)";
     } else {
