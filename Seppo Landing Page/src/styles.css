@@ -92,11 +92,11 @@ p {
 }
 /* Service part number cards */
 .left-up-title {
-  @apply text-white bg-primary relative top-0 left-0 w-fit text-xl tracking-widest text-center p-6 pl-8 pr-5 sm:p-8 sm:pl-16 sm:pr-12 lg:p-14 lg:pl-24 lg:pr-20 ;
+  @apply text-white bg-primary relative top-0 left-0 w-fit text-xl tracking-widest text-center p-6 sm:p-8 sm:pl-16 sm:pr-12 lg:p-14 lg:pl-24 lg:pr-20 ;
 }
 
 .title-effect {
-  @apply absolute h-full w-32 sm:w-24 lg:w-36 bg-white right-[-7rem] sm:right-[-6rem] lg:right-[-9rem] xl:w-48 xl:right-[-11rem]  top-0;
+  @apply absolute h-full w-28 sm:w-24 lg:w-36 bg-white right-[-6rem] sm:right-[-6rem] lg:right-[-9rem] xl:w-48 xl:right-[-11rem]  top-0;
 
   background: linear-gradient(
     135deg,

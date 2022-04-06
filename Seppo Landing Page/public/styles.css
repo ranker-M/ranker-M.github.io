@@ -1347,8 +1347,6 @@ p {
   --tw-bg-opacity: 1;
   background-color: rgb(71 234 78 / var(--tw-bg-opacity));
   padding: 1.5rem;
-  padding-left: 2rem;
-  padding-right: 1.25rem;
   text-align: center;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1387,10 +1385,10 @@ p {
 
 .title-effect {
   position: absolute;
-  right: -7rem;
+  right: -6rem;
   top: 0px;
   height: 100%;
-  width: 8rem;
+  width: 7rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
