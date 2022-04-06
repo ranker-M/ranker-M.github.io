@@ -721,6 +721,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 60px;
 }
 
+.h-auto {
+  height: auto;
+}
+
+.h-\[80\%\] {
+  height: 80%;
+}
+
+.h-\[50\%\] {
+  height: 50%;
+}
+
+.h-\[60\%\] {
+  height: 60%;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -779,6 +795,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[300px\] {
   width: 300px;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .max-w-screen-1\.5xl {
@@ -2113,6 +2137,22 @@ form input:focus::placeholder, form textarea:focus::placeholder {
 @media (min-width: 640px) {
   .sm\:\!h-\[180vh\] {
     height: 180vh !important;
+  }
+
+  .sm\:h-full {
+    height: 100%;
+  }
+
+  .sm\:h-\[70\%\] {
+    height: 70%;
+  }
+
+  .sm\:h-\[65\%\] {
+    height: 65%;
+  }
+
+  .sm\:w-full {
+    width: 100%;
   }
 
   .sm\:text-6xl {
