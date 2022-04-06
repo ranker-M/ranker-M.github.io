@@ -1,0 +1,263 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary: #47ea4e;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+p {
+  @apply text-p-secondary text-lg leading-9;
+}
+
+.btn-primary {
+  @apply text-white py-5 font-medium px-10 text-sm border rounded-full border-primary bg-primary uppercase w-fit cursor-pointer tracking-2px hover:text-primary hover:bg-transparent transition duration-200 ease-in;
+}
+
+.nav-button {
+  @apply p-2 sm:p-4 hover:text-primary transition duration-150 ease-linear font-semibold;
+}
+
+.nav-button.active{
+  @apply text-primary;
+}
+
+.toggle-menu.opened span:nth-child(2) {
+  transform: translateX(-1rem);
+}
+
+.toggle-menu:hover.closed span:nth-child(2) {
+  transform: translateX(-0.5rem);
+}
+
+.toggle-menu:hover.opened span:nth-child(2) {
+  transform: translateX(-0.5rem);
+}
+
+.intro {
+  height: calc(100vh - 78px);
+  margin-top: 78px;
+}
+
+.side-menu.closed {
+  transform: translateX(0px);
+}
+
+.side-menu.opened {
+  transform: translateX(-18rem);
+}
+
+@media screen and (min-width: 1024px) {
+  .side-menu.opened {
+    transform: translateX(0px);
+  }
+}
+
+.social-media-box a i{ 
+  @apply text-black hover:opacity-50 transition duration-300 text-[25px] mr-6;
+}
+
+/* Testimonials */
+.hide-item{
+  @apply absolute max-w-screen-1.5xl;
+  animation: vanish 1s forwards;
+}
+
+@keyframes vanish {
+  0% {
+    opacity: 100%;
+  }
+  100%{
+    position: absolute;
+    opacity: 0%;
+  }
+}
+
+.client-img{
+  @apply flex flex-col sm:flex-row justify-start items-start sm:items-center;
+}
+
+.client-job{
+  @apply text-sm sm:text-lg tracking-4px text-white;
+}
+
+.client-text{
+  @apply text-testimonial-p text-[20px] sm:text-[28px] mb-16;
+}
+/* Service part number cards */
+.left-up-title {
+  @apply text-white bg-primary relative top-0 left-0 w-fit text-xl tracking-widest text-center p-6 sm:p-8 sm:pl-16 sm:pr-12 lg:p-14 lg:pl-24 lg:pr-20 ;
+}
+
+.title-effect {
+  @apply absolute h-full w-28 sm:w-24 lg:w-36 bg-white right-[-6rem] sm:right-[-6rem] lg:right-[-9rem] xl:w-48 xl:right-[-11rem]  top-0;
+
+  background: linear-gradient(
+    135deg,
+    var(--primary) 50%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
+
+.number-card {
+  @apply flex flex-col justify-center items-center max-w-xs m-auto lg:justify-start lg:items-start;
+}
+
+.number-card .number {
+  @apply text-9xl overflow-hidden block h-40 font-bold mb-[-10px] text-[256px] text-black;
+  text-shadow: 1px 0px rgb(153, 153, 153), -1px 0px rgb(153, 153, 153),
+    0px 1px rgb(153, 153, 153), 0px -1px rgb(153, 153, 153);
+}
+
+.number-card .title {
+  @apply text-5xl font-bold leading-slightly-opened py-5;
+}
+
+.number-card .text {
+  @apply text-lg font-medium text-p-secondary leading-9 mb-3 text-center lg:text-left;
+}
+
+.number-card .more-btn {
+  @apply mt-5 relative h-8 p-4 block border-white border-2 rounded-full w-fit transition-all duration-300;
+}
+.number-card .more-text {
+  @apply ml-7 left-6 absolute top-1/2 translate-y-[-50%] transition-all duration-300 tracking-2px text-lg;
+}
+
+/* News section */
+.news-image {
+  @apply mb-10 bg-[url('./images/news-img-1.jpg')] bg-[length:100%_auto] lg:bg-[length:auto_100%] bg-no-repeat bg-center w-full h-[350px] lg:h-[600px] cursor-pointer transition-all duration-300 hover:opacity-80 hover:bg-[length:110%_auto] hover:lg:bg-[length:auto_110%];
+}
+
+.news-title {
+  @apply text-black text-[32px] lg:text-4xl leading-slightly-opened font-semibold transition duration-300 tracking-[-1px] hover:opacity-80 cursor-pointer;
+}
+
+/* Portfolio section */
+.portfolio-wrapper{
+  @apply bg-[url('./images/portfolio_item_01.jpg')] h-[375px] sm:h-[80vh] bg-cover bg-no-repeat bg-center w-full lg:h-full  cursor-pointer;
+}
+
+.portfolio-inner{
+  @apply bg-black w-full h-full opacity-0 flex flex-col justify-end p-12 transition-all duration-300;
+}
+
+.portfolio-text{
+  @apply text-p-secondary text-sm tracking-2px align-bottom;
+}
+
+.portfolio-title{
+@apply text-p-secondary text-3xl font-bold leading-[170%];
+}
+
+
+/* Pricing section */
+.pricing-box{
+  @apply relative w-[90%] xl:w-full h-full px-[5%]  lg:px-[15%] border-2 border-black pb-5;
+}
+
+.pricing-number-wrapper{
+  @apply absolute top-[-5rem] right-[-1rem] lg:right-[-2.5rem] bg-white h-52 w-24;
+}
+
+.price-number{
+  @apply text-[200px] font-bold text-white bg-white block h-52 w-24 text-center leading-[200px];
+  text-shadow: 1px 0px rgb(153, 153, 153), -1px 0px rgb(153, 153, 153),
+    0px 1px rgb(153, 153, 153), 0px -1px rgb(153, 153, 153);
+}
+
+.okay-list{
+  @apply py-[10px] text-black;
+}
+
+.okay-list::before{
+  content: "\2713";
+  @apply w-[18px] h-[18px] mr-[25px] font-black text-primary;
+}
+
+.not-okay-list{
+  @apply py-[10px] text-gray;
+}
+
+.not-okay-list::before{
+  content: "\2716";
+  @apply w-[18px] h-[18px] mr-[25px] font-black text-gray;
+}
+
+/* Team Section */
+.green-social-media{
+  @apply bg-primary py-[25px] px-[50px] static lg:left-1/2 lg:translate-x-[-50%] lg:col-span-2 flex w-full sm:w-[80%] mx-auto lg:relative left-[-20rem] top-[-10rem] justify-center lg:w-fit lg:mx-0 z-20 mb-14 lg:mb-0;
+}
+
+.green-social-media a i{
+  @apply text-white;
+}
+
+.member-text-box{
+  @apply lg:relative left-[-8rem] bottom-[-3rem] p-[10%] lg:p-10 bg-white flex flex-col justify-center h-fit my-auto lg:py-16 lg:px-28 mx-auto lg:mx-0 w-full sm:w-[80%] lg:w-full;
+}
+
+/* Skills section */
+.skill-wrapper{
+  @apply flex flex-col lg:flex-row justify-between items-center mb-12 lg:mb-8;
+}
+
+.percentage{
+  @apply  text-[40px] lg:text-5xl inline-block text-p-secondary;
+}
+
+.skill{
+  @apply w-full lg:w-[75%] h-full;
+}
+
+.skill-name{
+  @apply text-2xl leading-9 text-center lg:text-left mb-3;
+}
+
+.skill-slide{
+  @apply w-full h-3;
+  box-shadow: inset 0px 4px 0px 0px #cacaca4d;
+}
+
+.skill-slide-fill{
+  @apply bg-black h-full;
+}
+
+/* Milestones section */
+.milestone-card{
+  @apply flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left;
+}
+
+.milestone-number{
+  @apply text-6xl leading-[60px] lg:text-[80px] lg:leading-[80px] font-black text-black;
+  text-shadow: 1px 0px rgb(179,179,179), -1px 0px rgb(179,179,179),
+  0px 1px rgb(179,179,179), 0px -1px rgb(179,179,179);
+}
+
+.milestone-title{
+  @apply text-white lg:max-w-[240px] text-[28px] leading-[115%] pb-5 font-bold mt-5 lg:mt-0;
+}
+
+.milestone-right{
+  @apply max-w-[350px] lg:max-w-none;
+}
+
+/* Contact Us */
+form{
+  @apply w-full h-full flex flex-col;
+}
+
+form input,form textarea{
+  @apply text-black border-b-[3px] border-black border-solid placeholder:text-black focus:outline-none mb-5 lg:mb-9 p-2 focus:placeholder:text-transparent text-[15px];
+}
+
+/* Footer */
+.social-media-footer a i{ 
+  @apply text-white hover:text-primary transition duration-300 text-[28px] mr-6;
+}

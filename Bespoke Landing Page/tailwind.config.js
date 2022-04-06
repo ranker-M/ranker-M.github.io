@@ -1,0 +1,60 @@
+module.exports = {
+  content: ["./public/**/*.{html,js}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        "body": ['Rubik', 'sans-serif']
+      },
+      colors: {
+        primary: '#fd0060',
+        "p-secondary": "#b3b3b3",
+        "header": "#060606",
+        "gray": "#808080"
+      },
+      fontSize: {
+        "title-mobile": ["40px", "105%"],
+        "testimonial-p": ["28px", "170%"]
+      },
+      lineHeight: {
+        'title': '120%'
+      },
+      letterSpacing: {
+        "2px": "2px",
+        "4px": "4px"
+      },
+      height: {
+        "thin": "3px"
+      },
+      maxWidth: {
+        "screen-1.5xl": "1450px"
+      },
+      lineHeight: {
+        "opened": "120%",
+        "slightly-opened": "110%"
+      },
+      backgroundImage: {
+        'back-left-lines': "url('./images/on_black_left.png')",
+      },
+      gridTemplateColumns: {
+        // Complex site-specific column configuration
+        'portfolio': 'minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr)',
+        'pricing': 'minmax(0, 350px) minmax(0, 350px) minmax(0, 350px)',
+        'pricing-mobile': 'minmax(0, 350px)',
+      },
+      animation: {
+        vanish: 'vanish 1s forwards',
+      },
+      keyframes: {
+        vanish: {
+          "0%": {
+            opacity: "100%"
+          },
+          "100%": {
+            opacity: "0%"
+          }
+        }
+      }
+    },
+  },
+  plugins: [],
+}

@@ -1,0 +1,14 @@
+{
+  "name": "bespoke-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./public/index.html",
+  "scripts": {
+    "build-css": "npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
