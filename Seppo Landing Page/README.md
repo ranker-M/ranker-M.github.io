@@ -10,6 +10,7 @@ This is a clone of [Seppo - Corporate One Page HTML Template](https://elements.e
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -39,6 +40,12 @@ Creating a clone as similar as original [demo page](https://demo.cocobasic.com/s
 - CSS custom properties
 - Mobile-first workflow
 - [Tailwind](https://tailwindcss.com) - Css framework
+
+### Useful resources
+
+- [Google Fonts](https://fonts.google.com/specimen/Rubik?query=rubik) - Similar font family that used in the original template.
+- [Font Awesome](https://fontawesome.com/icons) - Social media icons.
+- [Unicode Table](https://unicode-table.com/) - Little icons and symbols that can be used without importing anything.
 
 ## Author
 
