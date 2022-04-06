@@ -49,13 +49,8 @@ module.exports = {
           "0%": {
             opacity: "100%"
           },
-          "99%": {
-            opacity: "0%"
-          },
           "100%": {
-            // position: "absolute",
-            // visibility: "hidden",
-            // left: "-20rem"
+            opacity: "0%"
           }
         }
       }
