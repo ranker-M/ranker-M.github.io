@@ -1338,7 +1338,6 @@ p {
 /* Service part number cards */
 
 .left-up-title {
-  position: absolute;
   position: relative;
   top: 0px;
   left: 0px;
@@ -1347,15 +1346,29 @@ p {
   width: fit-content;
   --tw-bg-opacity: 1;
   background-color: rgb(71 234 78 / var(--tw-bg-opacity));
-  padding: 2rem;
-  padding-left: 4rem;
-  padding-right: 3rem;
+  padding: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1.25rem;
   text-align: center;
   font-size: 1.25rem;
   line-height: 1.75rem;
   letter-spacing: 0.1em;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .left-up-title {
+    padding: 2rem;
+  }
+
+  .left-up-title {
+    padding-left: 4rem;
+  }
+
+  .left-up-title {
+    padding-right: 3rem;
+  }
 }
 
 @media (min-width: 1024px) {
