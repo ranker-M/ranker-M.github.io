@@ -3,6 +3,8 @@
 
 - **Online code editor**: [live page](https://code-editor-live.herokuapp.com), [repo]( https://github.com/ranker-M/code-editor-live)
 
+- **Seppo - Corporate One Page HTML Template Clone**: [live page](https://ranker-m.github.io/Seppo%20Landing%20Page/public/#home), [repo](https://github.com/ranker-M/ranker-M.github.io/tree/main/Seppo%20Landing%20Page)
+
 - **Clipboard Landing Page**: [live page](https://ranker-m.github.io/clipboard-landing-page-master/), [repo](https://github.com/ranker-M/ranker-M.github.io/tree/main/clipboard-landing-page-master)
 
 - **Blogr Landing Page**: [live page](https://ranker-m.github.io/blogr-landing-page/), [repo](https://github.com/ranker-M/ranker-M.github.io/tree/main/blogr-landing-page)
