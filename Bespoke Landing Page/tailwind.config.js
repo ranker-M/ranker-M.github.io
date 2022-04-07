@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "body": ['Rubik', 'sans-serif']
+        "body": ['Poppins', 'sans-serif']
       },
       colors: {
         primary: '#fd0060',

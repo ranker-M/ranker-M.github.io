@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
-
+/* Poppins font import from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
   --primary: #47ea4e;
 }
@@ -12,12 +12,12 @@
   box-sizing: border-box;
 }
 
-p {
-  @apply text-p-secondary text-lg leading-9;
+.parallax-bg{
+  @apply relative w-full h-[600px] md:h-screen bg-[url('./images/bg/16.jpg')] bg-cover bg-no-repeat bg-center bg-fixed flex justify-center items-center;
 }
 
 .btn-primary {
-  @apply text-white py-5 font-medium px-10 text-sm border rounded-full border-primary bg-primary uppercase w-fit cursor-pointer tracking-2px hover:text-primary hover:bg-transparent transition duration-200 ease-in;
+  @apply text-white font-semibold h-[49px] px-[46px] rounded-full bg-black w-fit cursor-pointer tracking-[2.8px] leading-[0.8px] hover:bg-primary transition duration-200 ease-in text-sm uppercase;
 }
 
 .nav-button {
