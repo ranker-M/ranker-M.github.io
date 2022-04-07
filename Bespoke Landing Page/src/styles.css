@@ -17,7 +17,7 @@
 }
 
 .btn-primary {
-  @apply text-white font-semibold h-[49px] px-[46px] rounded-full bg-black w-fit cursor-pointer tracking-[2.8px] leading-[0.8px] hover:bg-primary transition duration-200 ease-in text-sm uppercase;
+  @apply text-white font-semibold h-[49px] px-5 md:px-[46px] rounded-full bg-black w-fit cursor-pointer tracking-[1.8px] md:tracking-[2.8px] leading-[0.8px] hover:bg-primary transition duration-200 ease-in text-sm uppercase;
 }
 
 .nav-button {
@@ -59,8 +59,12 @@
   }
 }
 
+.social-media-box a{ 
+  @apply bg-black w-10 h-10 transition duration-300 leading-[42px] text-[14px] md:mr-[11px] mr-2 text-center rounded-full;
+}
+
 .social-media-box a i{ 
-  @apply text-black hover:opacity-50 transition duration-300 text-[25px] mr-6;
+
 }
 
 /* Testimonials */
@@ -249,13 +253,13 @@
 }
 
 /* Contact Us */
-form{
+/* form{
   @apply w-full h-full flex flex-col;
 }
 
 form input,form textarea{
   @apply text-black border-b-[3px] border-black border-solid placeholder:text-black focus:outline-none mb-5 lg:mb-9 p-2 focus:placeholder:text-transparent text-[15px];
-}
+} */
 
 /* Footer */
 .social-media-footer a i{ 
