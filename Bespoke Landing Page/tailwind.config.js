@@ -11,6 +11,9 @@ module.exports = {
         "header": "#060606",
         "gray": "#808080"
       },
+      maxWidth: {
+
+      },
       fontSize: {
         "title-mobile": ["40px", "105%"],
         "testimonial-p": ["28px", "170%"]

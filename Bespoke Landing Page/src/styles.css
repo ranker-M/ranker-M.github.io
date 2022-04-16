@@ -4,16 +4,13 @@
 
 /* Poppins font import from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-:root {
-  --primary: #47ea4e;
-}
 
 *{
   box-sizing: border-box;
 }
 
 .parallax-bg{
-  @apply relative w-full h-[600px] md:h-screen bg-[url('./images/bg/16.jpg')] bg-cover bg-no-repeat bg-center bg-fixed flex justify-center items-center;
+  @apply relative w-full bg-fixed h-[600px] md:h-screen bg-[url('./images/bg/16.jpg')] bg-cover bg-no-repeat bg-center flex justify-center items-center;
 }
 
 .btn-primary {
@@ -21,28 +18,76 @@
 }
 
 .nav-button {
-  @apply p-2 sm:p-4 hover:text-primary transition duration-150 ease-linear font-semibold;
+  @apply block tracking-[1px] md:tracking-[2.8px] md:text-sm py-[20px] md:py-[0px] md:mb-[20px] hover:text-primary md:hover:text-white md:opacity-20 transition duration-150 ease-linear uppercase border-b-2 border-[#272727] text-right ml-[30px] pr-[50px] md:pr-[0px] w-[80%] md:w-fit md:ml-0 font-bold md:border-0 md:text-left
+  after:md:content-[''] after:md:block after:md:ml-auto after:md:border-t-2 after:md:w-10 after:md:h-3 after:md:transition-all after:md:duration-300 after:md:mt-3;
 }
 
 .nav-button.active{
-  @apply text-primary;
+  @apply text-primary md:text-white md:opacity-100 after:md:w-32;
 }
 
-.toggle-menu.opened span:nth-child(2) {
-  transform: translateX(-1rem);
+@keyframes width {
+  0% {
+    top: -72px;
+  }
+  100%{
+    top: 0px;
+  }
 }
 
-.toggle-menu:hover.closed span:nth-child(2) {
-  transform: translateX(-0.5rem);
+.scrolled-navbar{
+  @apply bg-white;
+  animation: slideNavbar 1s forwards;
 }
 
-.toggle-menu:hover.opened span:nth-child(2) {
-  transform: translateX(-0.5rem);
+
+@keyframes slideNavbar {
+  0% {
+    top: -72px;
+  }
+  100%{
+    top: 0px;
+  }
+}
+.scrolled-navbar img{
+  content:url("./images/flogo.png");
+}
+
+.scrolled-navbar .toggle-menu span{
+  @apply bg-black;
+}
+
+.to-button-effect{
+  animation: buttonEffect 1s forwards;
+}
+
+@keyframes buttonEffect {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 100;
+  }
+}
+
+.to-button-effect i{
+  animation: buttonArrowEffect 0.75s forwards;
+}
+
+@keyframes buttonArrowEffect {
+  0% {
+    top: -15px;
+    opacity: 0;
+  }
+  100%{
+    top: 2px;
+    opacity: 100;
+  }
 }
 
 .intro {
-  height: calc(100vh - 78px);
-  margin-top: 78px;
+  height: calc(100vh - 72px);
+  margin-top: 72px;
 }
 
 .side-menu.closed {
@@ -59,13 +104,11 @@
   }
 }
 
+
 .social-media-box a{ 
   @apply bg-black w-10 h-10 transition duration-300 leading-[42px] text-[14px] md:mr-[11px] mr-2 text-center rounded-full;
 }
 
-.social-media-box a i{ 
-
-}
 
 /* Testimonials */
 .hide-item{
@@ -251,15 +294,6 @@
 .milestone-right{
   @apply max-w-[350px] lg:max-w-none;
 }
-
-/* Contact Us */
-/* form{
-  @apply w-full h-full flex flex-col;
-}
-
-form input,form textarea{
-  @apply text-black border-b-[3px] border-black border-solid placeholder:text-black focus:outline-none mb-5 lg:mb-9 p-2 focus:placeholder:text-transparent text-[15px];
-} */
 
 /* Footer */
 .social-media-footer a i{ 
