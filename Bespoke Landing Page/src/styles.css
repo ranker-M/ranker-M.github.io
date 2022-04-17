@@ -37,15 +37,15 @@ animation-delay: 3s;
 
 .nav-button {
   @apply block tracking-[1px] md:tracking-[2.8px] md:text-sm py-[20px] md:py-[0px] md:mb-[20px] hover:text-primary md:hover:text-white md:opacity-20 transition duration-150 ease-linear uppercase border-b-2 border-[#272727] text-right ml-[30px] pr-[50px] md:pr-[0px] w-[80%] md:w-fit md:ml-0 font-bold md:border-0 md:text-left
-  after:md:content-[''] after:md:block after:md:ml-auto after:md:border-t-2 after:md:w-10 after:md:h-3 after:md:transition-all after:md:duration-300 after:md:mt-3;
+  after:md:content-[''] after:md:block after:md:ml-auto after:md:border-t-2 after:md:w-10 after:md:h-3 after:md:transition-all after:md:duration-300 after:md:mt-3 after:2xl:w-16 2xl:w-max;
 }
 
 .nav-button.active{
-  @apply text-primary md:text-white md:opacity-100 after:md:w-32;
+  @apply text-primary md:text-white md:opacity-100 after:md:w-32 after:2xl:w-36;
 }
 
 .nav-button:hover{
-  @apply text-primary md:text-white md:opacity-100 after:md:w-32;
+  @apply text-primary md:text-white md:opacity-100 after:md:w-32 after:2xl:w-36;
 }
 
 @keyframes width {
@@ -125,6 +125,10 @@ animation-delay: 3s;
   .side-menu.opened {
     transform: translateX(0px);
   }
+}
+
+.scrolledOut{
+  top: -200px !important;
 }
 
 .social-media-box a{ 

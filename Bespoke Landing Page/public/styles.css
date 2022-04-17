@@ -1048,6 +1048,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition {
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1056,12 +1062,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
+.delay-300 {
+  transition-delay: 300ms;
+}
+
+.delay-150 {
+  transition-delay: 150ms;
+}
+
+.delay-100 {
+  transition-delay: 100ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
 .duration-200 {
   transition-duration: 200ms;
 }
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 /* Poppins font import from google fonts */
@@ -1296,6 +1322,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+@media (min-width: 1536px) {
+  .nav-button {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+
+  .nav-button::after {
+    content: var(--tw-content);
+    width: 4rem;
+  }
+}
+
 .nav-button.active {
   --tw-text-opacity: 1;
   color: rgb(253 0 96 / var(--tw-text-opacity));
@@ -1317,6 +1356,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+@media (min-width: 1536px) {
+  .nav-button.active::after {
+    content: var(--tw-content);
+    width: 9rem;
+  }
+}
+
 .nav-button:hover {
   --tw-text-opacity: 1;
   color: rgb(253 0 96 / var(--tw-text-opacity));
@@ -1335,6 +1381,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   .nav-button:hover::after {
     content: var(--tw-content);
     width: 8rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .nav-button:hover::after {
+    content: var(--tw-content);
+    width: 9rem;
   }
 }
 
@@ -1466,6 +1519,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .side-menu.opened {
     transform: translateX(0px);
   }
+}
+
+.scrolledOut{
+  top: -200px !important;
 }
 
 .social-media-box a {
@@ -1808,6 +1865,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:tracking-\[6\.4px\] {
     letter-spacing: 6.4px;
   }
+
+  .md\:transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .md\:delay-100 {
+    transition-delay: 100ms;
+  }
+
+  .md\:duration-1000 {
+    transition-duration: 1000ms;
+  }
+
+  .md\:ease-out {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1911,12 +1986,93 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:ml-\[10\%\] {
-    margin-left: 10%;
+  .\32xl\:right-\[80px\] {
+    right: 80px;
+  }
+
+  .\32xl\:right-\[60px\] {
+    right: 60px;
+  }
+
+  .\32xl\:ml-\[20\%\] {
+    margin-left: 20%;
   }
 
   .\32xl\:mb-9 {
     margin-bottom: 2.25rem;
+  }
+
+  .\32xl\:mr-\[25\%\] {
+    margin-right: 25%;
+  }
+
+  .\32xl\:mr-\[20\%\] {
+    margin-right: 20%;
+  }
+
+  .\32xl\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .\32xl\:ml-\[15\%\] {
+    margin-left: 15%;
+  }
+
+  .\32xl\:ml-\[12\%\] {
+    margin-left: 12%;
+  }
+
+  .\32xl\:h-14 {
+    height: 3.5rem;
+  }
+
+  .\32xl\:h-12 {
+    height: 3rem;
+  }
+
+  .\32xl\:w-14 {
+    width: 3.5rem;
+  }
+
+  .\32xl\:w-\[550px\] {
+    width: 550px;
+  }
+
+  .\32xl\:w-12 {
+    width: 3rem;
+  }
+
+  .\32xl\:py-\[15px\] {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .\32xl\:px-\[75px\] {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .\32xl\:py-\[12px\] {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .\32xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .\32xl\:text-\[100px\] {
+    font-size: 100px;
+  }
+
+  .\32xl\:text-\[70px\] {
+    font-size: 70px;
+  }
+
+  .\32xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .\32xl\:text-\[90px\] {
@@ -1927,11 +2083,23 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 120px;
   }
 
-  .\32xl\:leading-\[80px\] {
-    line-height: 80px;
+  .\32xl\:text-\[28px\] {
+    font-size: 28px;
+  }
+
+  .\32xl\:text-\[18px\] {
+    font-size: 18px;
   }
 
   .\32xl\:leading-\[110px\] {
     line-height: 110px;
+  }
+
+  .\32xl\:leading-\[90px\] {
+    line-height: 90px;
+  }
+
+  .\32xl\:leading-\[80px\] {
+    line-height: 80px;
   }
 }

@@ -31,8 +31,8 @@ window.onscroll = function (e) {
 
     const homeBtn = document.body.querySelector("#home .btn-primary");
     const navbar = document.body.querySelector("#navbar");
-    // Navbar appear after first element
     if (document.documentElement.clientWidth < 768) {
+        // Top Navbar appear after first element in mobile
         let position = homeBtn.getBoundingClientRect().y;
         if (position < -80) {
             navbar.classList.replace("absolute", "fixed");
@@ -42,7 +42,18 @@ window.onscroll = function (e) {
             navbar.classList.replace("fixed", "absolute");
             navbar.classList.remove("scrolled-navbar");
         }
+
     }
+
+    if (document.documentElement.clientWidth >= 768) {
+        // Right Navbar menu slide out of page when reached bottom
+        if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+            navbar.classList.add("scrolledOut");
+        } else {
+            navbar.classList.remove("scrolledOut");
+        }
+    }
+
 
     // To top button reappears
     const toTopButton = document.getElementById("toTopButton");
