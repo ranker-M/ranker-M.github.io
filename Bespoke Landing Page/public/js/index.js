@@ -46,8 +46,18 @@ window.onscroll = function (e) {
     }
 
     if (document.documentElement.clientWidth >= 768) {
+
+        var vertical_position = 0;
+        // Vertical position for all browser versions
+        if (scrollY)//usual
+            vertical_position = scrollY;
+        else if (document.documentElement.clientHeight)//ie
+            vertical_position = document.documentElement.scrollTop;
+        else if (document.body)//ie quirks
+            vertical_position = document.body.scrollTop;
+
         // Right Navbar menu slide out of page when reached bottom
-        if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+        if ((window.innerHeight + vertical_position) >= document.body.offsetHeight) {
             navbar.classList.add("scrolledOut");
         } else {
             navbar.classList.remove("scrolledOut");
@@ -57,7 +67,7 @@ window.onscroll = function (e) {
 
     // To top button reappears
     const toTopButton = document.getElementById("toTopButton");
-    if (scrollY > 800) {
+    if (vertical_position > 800) {
         toTopButton.classList.add("to-button-effect");
     } else toTopButton.classList.remove("to-button-effect");
 
@@ -66,7 +76,6 @@ window.onscroll = function (e) {
     const sideMenu = document.getElementById("side-menu");
 
     sections.forEach((el, key) => {
-        // let distance = key != 0 ? el.getBoundingClientRect().y : el.getBoundingClientRect().y - 78;
         let distance = el.getBoundingClientRect().y - 78;
         if (distance <= 0 && distance >= (-el.clientHeight)) {
             sideMenu.children[key].classList.add("active");
