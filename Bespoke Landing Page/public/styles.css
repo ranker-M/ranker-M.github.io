@@ -649,8 +649,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-\[80px\] {
-  width: 80px;
+.w-\[120px\] {
+  width: 120px;
 }
 
 .w-6 {
@@ -1081,8 +1081,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 #home{
-  background-position:50% 0% !important;
-  background-size: auto 70% !important;
+  background-position:55% 50% !important;
+  background-size: auto 100% !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -1637,10 +1637,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-32 {
     width: 8rem;
-  }
-
-  .md\:w-\[133px\] {
-    width: 133px;
   }
 
   .md\:w-full {
