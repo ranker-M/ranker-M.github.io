@@ -23,8 +23,8 @@ Creating a clone as similar as original [demo page](http://nasfactor.com/themes/
 
 (These sceenshots are only for preview, visit demo link to see all features.)
 
-<img src="./screenshots/Bespoke Landing Page-mobile-1.jpg" alt="Mobile screenshot" height="1000"> </img>
-<img src="./screenshots/Bespoke-laptop-ss.png" alt="Laptop screenshot" height="100%"> </img>
+<img src="./screenshots/Bespoke Landing Page-mobile-1.jpg" alt="Mobile screenshot" height="1000">
+<img src="./screenshots/Bespoke-laptop-ss.png" alt="Laptop screenshot" height="100%">
 
 ### Links
 

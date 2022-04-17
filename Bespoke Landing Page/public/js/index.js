@@ -56,6 +56,9 @@ window.onscroll = function (e) {
         else if (document.body)//ie quirks
             vertical_position = document.body.scrollTop;
 
+        console.log((window.innerHeight + vertical_position) >= document.body.offsetHeight);
+        console.log(window.innerHeight + vertical_position);
+        console.log(document.body.offsetHeight);
         // Right Navbar menu slide out of page when reached bottom
         if ((window.innerHeight + vertical_position) >= document.body.offsetHeight) {
             navbar.classList.add("scrolledOut");
