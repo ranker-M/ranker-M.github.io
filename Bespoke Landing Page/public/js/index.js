@@ -25,8 +25,8 @@ document.body.addEventListener("click", closeOnClick);
 
 // Scroll effect for elements
 window.onscroll = function (e) {
-    // Works only when large than 1024px (lg breakpoint)
-    if (document.documentElement.clientWidth >= 1024) {
+    // Works only when large than 768px (md breakpoint)
+    if (document.documentElement.clientWidth >= 768) {
     }
 
     const homeBtn = document.body.querySelector("#home .btn-primary");

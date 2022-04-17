@@ -1075,8 +1075,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 #loader{
   -webkit-animation: loaderAnimation 1s ease-in forwards;
           animation: loaderAnimation 1s ease-in forwards;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 @-webkit-keyframes loaderAnimation {
