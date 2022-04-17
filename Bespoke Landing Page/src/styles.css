@@ -9,22 +9,27 @@
   box-sizing: border-box;
 }
 
+#loader{
+animation: loaderAnimation 1s ease-in forwards;
+animation-delay: 1.5s;
+}
+
+
+@keyframes loaderAnimation {
+  0% {
+    opacity: 1;   
+    z-index: 50;
+  }
+  100%{
+    opacity: 0;
+    z-index: -1;
+    display: hidden;
+  }
+}
+
 .parallax-bg{
-  @apply relative w-full bg-fixed h-[600px] md:h-screen bg-[url('./images/bg/16.jpg')] bg-cover bg-no-repeat bg-center flex justify-center items-center;
+  @apply relative w-full md:bg-fixed h-[600px] md:h-screen bg-[url('./images/bg/16.jpg')] bg-cover bg-no-repeat bg-center flex justify-center items-center;
 }
-
-#home{
-  background-position:55% 50% !important;
-  background-size: auto 100% !important;
-}
-
-@media screen and (min-width: 768px) {
- #home{
-   background-position: center !important;
-   background-size: cover !important;
- }
-}
-
 
 .btn-primary {
   @apply text-white font-semibold h-[49px] px-5 md:px-[46px] rounded-full bg-black w-fit cursor-pointer tracking-[1.8px] md:tracking-[2.8px] leading-[0.8px] hover:bg-primary transition duration-200 ease-in text-sm uppercase;

@@ -484,6 +484,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .right-\[-18rem\] {
   right: -18rem;
 }
@@ -502,6 +506,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .right-\[15px\] {
   right: 15px;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .z-30 {
@@ -601,12 +609,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.h-\[72px\] {
-  height: 72px;
-}
-
 .h-full {
   height: 100%;
+}
+
+.h-\[72px\] {
+  height: 72px;
 }
 
 .h-auto {
@@ -649,8 +657,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-\[120px\] {
-  width: 120px;
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .w-6 {
@@ -675,12 +687,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 2.5rem;
 }
 
-.w-\[100px\] {
-  width: 100px;
-}
-
 .w-\[133px\] {
   width: 133px;
+}
+
+.max-w-\[296px\] {
+  max-width: 296px;
 }
 
 .max-w-screen-1\.5xl {
@@ -762,13 +774,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(49 49 49 / var(--tw-border-opacity));
 }
 
-.bg-transparent {
-  background-color: transparent;
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-\[\#171717\] {
@@ -1060,6 +1072,39 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-sizing: border-box;
 }
 
+#loader{
+  -webkit-animation: loaderAnimation 1s ease-in forwards;
+          animation: loaderAnimation 1s ease-in forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+@-webkit-keyframes loaderAnimation {
+  0% {
+    opacity: 1;
+    z-index: 50;
+  }
+
+  100%{
+    opacity: 0;
+    z-index: -1;
+    display: hidden;
+  }
+}
+
+@keyframes loaderAnimation {
+  0% {
+    opacity: 1;
+    z-index: 50;
+  }
+
+  100%{
+    opacity: 0;
+    z-index: -1;
+    display: hidden;
+  }
+}
+
 .parallax-bg {
   position: relative;
   display: flex;
@@ -1069,7 +1114,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
   background-image: url('./images/bg/16.jpg');
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1078,17 +1122,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   .parallax-bg {
     height: 100vh;
   }
-}
 
-#home{
-  background-position:55% 50% !important;
-  background-size: auto 100% !important;
-}
-
-@media screen and (min-width: 768px) {
-  #home{
-    background-position: center !important;
-    background-size: cover !important;
+  .parallax-bg {
+    background-attachment: fixed;
   }
 }
 
@@ -1635,12 +1671,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     min-height: 100px;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:w-32 {
     width: 8rem;
   }
 
-  .md\:w-full {
-    width: 100%;
+  .md\:w-\[133px\] {
+    width: 133px;
   }
 
   .md\:w-16 {
