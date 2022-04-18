@@ -45,17 +45,16 @@ window.onscroll = function (e) {
 
     }
 
+    var vertical_position = 0;
+    // Vertical position for all browser versions
+    if (scrollY)//usual
+        vertical_position = scrollY;
+    else if (document.documentElement.clientHeight)//ie
+        vertical_position = document.documentElement.scrollTop;
+    else if (document.body)//ie quirks
+        vertical_position = document.body.scrollTop;
+
     if (document.documentElement.clientWidth >= 768) {
-
-        var vertical_position = 0;
-        // Vertical position for all browser versions
-        if (scrollY)//usual
-            vertical_position = scrollY;
-        else if (document.documentElement.clientHeight)//ie
-            vertical_position = document.documentElement.scrollTop;
-        else if (document.body)//ie quirks
-            vertical_position = document.body.scrollTop;
-
         // Right Navbar menu slide out of page when reached bottom
         if ((window.innerHeight + vertical_position) >= document.body.offsetHeight - 2) {
             navbar.classList.add("scrolledOut");
